@@ -1,0 +1,8 @@
+# Test 1
+# GET http://localhost:8080/
+
+# Test 2
+# GET http://localhost:8080/?compute=-176*-51
+
+# Test 3
+GET http://localhost:8080/?q=hello&p=jack

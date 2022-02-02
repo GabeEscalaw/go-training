@@ -12,7 +12,27 @@ import (
 	"time"
 )
 
+// askQuestions loops through -n questions for the user and displays their score after.
+func askQuestions(numQuestions int, lines [][]string) {
+	var score int
+
+	for i := 0; i < numQuestions; i++ {
+		var ans string 
+		rand.Seed(time.Now().UnixNano())
+		index := rand.Intn(numQuestions - 0) + 0
+		fmt.Printf("Q: %s = ", lines[index][0])
+		fmt.Scan(&ans)
+		if ans == lines[index][1] {
+			fmt.Println("Correct!")
+			score++
+		}
+	}
+
+	fmt.Println("You answered", score, "out of", numQuestions, "questions correctly.")
+}
+
 func main() {
+	// flag.Type(flag, default value, short description)
 	dbname := flag.String("csv", "questions.csv", "database")
 	numQuestions := flag.Int("n", 10, "number of questions")
 	flag.Parse()
@@ -30,18 +50,5 @@ func main() {
 		log.Fatalf("Insufficient questions. Database should contain at least -n amount of questions")
 	}
 
-	var score int
-
-	for i := 0; i < *numQuestions; i++ {
-		var ans string 
-		rand.Seed(time.Now().UnixNano())
-		index := rand.Intn(*numQuestions - 0) + 0
-		fmt.Printf("Q: %s = ", lines[index][0])
-		fmt.Scan(&ans)
-		if ans == lines[index][1] {
-			fmt.Println("Correct!")
-			score++
-		}
-	}
-	fmt.Println("You answered", score, "out of", *numQuestions, "questions correctly.")
+	askQuestions(*numQuestions, lines)
 }

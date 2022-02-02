@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-// --- READ ---
+// --- READ ONLY ---
 // func main() {
 // 	fp, _ := os.Open("sample.csv")
 // 	defer fp.Close()
@@ -16,7 +16,7 @@ import (
 // 	fmt.Println(lines)
 // }
 
-// --- WRITE ---
+// --- READ AND WRITE ---
 func main() {
 	fp, err := os.Open("sample.csv")
 	if err != nil {
