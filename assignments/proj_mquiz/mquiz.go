@@ -31,6 +31,7 @@ func askQuestions(numQuestions int, lines [][]string) {
 	fmt.Println("You answered", score, "out of", numQuestions, "questions correctly.")
 }
 
+// main reads the files, handles errors, and proceeds with the askQuestions function if there are no errors.
 func main() {
 	// flag.Type(flag, default value, short description)
 	dbname := flag.String("csv", "questions.csv", "database")
