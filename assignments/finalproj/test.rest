@@ -1,0 +1,76 @@
+## Test 1 | Check whole contacts, empty on initial run
+GET http://localhost:8080/user
+
+
+
+## Test 2 | Successfully add a unique  item, duplicates return error 409
+# POST  http://localhost:8080/watches
+
+# {"brand" : "Rolex", "model" : "Explorer", "movement" : "Some Expensive Movement", "dialsize" : "39mm", "color" : "dull black", "price" : "$8500"}
+
+
+
+## Test 3 | Successfully add a unique item, duplicates return error 409
+# POST  http://localhost:8080/watches
+
+# {"brand" : "Rolex", "model" : "Explorer 2", "movement" : "Some Expensive Movement", "dialsize" : "41mm", "color" : "deep black", "price" : "$9500"}
+
+
+
+## Test 3 | Successfully add a unique  item, duplicates return error 409
+# POST  http://localhost:8080/watches
+
+# {"brand" : "Omega", "model" : "Seamaster", "movement" : "Some Expensive Movement", "dialsize" : "36mm", "color" : "Navy", "price" : "$5500"}
+
+
+
+## Test 4 | Delete specified item
+# DELETE  http://localhost:8080/watches/1
+
+
+
+## Test 5 | Replace item details but keep original ID
+# PUT  http://localhost:8080/watches/2
+
+# {"last" : "Replaced", "first" : "Replaced", "company" : "Replaced", "address" : "Replaced", "country" : "Replaced", "position" : "Replaced Replaced"}
+
+
+
+## Test 6 | Check if it returns an error 405 for POSTing at /contacts/{id}
+# POST  http://localhost:8080/watches/1
+
+# {"last" : "Tiongco", "first" : "John Eugene", "company" : "DSG", "address" : "Antipolo", "country" : "Philippines", "position" : "NFT Specialist"}
+
+
+
+## Test 7 | Return whole list, a specific item, or an error if doesn't exist
+# GET  http://localhost:8080/watches/2
+
+
+
+## Test 8 | Should return an error 405 not allowed
+# PUT  http://localhost:8080/watches
+
+# {"last" : "Replaced", "first" : "Replaced", "company" : "Replaced", "address" : "Replaced", "country" : "Replaced", "position" : "Replaced Replaced"}
+
+
+
+## Test 9 | Should return an error 404 not found
+# PUT  http://localhost:8080/watches/5
+
+# {"last" : "Replaced", "first" : "Replaced", "company" : "Replaced", "address" : "Replaced", "country" : "Replaced", "position" : "Replaced Replaced"}
+
+
+
+## Test 10 | DELETE at /contacts is not allowed
+# DELETE  http://localhost:8080/watches
+
+# {"last" : "Replaced", "first" : "Replaced", "company" : "Replaced", "address" : "Replaced", "country" : "Replaced", "position" : "Replaced Replaced"}
+
+
+
+## Test 11 | DELETE item that doesn't exist returns error 404 not found
+# DELETE  http://localhost:8080/watches/21
+
+# {"last" : "Replaced", "first" : "Replaced", "company" : "Replaced", "address" : "Replaced", "country" : "Replaced", "position" : "Replaced Replaced"}
+
