@@ -208,7 +208,7 @@ func (u *UserDatabase) signup(w http.ResponseWriter, r *http.Request) {
 			http.Error(w, "\n\n\nUser successfully added to database.\n", http.StatusCreated)
 			InfoLogger.Printf("signup | User: %v was successfully added to the database.\n", ui.Username)
 		} else if ui.Username == "" || ui.Password == "" {
-			http.Error(w, "\n\n\nPlease enter your desired credentials properly.\n", http.StatusMethodNotAllowed)
+			http.Error(w, "\n\n\nBad Request: Error 405: Please enter your desired credentials properly.\n", http.StatusMethodNotAllowed)
 			ErrorLogger.Println("signup | Bad Request: Error 405. Incorrect input.")
 		}
 		u.databaseWriter()
@@ -270,17 +270,14 @@ func (u *UserDatabase) login(w http.ResponseWriter, r *http.Request) {
 				userCorrect = true
 				passCorrect = true
 				amtLogged++
-				InfoLogger.Printf("login | %v succesfully logged in.\n", ui.Username)
 			} else if ui.Username == user.Username && ui.Password == user.Password && user.IsLoggedIn && amtLogged == 1 {
 				isLogged = true
 				index = j
 				userCorrect = true
 				passCorrect = true
 				alreadyLogged = true
-				InfoLogger.Printf("login | %v succesfully logged in.\n", ui.Username)
 			} else if ui.Username == user.Username && ui.Password != user.Password {
 				userCorrect = true
-				InfoLogger.Printf("login | %v entered incorrect password.\n", ui.Username)
 			} else if ui.Username == user.Username && ui.Password == user.Password && amtLogged == 1 {
 				amtLogged++
 			} 
@@ -289,8 +286,10 @@ func (u *UserDatabase) login(w http.ResponseWriter, r *http.Request) {
 		
 		if alreadyLogged {
 			fmt.Fprintf(w, "\n\n\nYou are already logged in, %v\n",  u.Users[index].Username)
+			WarningLogger.Printf("login | %v attemped to log in again.\n", ui.Username)
 		} else if isLogged && amtLogged == 1 && userCorrect && passCorrect {
 			fmt.Fprintf(w, "\n\n\nLogged in successfully.\nWelcome to your Watch Collection, %v.\n", u.Users[index].Username)
+			InfoLogger.Printf("login | %v succesfully logged in.\n", ui.Username)
 		} else if !isLogged && amtLogged == 0 && userCorrect {
 			http.Error(w, "\n\n\nError 400: Password entered is incorrect.\nPlease try again.\n", http.StatusBadRequest)
 			ErrorLogger.Println("login | Error 400: Bad Request. Incorrect password.")
@@ -629,7 +628,7 @@ func (u *UserDatabase) markWatch(w http.ResponseWriter, r *http.Request) {
 		if isLogged {
 			if wi.Brand == "" || wi.Model == "" {
 				http.Error(w, "\n\n\nPlease enter the watch brand and model properly.\n", http.StatusMethodNotAllowed)
-				ErrorLogger.Println("markWatch | Bad Request: Error 405. Incorrect input.")
+				WarningLogger.Println("markWatch | Bad Request: Error 405. Incorrect input.")
 			} else {
 				for j, watch := range u.Users[index].Watches {
 					if wi.Brand == watch.Brand && wi.Model == watch.Model {

@@ -2268,3 +2268,37 @@ INFO: 2022/02/15 16:46:16 server.go:209: signup | User: user5 was successfully a
 INFO: 2022/02/15 16:46:16 server.go:72: databaseWriter | Database was updated
 INFO: 2022/02/15 16:46:16 server.go:103: handler | /signup request was received from cli
 INFO: 2022/02/15 17:50:27 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 19:47:58 main.go:61: databaseReader | Database was read
+INFO: 2022/02/15 19:48:21 main.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 19:48:21 main.go:200: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/15 19:48:21 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 19:48:21 main.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 19:48:41 main.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 19:48:41 main.go:200: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/15 19:48:41 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 19:48:41 main.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 19:48:45 main.go:61: databaseReader | Database was read
+INFO: 2022/02/15 19:48:45 main.go:209: signup | User: user was successfully added to the database.
+INFO: 2022/02/15 19:48:45 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 19:48:45 main.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 19:48:55 main.go:61: databaseReader | Database was read
+INFO: 2022/02/15 19:48:55 main.go:209: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/15 19:48:55 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 19:48:55 main.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 19:49:13 main.go:61: databaseReader | Database was read
+INFO: 2022/02/15 19:49:13 main.go:273: login | gabe succesfully logged in.
+INFO: 2022/02/15 19:49:13 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 19:49:13 main.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 19:49:59 main.go:61: databaseReader | Database was read
+INFO: 2022/02/15 19:49:59 main.go:515: addWatch | Added Rolex Submariner to the collection of User: gabe.
+INFO: 2022/02/15 19:49:59 main.go:163: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 19:49:59 main.go:519: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/15 19:49:59 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 19:49:59 main.go:115: handler | /addWatch request was received from cli
+INFO: 2022/02/15 19:50:28 main.go:61: databaseReader | Database was read
+INFO: 2022/02/15 19:50:28 main.go:515: addWatch | Added Audemars Piguet Royal Oak to the collection of User: gabe.
+INFO: 2022/02/15 19:50:28 main.go:163: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 19:50:28 main.go:519: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/15 19:50:28 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 19:50:28 main.go:115: handler | /addWatch request was received from cli
+INFO: 2022/02/16 01:38:33 main.go:61: databaseReader | Database was read
