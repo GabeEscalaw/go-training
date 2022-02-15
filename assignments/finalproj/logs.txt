@@ -1378,3 +1378,893 @@ INFO: 2022/02/15 10:58:07 server.go:147: displayCollection | Current watch colle
 INFO: 2022/02/15 10:58:07 server.go:613: markWatch | Current watch collection of User: user was displayed.
 INFO: 2022/02/15 10:58:07 server.go:105: /markWatch request was received from cli
 INFO: 2022/02/15 10:58:13 server.go:90: /login request was received from cli
+INFO: 2022/02/15 11:57:14 server.go:60: databaseReader | Database was read
+INFO: 2022/02/15 11:57:14 server.go:208: signup | User: user was successfully added to the database.
+INFO: 2022/02/15 11:57:14 server.go:60: databaseReader | Database was read
+INFO: 2022/02/15 11:57:14 server.go:72: databaseWriter | Database was written
+INFO: 2022/02/15 11:57:14 server.go:100: handler | /signup request was received from cli
+INFO: 2022/02/15 11:57:33 server.go:103: handler | /login request was received from cli
+INFO: 2022/02/15 12:00:07 server.go:60: databaseReader | Database was read
+INFO: 2022/02/15 12:00:07 server.go:208: signup | User: user was successfully added to the database.
+INFO: 2022/02/15 12:00:07 server.go:100: handler | /signup request was received from cli
+INFO: 2022/02/15 12:07:56 server.go:60: databaseReader | Database was read
+ERROR: 2022/02/15 12:07:56 server.go:199: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/15 12:07:56 server.go:100: handler | /signup request was received from cli
+INFO: 2022/02/15 12:08:01 server.go:62: databaseReader | Database was read
+INFO: 2022/02/15 12:08:08 server.go:62: databaseReader | Database was read
+ERROR: 2022/02/15 12:08:08 server.go:204: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/15 12:08:08 server.go:105: handler | /signup request was received from cli
+INFO: 2022/02/15 12:08:17 server.go:62: databaseReader | Database was read
+INFO: 2022/02/15 12:08:17 server.go:213: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/15 12:08:17 server.go:105: handler | /signup request was received from cli
+INFO: 2022/02/15 12:08:25 server.go:108: handler | /login request was received from cli
+INFO: 2022/02/15 12:08:56 server.go:352: logout | na succesfully logged out
+.
+INFO: 2022/02/15 12:08:56 server.go:111: handler | /logout request was received from cli
+INFO: 2022/02/15 12:09:10 server.go:277: login | test succesfully logged in.
+INFO: 2022/02/15 12:09:10 server.go:108: handler | /login request was received from cli
+INFO: 2022/02/15 12:09:15 server.go:108: handler | /login request was received from cli
+INFO: 2022/02/15 12:10:53 server.go:62: databaseReader | Database was read
+INFO: 2022/02/15 12:11:05 server.go:62: databaseReader | Database was read
+INFO: 2022/02/15 12:11:05 server.go:213: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/15 12:11:05 server.go:105: handler | /signup request was received from cli
+INFO: 2022/02/15 12:11:13 server.go:108: handler | /login request was received from cli
+INFO: 2022/02/15 12:11:26 server.go:352: logout | na succesfully logged out
+.
+INFO: 2022/02/15 12:11:26 server.go:111: handler | /logout request was received from cli
+INFO: 2022/02/15 12:12:14 server.go:62: databaseReader | Database was read
+INFO: 2022/02/15 12:12:14 server.go:213: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/15 12:12:14 server.go:105: handler | /signup request was received from cli
+INFO: 2022/02/15 12:12:23 server.go:62: databaseReader | Database was read
+INFO: 2022/02/15 12:12:31 server.go:62: databaseReader | Database was read
+INFO: 2022/02/15 12:12:31 server.go:213: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/15 12:12:31 server.go:62: databaseReader | Database was read
+INFO: 2022/02/15 12:12:31 server.go:74: databaseWriter | Database was written
+INFO: 2022/02/15 12:12:31 server.go:105: handler | /signup request was received from cli
+INFO: 2022/02/15 12:12:34 server.go:62: databaseReader | Database was read
+INFO: 2022/02/15 12:12:34 server.go:213: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/15 12:12:34 server.go:62: databaseReader | Database was read
+INFO: 2022/02/15 12:12:34 server.go:74: databaseWriter | Database was written
+INFO: 2022/02/15 12:12:34 server.go:105: handler | /signup request was received from cli
+INFO: 2022/02/15 12:12:37 server.go:62: databaseReader | Database was read
+INFO: 2022/02/15 12:12:37 server.go:213: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/15 12:12:37 server.go:62: databaseReader | Database was read
+INFO: 2022/02/15 12:12:37 server.go:74: databaseWriter | Database was written
+INFO: 2022/02/15 12:12:37 server.go:105: handler | /signup request was received from cli
+INFO: 2022/02/15 12:12:39 server.go:108: handler | /login request was received from cli
+INFO: 2022/02/15 12:13:08 server.go:62: databaseReader | Database was read
+INFO: 2022/02/15 12:13:15 server.go:108: handler | /login request was received from cli
+INFO: 2022/02/15 12:13:20 server.go:213: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/15 12:13:20 server.go:105: handler | /signup request was received from cli
+INFO: 2022/02/15 12:13:23 server.go:108: handler | /login request was received from cli
+ERROR: 2022/02/15 12:13:27 server.go:204: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/15 12:13:27 server.go:105: handler | /signup request was received from cli
+INFO: 2022/02/15 12:14:05 server.go:62: databaseReader | Database was read
+INFO: 2022/02/15 12:14:15 server.go:213: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/15 12:14:15 server.go:62: databaseReader | Database was read
+INFO: 2022/02/15 12:14:15 server.go:74: databaseWriter | Database was written
+INFO: 2022/02/15 12:14:15 server.go:105: handler | /signup request was received from cli
+INFO: 2022/02/15 12:14:24 server.go:108: handler | /login request was received from cli
+INFO: 2022/02/15 12:14:33 server.go:213: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/15 12:14:33 server.go:62: databaseReader | Database was read
+INFO: 2022/02/15 12:14:33 server.go:74: databaseWriter | Database was written
+INFO: 2022/02/15 12:14:33 server.go:105: handler | /signup request was received from cli
+INFO: 2022/02/15 12:16:41 server.go:62: databaseReader | Database was read
+INFO: 2022/02/15 12:16:51 server.go:352: logout | na succesfully logged out
+.
+INFO: 2022/02/15 12:16:51 server.go:111: handler | /logout request was received from cli
+WARNING: 2022/02/15 12:17:02 server.go:360: logout | Attempted to log out while not logged in.
+INFO: 2022/02/15 12:17:02 server.go:111: handler | /logout request was received from cli
+INFO: 2022/02/15 12:17:04 server.go:108: handler | /login request was received from cli
+INFO: 2022/02/15 12:18:06 server.go:62: databaseReader | Database was read
+INFO: 2022/02/15 12:18:14 server.go:352: logout | na succesfully logged out
+.
+INFO: 2022/02/15 12:18:14 server.go:111: handler | /logout request was received from cli
+INFO: 2022/02/15 12:18:18 server.go:213: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/15 12:18:18 server.go:62: databaseReader | Database was read
+INFO: 2022/02/15 12:18:18 server.go:105: handler | /signup request was received from cli
+INFO: 2022/02/15 13:12:00 server.go:213: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/15 13:12:00 server.go:62: databaseReader | Database was read
+INFO: 2022/02/15 13:12:00 server.go:105: handler | /signup request was received from cli
+INFO: 2022/02/15 13:12:06 server.go:84: databaseReader | Database was read
+INFO: 2022/02/15 13:12:40 server.go:84: databaseReader | Database was read
+INFO: 2022/02/15 13:12:40 server.go:235: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/15 13:12:40 server.go:127: handler | /signup request was received from cli
+INFO: 2022/02/15 13:12:43 server.go:84: databaseReader | Database was read
+INFO: 2022/02/15 13:12:43 server.go:235: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/15 13:12:43 server.go:127: handler | /signup request was received from cli
+INFO: 2022/02/15 13:13:04 server.go:84: databaseReader | Database was read
+INFO: 2022/02/15 13:13:18 server.go:84: databaseReader | Database was read
+INFO: 2022/02/15 13:13:18 server.go:235: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/15 13:13:18 server.go:127: handler | /signup request was received from cli
+INFO: 2022/02/15 13:15:56 server.go:130: handler | /login request was received from cli
+INFO: 2022/02/15 13:19:18 server.go:130: handler | /login request was received from cli
+INFO: 2022/02/15 13:20:57 server.go:83: databaseReader | Database was read
+INFO: 2022/02/15 13:21:06 server.go:83: databaseReader | Database was read
+INFO: 2022/02/15 13:21:06 server.go:236: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/15 13:21:06 server.go:83: databaseReader | Database was read
+INFO: 2022/02/15 13:21:06 server.go:125: handler | /signup request was received from cli
+INFO: 2022/02/15 13:21:35 server.go:83: databaseReader | Database was read
+INFO: 2022/02/15 13:21:46 server.go:83: databaseReader | Database was read
+INFO: 2022/02/15 13:21:46 server.go:236: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/15 13:21:46 server.go:83: databaseReader | Database was read
+INFO: 2022/02/15 13:21:46 server.go:125: handler | /signup request was received from cli
+INFO: 2022/02/15 13:22:00 server.go:128: handler | /login request was received from cli
+INFO: 2022/02/15 13:22:17 server.go:128: handler | /login request was received from cli
+INFO: 2022/02/15 13:27:55 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 13:28:04 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 13:28:04 server.go:214: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/15 13:28:04 server.go:72: databaseWriter | Database was written
+INFO: 2022/02/15 13:28:04 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 13:28:04 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 13:28:16 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 13:29:31 server.go:62: databaseReader | Database was read
+INFO: 2022/02/15 13:30:10 server.go:62: databaseReader | Database was read
+INFO: 2022/02/15 13:30:19 server.go:62: databaseReader | Database was read
+ERROR: 2022/02/15 13:30:19 server.go:206: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/15 13:30:19 server.go:73: databaseWriter | Database was written
+INFO: 2022/02/15 13:30:19 server.go:62: databaseReader | Database was read
+INFO: 2022/02/15 13:30:19 server.go:104: handler | /signup request was received from cli
+INFO: 2022/02/15 13:30:25 server.go:62: databaseReader | Database was read
+INFO: 2022/02/15 13:30:25 server.go:215: signup | User: user3 was successfully added to the database.
+INFO: 2022/02/15 13:30:25 server.go:73: databaseWriter | Database was written
+INFO: 2022/02/15 13:30:25 server.go:62: databaseReader | Database was read
+INFO: 2022/02/15 13:30:25 server.go:104: handler | /signup request was received from cli
+INFO: 2022/02/15 13:33:14 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 13:33:25 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 13:33:25 server.go:205: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/15 13:33:25 server.go:72: databaseWriter | Database was written
+INFO: 2022/02/15 13:33:25 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 13:33:25 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 13:33:32 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 13:33:32 server.go:205: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/15 13:33:32 server.go:72: databaseWriter | Database was written
+INFO: 2022/02/15 13:33:32 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 13:33:32 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 13:33:46 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 13:33:46 server.go:214: signup | User: user4 was successfully added to the database.
+INFO: 2022/02/15 13:33:46 server.go:72: databaseWriter | Database was written
+INFO: 2022/02/15 13:33:46 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 13:33:46 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 13:35:02 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 13:35:11 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 13:35:11 server.go:205: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/15 13:35:11 server.go:72: databaseWriter | Database was written
+INFO: 2022/02/15 13:35:11 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 13:35:11 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 13:35:15 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 13:35:15 server.go:214: signup | User: user4 was successfully added to the database.
+INFO: 2022/02/15 13:35:15 server.go:72: databaseWriter | Database was written
+INFO: 2022/02/15 13:35:15 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 13:35:15 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 13:35:45 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 13:35:53 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 13:35:59 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 13:35:59 server.go:214: signup | User: user5 was successfully added to the database.
+INFO: 2022/02/15 13:35:59 server.go:72: databaseWriter | Database was written
+INFO: 2022/02/15 13:35:59 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 13:35:59 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 13:36:15 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 13:42:17 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 13:42:46 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 13:43:39 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 13:43:45 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 13:43:45 server.go:205: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/15 13:43:45 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 13:43:45 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 13:43:55 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 13:43:55 server.go:205: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/15 13:43:55 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 13:43:55 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 13:45:27 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 13:45:58 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 13:45:58 server.go:356: logout | na succesfully logged out
+.
+INFO: 2022/02/15 13:45:58 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 13:45:58 server.go:109: handler | /logout request was received from cli
+INFO: 2022/02/15 13:47:02 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 13:47:29 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 13:47:29 server.go:420: delete | Error 400: Bad Request. User to delete was not found.
+ERROR: 2022/02/15 13:47:29 server.go:420: delete | Error 400: Bad Request. User to delete was not found.
+ERROR: 2022/02/15 13:47:29 server.go:420: delete | Error 400: Bad Request. User to delete was not found.
+INFO: 2022/02/15 13:47:29 server.go:413: delete | User user3 was deleted from the database.
+INFO: 2022/02/15 13:47:29 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 13:47:29 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:07:15 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:07:21 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:07:29 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 14:07:29 server.go:434: delete | Error 400: Bad Request. User to delete was not found.
+INFO: 2022/02/15 14:07:29 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:07:29 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:07:33 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:07:33 server.go:427: delete | User user4 was deleted from the database.
+INFO: 2022/02/15 14:07:33 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:07:38 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:07:44 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:07:44 server.go:427: delete | User user5 was deleted from the database.
+INFO: 2022/02/15 14:07:44 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:07:47 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:07:56 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:07:56 server.go:427: delete | User user4 was deleted from the database.
+INFO: 2022/02/15 14:07:56 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:07:59 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:08:59 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:08:59 server.go:427: delete | User user4 was deleted from the database.
+INFO: 2022/02/15 14:08:59 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:09:02 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:09:02 server.go:427: delete | User user4 was deleted from the database.
+INFO: 2022/02/15 14:09:02 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:09:05 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:09:06 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:09:06 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:09:07 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:09:07 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:09:43 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:09:57 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:09:57 server.go:214: signup | User: user6 was successfully added to the database.
+INFO: 2022/02/15 14:09:57 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:09:57 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 14:10:00 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:10:05 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 14:10:05 server.go:205: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/15 14:10:05 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:10:05 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 14:10:07 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:10:49 server.go:61: databaseReader | Database was read
+WARNING: 2022/02/15 14:10:49 server.go:364: logout | Attempted to log out while not logged in.
+INFO: 2022/02/15 14:10:49 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:10:49 server.go:109: handler | /logout request was received from cli
+INFO: 2022/02/15 14:10:54 server.go:106: handler | /login request was received from cli
+ERROR: 2022/02/15 14:10:54 server.go:128: 
+
+
+Bad Request: Error 404. url /favicon.ico was not found on this server.
+INFO: 2022/02/15 14:11:00 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:11:00 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:11:18 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:11:18 server.go:289: login | user3 entered incorrect password.
+ERROR: 2022/02/15 14:11:18 server.go:302: login | Error 400: Bad Request. Incorrect password.
+INFO: 2022/02/15 14:11:18 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:11:18 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:11:22 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:11:22 server.go:279: login | user3 succesfully logged in.
+INFO: 2022/02/15 14:11:22 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:11:22 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:11:28 server.go:106: handler | /login request was received from cli
+ERROR: 2022/02/15 14:11:37 server.go:128: 
+
+
+Bad Request: Error 404. url /favicon.ico was not found on this server.
+INFO: 2022/02/15 14:12:00 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:12:00 server.go:356: logout | na succesfully logged out
+.
+INFO: 2022/02/15 14:12:00 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:12:00 server.go:109: handler | /logout request was received from cli
+INFO: 2022/02/15 14:14:21 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:14:21 server.go:279: login | user succesfully logged in.
+INFO: 2022/02/15 14:14:21 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:14:21 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:15:00 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:15:00 server.go:177: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/15 14:15:00 server.go:524: addWatch | Added Rolex Submariner to the collection of User: user.
+INFO: 2022/02/15 14:15:00 server.go:163: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 14:15:00 server.go:528: addWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/15 14:15:00 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:15:00 server.go:115: handler | /addWatch request was received from cli
+INFO: 2022/02/15 14:15:16 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:15:16 server.go:356: logout | na succesfully logged out
+.
+INFO: 2022/02/15 14:15:16 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:15:16 server.go:109: handler | /logout request was received from cli
+INFO: 2022/02/15 14:15:26 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:15:26 server.go:279: login | gabe succesfully logged in.
+INFO: 2022/02/15 14:15:26 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:15:26 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:15:29 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:15:29 server.go:177: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/15 14:15:29 server.go:524: addWatch | Added Rolex Submariner to the collection of User: gabe.
+INFO: 2022/02/15 14:15:29 server.go:163: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 14:15:29 server.go:528: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/15 14:15:29 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:15:29 server.go:115: handler | /addWatch request was received from cli
+INFO: 2022/02/15 14:15:33 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:15:52 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:15:52 server.go:177: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/15 14:15:52 server.go:584: removeWatch | Removed Rolex Submariner from the collection of User: gabe.
+WARNING: 2022/02/15 14:15:52 server.go:595: removeWatch | Watch collection is currently empty.
+INFO: 2022/02/15 14:15:52 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:15:52 server.go:118: handler | /removeWatch request was received from cli
+INFO: 2022/02/15 14:16:07 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:16:12 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:16:12 server.go:177: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/15 14:16:12 server.go:595: removeWatch | Watch collection is currently empty.
+INFO: 2022/02/15 14:16:12 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:16:12 server.go:118: handler | /removeWatch request was received from cli
+INFO: 2022/02/15 14:20:44 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:20:54 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:20:54 server.go:177: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/15 14:20:54 server.go:593: removeWatch | gabe attempted to delete a watch that is not part of the collection.
+WARNING: 2022/02/15 14:20:54 server.go:600: removeWatch | Watch collection is currently empty.
+INFO: 2022/02/15 14:20:54 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:20:54 server.go:118: handler | /removeWatch request was received from cli
+INFO: 2022/02/15 14:23:08 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:23:16 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:23:16 server.go:177: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/15 14:23:16 server.go:593: removeWatch | gabe attempted to delete a watch that is not part of the collection.
+WARNING: 2022/02/15 14:23:16 server.go:600: removeWatch | Watch collection is currently empty.
+INFO: 2022/02/15 14:23:16 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:23:16 server.go:118: handler | /removeWatch request was received from cli
+INFO: 2022/02/15 14:25:43 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:25:52 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:25:52 server.go:177: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/15 14:25:52 server.go:593: removeWatch | gabe attempted to delete a watch that is not part of the collection.
+WARNING: 2022/02/15 14:25:52 server.go:600: removeWatch | Watch collection is currently empty.
+INFO: 2022/02/15 14:25:52 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:25:52 server.go:118: handler | /removeWatch request was received from cli
+INFO: 2022/02/15 14:25:58 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:26:07 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:26:07 server.go:355: logout | na succesfully logged out
+.
+INFO: 2022/02/15 14:26:07 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:26:07 server.go:109: handler | /logout request was received from cli
+INFO: 2022/02/15 14:26:44 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:26:53 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:27:37 server.go:112: handler | /delete request was received from cli
+ERROR: 2022/02/15 14:27:37 server.go:128: 
+
+
+Bad Request: Error 404. url /favicon.ico was not found on this server.
+INFO: 2022/02/15 14:27:43 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:27:47 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:27:47 server.go:426: delete | User user6 was deleted from the database.
+INFO: 2022/02/15 14:27:47 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:27:55 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:28:00 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:28:07 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:28:07 server.go:426: delete | User user5 was deleted from the database.
+INFO: 2022/02/15 14:28:07 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:28:12 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:30:02 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:30:02 server.go:426: delete | User user6 was deleted from the database.
+INFO: 2022/02/15 14:30:02 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:30:09 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:30:10 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:30:12 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:34:31 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:34:31 server.go:426: delete | User user4 was deleted from the database.
+INFO: 2022/02/15 14:34:31 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:34:40 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:34:40 server.go:426: delete | User user3 was deleted from the database.
+INFO: 2022/02/15 14:34:40 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:34:44 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:34:56 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:34:56 server.go:426: delete | User test was deleted from the database.
+INFO: 2022/02/15 14:34:56 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:34:59 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:35:17 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 14:35:17 server.go:433: delete | Error 400: Bad Request. User to delete was not found.
+INFO: 2022/02/15 14:35:17 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:35:17 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:35:22 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 14:35:22 server.go:430: delete | Error 400: Bad Request. Password entered is incorrect.
+INFO: 2022/02/15 14:35:22 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:35:22 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:35:29 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:35:58 server.go:61: databaseReader | Database was read
+WARNING: 2022/02/15 14:35:58 server.go:363: logout | Attempted to log out while not logged in.
+INFO: 2022/02/15 14:35:58 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:35:58 server.go:109: handler | /logout request was received from cli
+INFO: 2022/02/15 14:36:10 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:36:10 server.go:278: login | user succesfully logged in.
+INFO: 2022/02/15 14:36:10 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:36:10 server.go:106: handler | /login request was received from cli
+ERROR: 2022/02/15 14:36:29 server.go:128: 
+
+
+Bad Request: Error 404. url /delw was not found on this server.
+INFO: 2022/02/15 14:36:36 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:36:36 server.go:177: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/15 14:36:36 server.go:584: removeWatch | Removed Rolex Submariner from the collection of User: user.
+INFO: 2022/02/15 14:36:36 server.go:163: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 14:36:36 server.go:597: removeWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/15 14:36:36 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:36:36 server.go:118: handler | /removeWatch request was received from cli
+INFO: 2022/02/15 14:36:44 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:36:48 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:36:48 server.go:177: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/15 14:36:48 server.go:593: removeWatch | user attempted to delete a watch that is not part of the collection.
+INFO: 2022/02/15 14:36:48 server.go:163: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 14:36:48 server.go:597: removeWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/15 14:36:48 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:36:48 server.go:118: handler | /removeWatch request was received from cli
+INFO: 2022/02/15 14:37:31 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:37:35 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:37:35 server.go:426: delete | User test was deleted from the database.
+INFO: 2022/02/15 14:37:35 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:40:01 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:40:16 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:40:16 server.go:430: delete | User test was deleted from the database.
+INFO: 2022/02/15 14:40:16 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:40:16 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:40:23 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 14:40:23 server.go:433: delete | Error 400: Bad Request. Password entered is incorrect.
+INFO: 2022/02/15 14:40:23 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:40:23 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:40:27 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:43:03 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:43:35 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:43:41 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:43:41 server.go:413: delete | User user6 was deleted from the database.
+ERROR: 2022/02/15 14:43:41 server.go:427: delete | Error 400: Bad Request. User to delete was not found.
+INFO: 2022/02/15 14:43:41 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:43:41 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:44:06 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:44:12 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 14:44:12 server.go:433: delete | Error 400: Bad Request. User to delete was not found.
+INFO: 2022/02/15 14:44:12 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:44:12 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:44:17 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:44:23 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 14:44:23 server.go:433: delete | Error 400: Bad Request. User to delete was not found.
+INFO: 2022/02/15 14:44:23 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 14:44:23 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:44:27 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:44:31 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 14:44:31 server.go:402: delete | Error 400: Bad Request. Error on decoding json sign up.
+INFO: 2022/02/15 14:44:31 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:44:36 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:44:36 server.go:426: delete | User user6 was deleted from the database.
+INFO: 2022/02/15 14:44:36 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:44:38 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:44:48 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:44:48 server.go:426: delete | User user4 was deleted from the database.
+INFO: 2022/02/15 14:44:48 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:44:50 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:44:56 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:44:56 server.go:426: delete | User user6 was deleted from the database.
+INFO: 2022/02/15 14:44:56 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:44:59 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 14:51:48 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:52:09 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:52:09 server.go:416: delete | User user6 was deleted from the database.
+INFO: 2022/02/15 14:52:18 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:52:18 server.go:416: delete | User user4 was deleted from the database.
+INFO: 2022/02/15 14:52:27 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:52:31 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:52:31 server.go:416: delete | User user6 was deleted from the database.
+INFO: 2022/02/15 14:56:47 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:57:10 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:57:10 server.go:426: delete | User user6 was deleted from the database.
+INFO: 2022/02/15 14:57:10 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:57:13 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:57:13 server.go:426: delete | User user6 was deleted from the database.
+INFO: 2022/02/15 14:57:13 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:58:08 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:58:17 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:58:17 server.go:426: delete | User user6 was deleted from the database.
+INFO: 2022/02/15 14:58:17 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 14:58:20 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 14:58:20 server.go:426: delete | User user6 was deleted from the database.
+INFO: 2022/02/15 14:58:20 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 15:02:11 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:02:21 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:02:21 server.go:414: delete | User user6 was deleted from the database.
+ERROR: 2022/02/15 15:02:21 server.go:429: delete | Error 400: Bad Request. User to delete was not found.
+INFO: 2022/02/15 15:02:21 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:02:21 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 15:05:40 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:05:48 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:05:54 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 15:05:54 server.go:429: delete | Error 400: Bad Request. User to delete was not found.
+INFO: 2022/02/15 15:05:54 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:05:54 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 15:05:59 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 15:06:07 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 15:06:07 server.go:429: delete | Error 400: Bad Request. User to delete was not found.
+INFO: 2022/02/15 15:06:07 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:06:07 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 15:06:14 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:06:14 server.go:414: delete | User user6 was deleted from the database.
+INFO: 2022/02/15 15:06:14 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:06:14 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 15:06:18 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 15:06:31 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:06:31 server.go:414: delete | User user was deleted from the database.
+INFO: 2022/02/15 15:06:31 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:06:31 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 15:06:34 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 15:06:55 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:07:05 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:07:05 server.go:414: delete | User user6 was deleted from the database.
+INFO: 2022/02/15 15:07:05 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:07:05 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 15:07:08 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 15:07:11 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 15:07:11 server.go:429: delete | Error 400: Bad Request. User to delete was not found.
+INFO: 2022/02/15 15:07:11 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:07:11 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 15:07:15 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:07:38 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:07:38 server.go:214: signup | User: user3 was successfully added to the database.
+INFO: 2022/02/15 15:07:38 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:07:38 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 15:07:39 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 15:07:45 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:07:45 server.go:414: delete | User user3 was deleted from the database.
+INFO: 2022/02/15 15:07:45 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:07:45 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 15:07:51 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:07:57 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 15:07:59 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 15:08:04 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:08:14 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 15:08:33 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 15:08:33 server.go:429: delete | Error 400: Bad Request. User to delete was not found.
+INFO: 2022/02/15 15:08:33 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:08:33 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 15:08:46 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 15:08:46 server.go:429: delete | Error 400: Bad Request. User to delete was not found.
+INFO: 2022/02/15 15:08:46 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:08:46 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 15:08:52 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 15:08:52 server.go:429: delete | Error 400: Bad Request. User to delete was not found.
+INFO: 2022/02/15 15:08:52 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:08:52 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 15:08:57 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 15:08:57 server.go:429: delete | Error 400: Bad Request. User to delete was not found.
+INFO: 2022/02/15 15:08:57 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:08:57 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 15:09:01 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 15:09:01 server.go:429: delete | Error 400: Bad Request. User to delete was not found.
+INFO: 2022/02/15 15:09:01 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:09:01 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 15:09:04 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:09:08 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 15:09:08 server.go:429: delete | Error 400: Bad Request. User to delete was not found.
+INFO: 2022/02/15 15:09:08 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:09:08 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 15:09:14 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:09:18 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 15:09:45 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:09:53 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:09:56 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 15:10:12 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 15:10:12 server.go:429: delete | Error 400: Bad Request. User to delete was not found.
+INFO: 2022/02/15 15:10:12 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:10:12 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 15:11:30 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:11:57 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:11:57 server.go:214: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/15 15:11:57 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:11:57 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 15:12:11 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:12:21 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:12:21 server.go:414: delete | User gabe was deleted from the database.
+INFO: 2022/02/15 15:12:21 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:12:21 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 15:12:27 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 15:12:27 server.go:429: delete | Error 400: Bad Request. User to delete was not found.
+INFO: 2022/02/15 15:12:27 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:12:27 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 15:12:39 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 15:12:39 server.go:205: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/15 15:12:39 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:12:39 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 15:12:45 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 15:12:45 server.go:429: delete | Error 400: Bad Request. User to delete was not found.
+INFO: 2022/02/15 15:12:45 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:12:45 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 15:12:53 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:12:53 server.go:214: signup | User: user was successfully added to the database.
+INFO: 2022/02/15 15:12:53 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:12:53 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 15:12:57 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:12:57 server.go:214: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/15 15:12:57 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:12:57 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 15:13:14 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:13:14 server.go:278: login | user2 succesfully logged in.
+INFO: 2022/02/15 15:13:14 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:13:14 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 15:13:43 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:13:43 server.go:177: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/15 15:13:43 server.go:520: addWatch | Added Rolex Explorer to the collection of User: user2.
+INFO: 2022/02/15 15:13:43 server.go:163: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 15:13:43 server.go:524: addWatch | Current watch collection of User: user2 was displayed.
+INFO: 2022/02/15 15:13:43 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:13:43 server.go:115: handler | /addWatch request was received from cli
+INFO: 2022/02/15 15:13:51 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:13:51 server.go:355: logout | na succesfully logged out
+.
+INFO: 2022/02/15 15:13:51 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:13:51 server.go:109: handler | /logout request was received from cli
+INFO: 2022/02/15 15:13:58 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 15:13:58 server.go:304: login | Error 400: Bad Request. Account does not exist.
+INFO: 2022/02/15 15:13:58 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:13:58 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 15:14:02 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:14:02 server.go:278: login | user succesfully logged in.
+INFO: 2022/02/15 15:14:02 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:14:02 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 15:14:22 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:14:22 server.go:177: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/15 15:14:22 server.go:520: addWatch | Added Rolex Submariner to the collection of User: user.
+INFO: 2022/02/15 15:14:22 server.go:163: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 15:14:22 server.go:524: addWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/15 15:14:22 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:14:22 server.go:115: handler | /addWatch request was received from cli
+INFO: 2022/02/15 15:14:31 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:14:31 server.go:177: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/15 15:14:31 server.go:527: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/15 15:14:31 server.go:163: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 15:14:31 server.go:531: addWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/15 15:14:31 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:14:31 server.go:115: handler | /addWatch request was received from cli
+INFO: 2022/02/15 15:14:48 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:16:01 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 15:16:01 server.go:407: delete | Error 400: Bad Request. No users in database to delete.
+INFO: 2022/02/15 15:16:01 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:16:01 server.go:112: handler | /delete request was received from cli
+ERROR: 2022/02/15 15:16:13 server.go:548: addWatch | Bad Request: Error 405. Method other than POST was used.
+INFO: 2022/02/15 15:16:13 server.go:115: handler | /addWatch request was received from cli
+INFO: 2022/02/15 15:16:23 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:16:23 server.go:214: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/15 15:16:23 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:16:23 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 15:16:35 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:17:24 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 15:17:24 server.go:407: delete | Error 400: Bad Request. No users in database to delete.
+INFO: 2022/02/15 15:17:24 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:17:24 server.go:112: handler | /delete request was received from cli
+ERROR: 2022/02/15 15:17:28 server.go:548: addWatch | Bad Request: Error 405. Method other than POST was used.
+INFO: 2022/02/15 15:17:28 server.go:115: handler | /addWatch request was received from cli
+INFO: 2022/02/15 15:17:32 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:17:32 server.go:214: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/15 15:17:32 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:17:32 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 15:18:26 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 15:18:26 server.go:205: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/15 15:18:26 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:18:26 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 15:18:34 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:19:44 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 15:19:47 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 15:19:57 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:20:08 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 15:20:08 server.go:205: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/15 15:20:08 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:20:08 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 15:21:56 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 15:21:56 server.go:205: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/15 15:21:56 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:21:56 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 15:22:00 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:22:00 server.go:214: signup | User: user3 was successfully added to the database.
+INFO: 2022/02/15 15:22:00 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:22:00 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 15:22:07 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 15:22:07 server.go:205: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/15 15:22:07 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:22:07 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 15:22:23 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:22:36 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 15:22:36 server.go:204: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/15 15:22:36 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:22:36 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 15:22:55 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:37:35 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:37:53 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:38:30 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:39:46 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:42:02 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 15:42:02 server.go:406: delete | Error 400: Bad Request. No users in database to delete.
+INFO: 2022/02/15 15:42:02 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:42:02 server.go:112: handler | /delete request was received from cli
+ERROR: 2022/02/15 15:42:12 server.go:547: addWatch | Bad Request: Error 405. Method other than POST was used.
+INFO: 2022/02/15 15:42:12 server.go:115: handler | /addWatch request was received from cli
+INFO: 2022/02/15 15:42:17 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:42:17 server.go:213: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/15 15:42:17 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:42:17 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 15:42:20 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:43:18 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:43:25 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:43:25 server.go:412: delete | User user2 was deleted from the database.
+INFO: 2022/02/15 15:43:25 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:43:25 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 15:45:18 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:45:28 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 15:45:28 server.go:406: delete | Error 400: Bad Request. No users in database to delete.
+INFO: 2022/02/15 15:45:28 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:45:28 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 15:45:35 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:45:35 server.go:213: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/15 15:45:35 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:45:35 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 15:45:39 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:45:39 server.go:177: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/15 15:45:39 server.go:504: addWatch | Attempted to add a watch before logging in.
+INFO: 2022/02/15 15:45:39 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:45:39 server.go:115: handler | /addWatch request was received from cli
+INFO: 2022/02/15 15:45:45 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:45:45 server.go:277: login | user2 succesfully logged in.
+INFO: 2022/02/15 15:45:45 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:45:45 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 15:45:49 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:45:49 server.go:177: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/15 15:45:49 server.go:519: addWatch | Added Rolex Submariner to the collection of User: user2.
+INFO: 2022/02/15 15:45:49 server.go:163: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 15:45:49 server.go:523: addWatch | Current watch collection of User: user2 was displayed.
+INFO: 2022/02/15 15:45:49 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:45:49 server.go:115: handler | /addWatch request was received from cli
+INFO: 2022/02/15 15:46:12 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:46:12 server.go:177: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/15 15:46:12 server.go:580: removeWatch | Removed Rolex Submariner from the collection of User: user2.
+WARNING: 2022/02/15 15:46:12 server.go:596: removeWatch | Watch collection is currently empty.
+INFO: 2022/02/15 15:46:12 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:46:12 server.go:118: handler | /removeWatch request was received from cli
+INFO: 2022/02/15 15:47:36 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:47:43 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:47:43 server.go:177: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/15 15:47:43 server.go:589: removeWatch | user2 attempted to delete a watch that is not part of the collection.
+WARNING: 2022/02/15 15:47:43 server.go:596: removeWatch | Watch collection is currently empty.
+INFO: 2022/02/15 15:47:43 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:47:43 server.go:118: handler | /removeWatch request was received from cli
+INFO: 2022/02/15 15:47:48 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:47:48 server.go:177: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/15 15:47:48 server.go:519: addWatch | Added Rolex Submariner to the collection of User: user2.
+INFO: 2022/02/15 15:47:48 server.go:163: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 15:47:48 server.go:523: addWatch | Current watch collection of User: user2 was displayed.
+INFO: 2022/02/15 15:47:48 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:47:48 server.go:115: handler | /addWatch request was received from cli
+INFO: 2022/02/15 15:47:56 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:47:56 server.go:354: logout | na succesfully logged out
+.
+INFO: 2022/02/15 15:47:56 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:47:56 server.go:109: handler | /logout request was received from cli
+INFO: 2022/02/15 15:48:06 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:48:06 server.go:277: login | user2 succesfully logged in.
+INFO: 2022/02/15 15:48:06 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:48:06 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 15:48:11 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:48:11 server.go:413: delete | User user2 was deleted from the database.
+INFO: 2022/02/15 15:48:11 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:48:11 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 15:48:19 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 15:48:19 server.go:406: delete | Error 400: Bad Request. No users in database to delete.
+INFO: 2022/02/15 15:48:19 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:48:19 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 15:50:18 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 15:50:18 server.go:303: login | Error 400: Bad Request. Account does not exist.
+INFO: 2022/02/15 15:50:18 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:50:18 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 15:50:25 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:50:25 server.go:213: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/15 15:50:25 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:50:25 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 15:50:28 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:50:28 server.go:177: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/15 15:50:28 server.go:504: addWatch | Attempted to add a watch before logging in.
+INFO: 2022/02/15 15:50:28 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:50:28 server.go:115: handler | /addWatch request was received from cli
+INFO: 2022/02/15 15:50:30 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:50:30 server.go:277: login | user2 succesfully logged in.
+INFO: 2022/02/15 15:50:30 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:50:30 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 15:50:32 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:50:32 server.go:177: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/15 15:50:32 server.go:519: addWatch | Added Rolex Submariner to the collection of User: user2.
+INFO: 2022/02/15 15:50:32 server.go:163: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 15:50:32 server.go:523: addWatch | Current watch collection of User: user2 was displayed.
+INFO: 2022/02/15 15:50:32 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:50:32 server.go:115: handler | /addWatch request was received from cli
+INFO: 2022/02/15 15:50:36 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:50:36 server.go:177: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/15 15:50:36 server.go:580: removeWatch | Removed Rolex Submariner from the collection of User: user2.
+WARNING: 2022/02/15 15:50:36 server.go:596: removeWatch | Watch collection is currently empty.
+INFO: 2022/02/15 15:50:36 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:50:36 server.go:118: handler | /removeWatch request was received from cli
+INFO: 2022/02/15 15:51:12 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:51:20 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:51:20 server.go:284: login | user2 succesfully logged in.
+INFO: 2022/02/15 15:51:20 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:51:20 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 15:51:24 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:51:24 server.go:177: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/15 15:51:24 server.go:589: removeWatch | user2 attempted to delete a watch that is not part of the collection.
+WARNING: 2022/02/15 15:51:24 server.go:596: removeWatch | Watch collection is currently empty.
+INFO: 2022/02/15 15:51:24 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:51:24 server.go:118: handler | /removeWatch request was received from cli
+INFO: 2022/02/15 15:51:28 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:51:28 server.go:177: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/15 15:51:28 server.go:519: addWatch | Added Rolex Submariner to the collection of User: user2.
+INFO: 2022/02/15 15:51:28 server.go:163: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 15:51:28 server.go:523: addWatch | Current watch collection of User: user2 was displayed.
+INFO: 2022/02/15 15:51:28 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:51:28 server.go:115: handler | /addWatch request was received from cli
+INFO: 2022/02/15 15:51:31 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:51:31 server.go:177: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/15 15:51:31 server.go:580: removeWatch | Removed Rolex Submariner from the collection of User: user2.
+WARNING: 2022/02/15 15:51:31 server.go:596: removeWatch | Watch collection is currently empty.
+INFO: 2022/02/15 15:51:31 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:51:31 server.go:118: handler | /removeWatch request was received from cli
+INFO: 2022/02/15 15:51:46 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 15:51:46 server.go:413: delete | User user2 was deleted from the database.
+INFO: 2022/02/15 15:51:46 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 15:51:46 server.go:112: handler | /delete request was received from cli
+INFO: 2022/02/15 16:11:11 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 16:13:47 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 16:14:10 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 16:14:10 server.go:209: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/15 16:14:10 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 16:14:10 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 16:14:19 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 16:14:19 server.go:209: signup | User: user was successfully added to the database.
+INFO: 2022/02/15 16:14:19 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 16:14:19 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 16:14:25 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 16:14:25 server.go:273: login | user succesfully logged in.
+INFO: 2022/02/15 16:14:25 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 16:14:25 server.go:106: handler | /login request was received from cli
+INFO: 2022/02/15 16:14:31 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 16:14:31 server.go:515: addWatch | Added Rolex Submariner to the collection of User: user.
+INFO: 2022/02/15 16:14:31 server.go:163: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 16:14:31 server.go:519: addWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/15 16:14:31 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 16:14:31 server.go:115: handler | /addWatch request was received from cli
+INFO: 2022/02/15 16:14:43 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 16:14:43 server.go:522: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/15 16:14:43 server.go:163: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 16:14:43 server.go:526: addWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/15 16:14:43 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 16:14:43 server.go:115: handler | /addWatch request was received from cli
+INFO: 2022/02/15 16:14:50 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 16:14:50 server.go:515: addWatch | Added Rolex Exlporer to the collection of User: user.
+INFO: 2022/02/15 16:14:50 server.go:163: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 16:14:50 server.go:519: addWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/15 16:14:50 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 16:14:50 server.go:115: handler | /addWatch request was received from cli
+INFO: 2022/02/15 16:15:03 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 16:15:03 server.go:642: markWatch | Rolex Exlporer was marked as COLLECTED from the collection of User: user.
+INFO: 2022/02/15 16:15:03 server.go:163: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 16:15:03 server.go:667: markWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/15 16:15:03 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 16:15:03 server.go:121: handler | /markWatch request was received from cli
+INFO: 2022/02/15 16:15:22 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 16:15:22 server.go:576: removeWatch | Removed Rolex Submariner from the collection of User: user.
+INFO: 2022/02/15 16:15:22 server.go:163: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 16:15:22 server.go:589: removeWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/15 16:15:22 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 16:15:22 server.go:118: handler | /removeWatch request was received from cli
+INFO: 2022/02/15 16:15:41 server.go:61: databaseReader | Database was read
+WARNING: 2022/02/15 16:15:41 server.go:585: removeWatch | user attempted to delete a watch that is not part of the collection.
+INFO: 2022/02/15 16:15:41 server.go:163: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 16:15:41 server.go:589: removeWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/15 16:15:41 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 16:15:41 server.go:118: handler | /removeWatch request was received from cli
+INFO: 2022/02/15 16:15:47 server.go:61: databaseReader | Database was read
+WARNING: 2022/02/15 16:15:47 server.go:585: removeWatch | user attempted to delete a watch that is not part of the collection.
+INFO: 2022/02/15 16:15:47 server.go:163: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 16:15:47 server.go:589: removeWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/15 16:15:47 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 16:15:47 server.go:118: handler | /removeWatch request was received from cli
+INFO: 2022/02/15 16:15:56 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 16:15:56 server.go:576: removeWatch | Removed Rolex Exlporer from the collection of User: user.
+WARNING: 2022/02/15 16:15:56 server.go:592: removeWatch | Watch collection is currently empty.
+INFO: 2022/02/15 16:15:56 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 16:15:56 server.go:118: handler | /removeWatch request was received from cli
+INFO: 2022/02/15 16:45:01 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 16:45:20 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 16:45:30 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 16:45:30 server.go:209: signup | User: user4 was successfully added to the database.
+INFO: 2022/02/15 16:45:30 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 16:45:30 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 16:45:38 server.go:61: databaseReader | Database was read
+ERROR: 2022/02/15 16:45:38 server.go:200: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/15 16:45:38 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 16:45:38 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 16:46:16 server.go:61: databaseReader | Database was read
+INFO: 2022/02/15 16:46:16 server.go:209: signup | User: user5 was successfully added to the database.
+INFO: 2022/02/15 16:46:16 server.go:72: databaseWriter | Database was updated
+INFO: 2022/02/15 16:46:16 server.go:103: handler | /signup request was received from cli
+INFO: 2022/02/15 17:50:27 server.go:61: databaseReader | Database was read

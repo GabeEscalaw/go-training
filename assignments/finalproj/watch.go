@@ -141,7 +141,7 @@ func addWatch(brand string, model string, width string, price string) {
 
 // deleteWatch throws the brand and model json information specified by the user as a removeWatch Post request to be received and processed by server.go.
 func deleteWatch(brand string, model string) {
-	c := http.Client{Timeout: time.Duration(1) * time.Second}
+	c := http.Client{Timeout: time.Duration(1) * time.Second * 3}
 	jsonRec := fmt.Sprintf("{\"brand\":\"%s\",\"model\":\"%s\"}", brand, model)
 	outData := bytes.NewBuffer([]byte(jsonRec))
 	resp, err := c.Post(removeURL, "application/json", outData)

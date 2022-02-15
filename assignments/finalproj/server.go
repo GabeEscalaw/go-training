@@ -41,30 +41,35 @@ var (
     ErrorLogger   *log.Logger
 )
 
-// databaseReader reads the json file specified when it was called.
-func databaseReader (fileName string) UserDatabase {
-	file, err := os.Open(fileName)
+// databaseReader reads the users.json file for the database of the program.
+func (u *UserDatabase) databaseReader () {
+	file, err := os.Open("users.json")
 	if err != nil {
 		log.Fatalf("%v", err)
+		ErrorLogger.Println("databaseReader | Fatal error with opening users.json file.")
 	}
 	defer file.Close()
 	byteData, err := ioutil.ReadAll(file)
 	if err != nil {
 		log.Fatalf("failed to read json file: %s", err)
+		ErrorLogger.Println("databaseReader | Fatal error with reading users.json file.")
 	}
 	var result UserDatabase 
 	json.Unmarshal([]byte(byteData), &result)
 	
-	return result
+	*u = result
+	InfoLogger.Println("databaseReader | Database was read")
 }
 
-// databaseWriter outputs the json file that was read from the databaseReader as users.json.
-func databaseWriter(result UserDatabase) {
-	byteData, err := json.Marshal(result)
+// databaseWriter outputs the json file that was read from users.json.
+func (u *UserDatabase) databaseWriter() {
+	byteData, err := json.Marshal(u)
 	if err != nil {
 		log.Fatalf("failed to Marshal data: %s", err)
+		ErrorLogger.Println("databaseWriter | Fatal error with marshalling result from databaseReader.")
 	}
 	ioutil.WriteFile("users.json", byteData, 0644)
+	InfoLogger.Println("databaseWriter | Database was updated")
 }
 
 // init initializes the means to use the Info, Warning, and Error Loggers which are outputted to logs.txt.
@@ -72,6 +77,7 @@ func init() {
     file, err := os.OpenFile("logs.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
     if err != nil {
         log.Fatal(err)
+		ErrorLogger.Println("init | Fatal error with opening logs.txt file.")
     }
 
     InfoLogger = log.New(file, "INFO: ", log.Ldate|log.Ltime|log.Lshortfile)
@@ -81,9 +87,12 @@ func init() {
 
 // main initializes an empty database: Users that uses the struct []UserInfo.
 func main() {
-	u := &UserDatabase{Users: []UserInfo{}} // Users start with an empty collection of watches 
+	u := &UserDatabase{} 
+	
+	u.databaseReader()
+
 	http.ListenAndServe(":8080", u.handler())
-	InfoLogger.Println("server was initialized")
+	InfoLogger.Println("main | Server was initialized")
 }
 
 // handler provides the response writer and requests for the process function if the URL path is correct based on the -cmd retrieved from watch.go.
@@ -91,28 +100,28 @@ func (u *UserDatabase) handler() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		if r.URL.Path == "/signup" {
 			u.signup(w, r)
-			InfoLogger.Println("/signup request was received from cli")
+			InfoLogger.Println("handler | /signup request was received from cli")
 		} else if r.URL.Path == "/login" {
 			u.login(w, r)
-			InfoLogger.Println("/login request was received from cli")
+			InfoLogger.Println("handler | /login request was received from cli")
 		} else if r.URL.Path == "/logout" {
 			u.logout(w, r)
-			InfoLogger.Println("/logout request was received from cli")
+			InfoLogger.Println("handler | /logout request was received from cli")
 		} else if r.URL.Path == "/delete" {
 			u.delete(w, r)
-			InfoLogger.Println("/delete request was received from cli")
+			InfoLogger.Println("handler | /delete request was received from cli")
 		} else if r.URL.Path == "/add" {
 			u.addWatch(w, r)
-			InfoLogger.Println("/addWatch request was received from cli")
+			InfoLogger.Println("handler | /addWatch request was received from cli")
 		} else if r.URL.Path == "/remove" {
 			u.removeWatch(w, r)
-			InfoLogger.Println("/removeWatch request was received from cli")
+			InfoLogger.Println("handler | /removeWatch request was received from cli")
 		} else if r.URL.Path == "/mark" {
 			u.markWatch(w, r)
-			InfoLogger.Println("/markWatch request was received from cli")
+			InfoLogger.Println("handler | /markWatch request was received from cli")
 		} else if r.URL.Path == "/list" {
 			u.watchList(w, r)
-			InfoLogger.Println("/watchList request was received from cli")
+			InfoLogger.Println("handler | /watchList request was received from cli")
 		} else {
 			message := "\n\n\nBad Request: Error 404. url " + r.URL.Path + " was not found on this server."
 			http.Error(w, message, http.StatusBadRequest)
@@ -156,24 +165,24 @@ func displayCollection (u *UserDatabase, watch WatchInfo, username string, numWa
 
 // logCheck is a checker that returns the user's index and True if a user is logged in, else it returns -1 and False.
 func logCheck (u *UserDatabase) (int, bool) {
-	isLogged := false
-	index := -1
 	for i, user := range u.Users {
 		if user.IsLoggedIn {
-			index = i
-			isLogged = true
+			return i, true
 		}
 	}
-
 	InfoLogger.Println("logCheck | Login check boolean and index was sent.")
-	return index, isLogged
+	return -1, false
 }
 
 // signup registers a user into the database with a unique username.
 func (u *UserDatabase) signup(w http.ResponseWriter, r *http.Request) {
+	
+
 	var ui UserInfo
 	switch r.Method {
 	case "POST":
+		u.databaseReader()
+
 		w.Header().Set("Content-Type", "application/json")
 		
 		if err := json.NewDecoder(r.Body).Decode(&ui); err != nil {
@@ -202,8 +211,7 @@ func (u *UserDatabase) signup(w http.ResponseWriter, r *http.Request) {
 			http.Error(w, "\n\n\nPlease enter your desired credentials properly.\n", http.StatusMethodNotAllowed)
 			ErrorLogger.Println("signup | Bad Request: Error 405. Incorrect input.")
 		}
-
-			
+		u.databaseWriter()
 		
 	default:
 		w.Header().Set("Content-Type", "application/json")
@@ -238,6 +246,7 @@ func (u *UserDatabase) login(w http.ResponseWriter, r *http.Request) {
 		}
 
 	case "POST":
+		u.databaseReader()
 		w.Header().Set("Content-Type", "application/json")
 		
 		if err := json.NewDecoder(r.Body).Decode(&ui); err != nil {
@@ -292,6 +301,7 @@ func (u *UserDatabase) login(w http.ResponseWriter, r *http.Request) {
 			http.Error(w, "\n\n\nError 400: Please log out of your current account before attempting to log in again.\n", http.StatusBadRequest)
 			ErrorLogger.Println("login | Error 400: Bad Request. Attempted to log in a different account without logging out.")
 		}
+		u.databaseWriter()
 		
 	default:
 		w.Header().Set("Content-Type", "application/json")
@@ -321,6 +331,7 @@ func (u *UserDatabase) logout(w http.ResponseWriter, r *http.Request) {
 		}	
 
 	case "POST":
+		u.databaseReader()
 		w.Header().Set("Content-Type", "application/json")
 		
 		allOut := false
@@ -334,7 +345,7 @@ func (u *UserDatabase) logout(w http.ResponseWriter, r *http.Request) {
 		for j := range u.Users {
 			if u.Users[j].IsLoggedIn {
 				u.Users[j].IsLoggedIn = false
-				fmt.Fprintln(w, "\n\n\nSuccessfully logged out.\nThank you for using our application.")
+				fmt.Fprintf(w, "\n\n\nSuccessfully logged out.\nThank you for using our application, %v.\n", u.Users[j].Username)
 				allOut = true
 				InfoLogger.Printf("logout | %v succesfully logged out\n.", ui.Username)
 				break
@@ -346,6 +357,7 @@ func (u *UserDatabase) logout(w http.ResponseWriter, r *http.Request) {
 			fmt.Fprintln(w, "\n\n\nYou are not logged in.")
 			WarningLogger.Println("logout | Attempted to log out while not logged in.")
 		}
+		u.databaseWriter()
 		
 	default:
 		w.Header().Set("Content-Type", "application/json")
@@ -358,12 +370,14 @@ func (u *UserDatabase) logout(w http.ResponseWriter, r *http.Request) {
 // delete removes a registered user from the database after providing that user's credentials.
 func (u *UserDatabase) delete(w http.ResponseWriter, r *http.Request) {
 	var ui UserInfo
+	userCorrect := false
+	passCorrect := false
 	switch r.Method {
 	case "GET": 
 		w.Header().Set("Content-Type", "application/json")
 		
 		if len(u.Users) == 0 {
-			http.Error(w, "Bad Request: Error 404. Database not found.", http.StatusNotFound)
+			http.Error(w, "n\n\nBad Request: Error 404. Database not found.", http.StatusNotFound)
 			WarningLogger.Println("delete | Database not found.")
 		} else {
 			if err := json.NewEncoder(w).Encode(u.Users); err != nil {
@@ -374,6 +388,7 @@ func (u *UserDatabase) delete(w http.ResponseWriter, r *http.Request) {
 		}	
 
 	case "POST":
+		u.databaseReader()
 		w.Header().Set("Content-Type", "application/json")
 		
 		if err := json.NewDecoder(r.Body).Decode(&ui); err != nil {
@@ -387,22 +402,32 @@ func (u *UserDatabase) delete(w http.ResponseWriter, r *http.Request) {
 			ErrorLogger.Println("delete | Error 400: Bad Request. No users in database to delete.")
 		} else {
 			u.mu.Lock()
-			for j, user := range u.Users {
-				if ui.Username == user.Username && ui.Password == user.Password {
-					fmt.Fprintf(w, "\n\n\nThank you for trying our app, %v.\nYour account has been successfully deleted.\n", u.Users[j].Username)
-					u.Users = append(u.Users[:j], u.Users[j+1:]...)
-					InfoLogger.Printf("delete | User %v was deleted from the database.\n", u.Users[j].Username)
+			for i, user := range u.Users {
+				if ui.Username == user.Username && ui.Password == user.Password  {
+					u.Users = append(u.Users[:i], u.Users[i+1:]...)
+					fmt.Fprintf(w, "\n\n\nThank you for trying our application, %v.\nYour account has been successfully deleted.\n", user.Username)
+					InfoLogger.Printf("delete | User %v was deleted from the database.\n", user.Username)
+					userCorrect = true
+					passCorrect = true
 					break
 				} else if ui.Username == user.Username && ui.Password != user.Password {
-					http.Error(w, "\n\n\nError 400: Password entered is incorrect. Please try again.", http.StatusBadRequest)
-					ErrorLogger.Println("delete | Error 400: Bad Request. Password entered is incorrect.")
-				} else {
-					http.Error(w, "\n\n\nError 400: Specified user wasn't found", http.StatusBadRequest)
-					ErrorLogger.Println("delete | Error 400: Bad Request. User to delete was not found.")
+					userCorrect = true
 				}
 			}
 			u.mu.Unlock()
+				
+			if userCorrect && !passCorrect {
+					http.Error(w, "\n\n\nError 400: Password entered is incorrect. Please try again.", http.StatusBadRequest)
+					ErrorLogger.Println("delete | Error 400: Bad Request. Password entered is incorrect.")
+			} else if !userCorrect && !passCorrect {
+					http.Error(w, "\n\n\nError 400: Specified user wasn't found", http.StatusBadRequest)
+					ErrorLogger.Println("delete | Error 400: Bad Request. User to delete was not found.")
+			}
+
+
 		}
+		u.databaseWriter()
+	
 		
 	default:
 		w.Header().Set("Content-Type", "application/json")
@@ -417,6 +442,7 @@ func (u *UserDatabase) watchList (w http.ResponseWriter, r *http.Request) {
 	var wi WatchInfo
 	switch r.Method {
 	case "GET":
+		u.databaseReader()
 		w.Header().Set("Content-Type", "application/json")
 
 		if len(u.Users) == 0 {
@@ -432,7 +458,7 @@ func (u *UserDatabase) watchList (w http.ResponseWriter, r *http.Request) {
 			
 			if isLogged {
 				if len(u.Users[index].Watches) == 0 {
-					fmt.Fprintln(w, "\n\n\nYour collection is currently empty.")
+					fmt.Fprintln(w, "-------------------------------------\nYour collection is currently empty.\n-------------------------------------")
 					WarningLogger.Println("watchList | Watch collection is currently empty.")
 				} else {
 					
@@ -456,6 +482,7 @@ func (u *UserDatabase) addWatch(w http.ResponseWriter, r *http.Request) {
 	var wi WatchInfo
 	switch r.Method {
 	case "POST":
+		u.databaseReader()
 		w.Header().Set("Content-Type", "application/json")
 
 		if err := json.NewDecoder(r.Body).Decode(&wi); err != nil {
@@ -507,6 +534,7 @@ func (u *UserDatabase) addWatch(w http.ResponseWriter, r *http.Request) {
 			}
 			u.mu.Unlock()
 		} 
+		u.databaseWriter()
 
 	default:
 		w.Header().Set("Content-Type", "application/json")
@@ -519,9 +547,11 @@ func (u *UserDatabase) addWatch(w http.ResponseWriter, r *http.Request) {
 // removeWatch deletes the watch from the logged in user's watch collection based on the provided Brand and Model.
 func (u *UserDatabase) removeWatch(w http.ResponseWriter, r *http.Request) {
 	var wi WatchInfo
+	removed := false
 
 	switch r.Method {
 	case "POST":
+		u.databaseReader()
 		w.Header().Set("Content-Type", "application/json")
 		
 		if err := json.NewDecoder(r.Body).Decode(&wi); err != nil {
@@ -542,21 +572,27 @@ func (u *UserDatabase) removeWatch(w http.ResponseWriter, r *http.Request) {
 				u.mu.Lock()
 				if wi.Brand == u.Users[index].Watches[j].Brand && wi.Model == u.Users[index].Watches[j].Model {
 					u.Users[index].Watches = append(u.Users[index].Watches[:j], u.Users[index].Watches[j+1:]...)
-					fmt.Fprintf(w, "\n\n\nSuccessfully added %v %v.\n", watch.Brand, watch.Model)		
-					InfoLogger.Printf("removeWatch | Removed %v %v from the collection of User: %v.\n", wi.Brand, wi.Model, u.Users[index].Username)
+					fmt.Fprintf(w, "\n\n\nSuccessfully removed %v %v.\n", watch.Brand, watch.Model)		
+					InfoLogger.Printf("removeWatch | Removed %v %v from the collection of User: %v.\n", watch.Brand, watch.Model, u.Users[index].Username)
+					removed = true
 					break
 				}
 				u.mu.Unlock()
 			}
 			
+			if !removed {
+				fmt.Fprintln(w, "\n\n\nThe watch with the provided details was not found in your collection.")
+				WarningLogger.Printf("removeWatch | %v attempted to delete a watch that is not part of the collection.\n", u.Users[index].Username)
+			}
 			if len(u.Users[index].Watches) > 0 {
 				displayCollection(u, wi, u.Users[index].Username, len(u.Users[index].Watches), index, w)
 				InfoLogger.Printf("removeWatch | Current watch collection of User: %v was displayed.\n", u.Users[index].Username)
 			} else {
-				fmt.Fprintln(w, "Your collection is currently empty.")
+				fmt.Fprintln(w, "-------------------------------------\nYour collection is currently empty.\n-------------------------------------")
 				WarningLogger.Println("removeWatch | Watch collection is currently empty.")
 			}
 		}
+		u.databaseWriter()
 
 	default:
 		w.Header().Set("Content-Type", "application/json")
@@ -571,6 +607,7 @@ func (u *UserDatabase) markWatch(w http.ResponseWriter, r *http.Request) {
 	var wi WatchInfo
 	switch r.Method {
 	case "POST":
+		u.databaseReader()
 		w.Header().Set("Content-Type", "application/json")
 		
 		if err := json.NewDecoder(r.Body).Decode(&wi); err != nil {
@@ -629,14 +666,14 @@ func (u *UserDatabase) markWatch(w http.ResponseWriter, r *http.Request) {
 					displayCollection(u, wi, u.Users[index].Username, len(u.Users[index].Watches), index, w)
 					InfoLogger.Printf("markWatch | Current watch collection of User: %v was displayed.\n", u.Users[index].Username)
 				} else {
-					fmt.Fprintln(w, "Your collection is currently empty.")
-					fmt.Fprintln(w, "")
+					fmt.Fprintln(w, "-------------------------------------\nYour collection is currently empty.\n-------------------------------------")
 					WarningLogger.Println("markWatch | Watch collection is currently empty.")
 				}
 			}
 
 			
 		}
+		u.databaseWriter()
 
 	default:
 		w.Header().Set("Content-Type", "application/json")
