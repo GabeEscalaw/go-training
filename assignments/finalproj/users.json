@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "Username": "gabe",
+      "Password": "1234",
+      "IsLoggedIn": false,
+      "Watches": null
+    },
+    {
+      "Username": "test",
+      "Password": "test",
+      "IsLoggedIn": false,
+      "Watches": null
+    },
+    {
+      "Username": "user",
+      "Password": "pass",
+      "IsLoggedIn": true,
+      "Watches": [
+        {
+          "Brand": "Rolex",
+          "Model": "Explorer",
+          "Width": "36mm",
+          "Price": "$8500",
+          "Collected": false
+        },
+        {
+          "Brand": "AudemarsPiguet",
+          "Model": "RoyalOak",
+          "Width": "40mm",
+          "Price": "$67000",
+          "Collected": false
+        },
+        {
+          "Brand": "Tissot",
+          "Model": "PRX",
+          "Width": "40mm",
+          "Price": "$650",
+          "Collected": true
+        }
+      ]
+    }
+  ]
+}

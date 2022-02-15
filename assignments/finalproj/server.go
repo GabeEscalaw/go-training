@@ -3,67 +3,173 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"io/ioutil"
+	"log"
 	"net/http"
+	"os"
 	"sync"
 )
 
-// ContactInfo is a struct that contains the information recorded for each contact
+// WatchInfo sets-up the details that each watch contains.
 type WatchInfo struct {
-	Brand string
-	Model string
-	DialSize string
-	Price string
-	Collected bool
+	Brand 		string		`json:"brand"`
+	Model 		string		`json:"model"`
+	Width 	string			`json:"width"`
+	Price 		string		`json:"price"`
+	Collected 	bool		`json:"collected"`
 }
 
+// UserInfo sets-up the details of each user registered in the database including their own watch collection.
 type UserInfo struct {
-	Username string
-	Password string
-	IsLoggedIn bool
+	Username 	string		`json:"username"`
+	Password 	string		`json:"password"`
+	IsLoggedIn 	bool		`json:"isLoggedIn"`
 
-	mu sync.Mutex
-	Watches []WatchInfo
+	Watches 	[]WatchInfo	`json:"watches"`
 }
 
+// UserDatabase contains all of the users registered in the database.
 type UserDatabase struct {
-	mu 	sync.Mutex
-	users []UserInfo
+	mu 			sync.Mutex  
+	Users 		[]UserInfo	`json:"users"`
 }
 
-// main initializes an empty database: contacts that uses the struct ContactInfo
+// var sets-up the variables used for init.
+var (
+    WarningLogger *log.Logger
+    InfoLogger    *log.Logger
+    ErrorLogger   *log.Logger
+)
+
+// databaseReader reads the json file specified when it was called.
+func databaseReader (fileName string) UserDatabase {
+	file, err := os.Open(fileName)
+	if err != nil {
+		log.Fatalf("%v", err)
+	}
+	defer file.Close()
+	byteData, err := ioutil.ReadAll(file)
+	if err != nil {
+		log.Fatalf("failed to read json file: %s", err)
+	}
+	var result UserDatabase 
+	json.Unmarshal([]byte(byteData), &result)
+	
+	return result
+}
+
+// databaseWriter outputs the json file that was read from the databaseReader as users.json.
+func databaseWriter(result UserDatabase) {
+	byteData, err := json.Marshal(result)
+	if err != nil {
+		log.Fatalf("failed to Marshal data: %s", err)
+	}
+	ioutil.WriteFile("users.json", byteData, 0644)
+}
+
+// init initializes the means to use the Info, Warning, and Error Loggers which are outputted to logs.txt.
+func init() {
+    file, err := os.OpenFile("logs.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    InfoLogger = log.New(file, "INFO: ", log.Ldate|log.Ltime|log.Lshortfile)
+    WarningLogger = log.New(file, "WARNING: ", log.Ldate|log.Ltime|log.Lshortfile)
+    ErrorLogger = log.New(file, "ERROR: ", log.Ldate|log.Ltime|log.Lshortfile)
+}
+
+// main initializes an empty database: Users that uses the struct []UserInfo.
 func main() {
-	u := &UserDatabase{users: []UserInfo{}} // Users start with an empty collection of watches 
+	u := &UserDatabase{Users: []UserInfo{}} // Users start with an empty collection of watches 
 	http.ListenAndServe(":8080", u.handler())
+	InfoLogger.Println("server was initialized")
 }
 
-// handler provides the response writer and requests for the process function if the URL path is correct.
+// handler provides the response writer and requests for the process function if the URL path is correct based on the -cmd retrieved from watch.go.
 func (u *UserDatabase) handler() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		if r.URL.Path == "/signup" {
 			u.signup(w, r)
-		} else if r.URL.Path == "/user" {
+			InfoLogger.Println("/signup request was received from cli")
+		} else if r.URL.Path == "/login" {
 			u.login(w, r)
+			InfoLogger.Println("/login request was received from cli")
 		} else if r.URL.Path == "/logout" {
 			u.logout(w, r)
+			InfoLogger.Println("/logout request was received from cli")
 		} else if r.URL.Path == "/delete" {
 			u.delete(w, r)
-
+			InfoLogger.Println("/delete request was received from cli")
 		} else if r.URL.Path == "/add" {
 			u.addWatch(w, r)
+			InfoLogger.Println("/addWatch request was received from cli")
 		} else if r.URL.Path == "/remove" {
 			u.removeWatch(w, r)
+			InfoLogger.Println("/removeWatch request was received from cli")
 		} else if r.URL.Path == "/mark" {
 			u.markWatch(w, r)
+			InfoLogger.Println("/markWatch request was received from cli")
 		} else if r.URL.Path == "/list" {
 			u.watchList(w, r)
+			InfoLogger.Println("/watchList request was received from cli")
 		} else {
-			message := "Bad Request: Error 404. url " + r.URL.Path + " was not found on this server."
+			message := "\n\n\nBad Request: Error 404. url " + r.URL.Path + " was not found on this server."
 			http.Error(w, message, http.StatusBadRequest)
+			ErrorLogger.Println(message)
 		}
 	}
 }
 
-// process processes the switch cases for POST and GET when URL path is /contacts
+// displayCollection sets up the template used to display the username, number of watches collected, and the deatils of each watch in the user's collection.
+func displayCollection (u *UserDatabase, watch WatchInfo, username string, numWatches int, index int, w http.ResponseWriter) {
+	watchesCollected := 0
+
+	for _, watch := range u.Users[index].Watches {
+		if watch.Collected {
+			watchesCollected++
+		}
+	} 
+	
+	fmt.Fprintln(w, "\n-------------------------------------")
+	fmt.Fprintf(w, " User: %v | Watches Collected: %v/%v", username, watchesCollected, numWatches)
+	fmt.Fprintln(w, "\n-------------------------------------")
+	fmt.Fprintln(w, "\n~~~~~ CURRENT WATCH COLLECTION ~~~~~~")
+    fmt.Fprintln(w, "")
+	
+	for _, watch := range u.Users[index].Watches {
+		fmt.Fprintf(w, "|\t%v %v\n", watch.Brand, watch.Model)
+		fmt.Fprintf(w, "|\tCase Size: %v\n", watch.Width)	
+		fmt.Fprintf(w, "|\t%v\n", watch.Price)
+		fmt.Fprintln(w, "|")
+		if watch.Collected {
+			fmt.Fprintf(w, "|\tCollected.\n")
+		} else {
+			fmt.Fprintf(w, "|\tNot yet collected.\n")
+		}
+		fmt.Fprintln(w, "_____________________________________")
+		fmt.Fprintln(w, "")
+	}
+	
+	InfoLogger.Println("displayCollection | Current watch collection list was sent.")
+}
+
+// logCheck is a checker that returns the user's index and True if a user is logged in, else it returns -1 and False.
+func logCheck (u *UserDatabase) (int, bool) {
+	isLogged := false
+	index := -1
+	for i, user := range u.Users {
+		if user.IsLoggedIn {
+			index = i
+			isLogged = true
+		}
+	}
+
+	InfoLogger.Println("logCheck | Login check boolean and index was sent.")
+	return index, isLogged
+}
+
+// signup registers a user into the database with a unique username.
 func (u *UserDatabase) signup(w http.ResponseWriter, r *http.Request) {
 	var ui UserInfo
 	switch r.Method {
@@ -72,32 +178,42 @@ func (u *UserDatabase) signup(w http.ResponseWriter, r *http.Request) {
 		
 		if err := json.NewDecoder(r.Body).Decode(&ui); err != nil {
 			http.Error(w, err.Error(), http.StatusBadRequest)
+			ErrorLogger.Println("signup | Error 400: Bad Request. Error on decoding json sign up.")
 			return
 		}
 
 		isDuplicate := false
 
-		for _, user := range u.users {
+		for _, user := range u.Users {
 			if ui.Username == user.Username {
 				isDuplicate = true
-				http.Error(w, "Bad Request: Error 409. User already exists in Database", http.StatusConflict)
+				http.Error(w, "\n\n\nBad Request: Error 409. User already exists in Database.\n", http.StatusConflict)
+				ErrorLogger.Println("signup | Bad Request: Error 409. User already exists in Database.")
 			} 
 		}
 
-		if !isDuplicate {
+		if !isDuplicate && ui.Username != "" && ui.Password != "" {
 			u.mu.Lock()
-			u.users = append(u.users, ui)
+			u.Users = append(u.Users, ui)
 			u.mu.Unlock()
-			http.Error(w, "##########\nUser successfully added to database.\n##########\n", http.StatusCreated)
+			http.Error(w, "\n\n\nUser successfully added to database.\n", http.StatusCreated)
+			InfoLogger.Printf("signup | User: %v was successfully added to the database.\n", ui.Username)
+		} else if ui.Username == "" || ui.Password == "" {
+			http.Error(w, "\n\n\nPlease enter your desired credentials properly.\n", http.StatusMethodNotAllowed)
+			ErrorLogger.Println("signup | Bad Request: Error 405. Incorrect input.")
 		}
+
+			
 		
 	default:
 		w.Header().Set("Content-Type", "application/json")
 
-		http.Error(w, "Bad Request: Error 405. Action is not allowed.", http.StatusMethodNotAllowed)
+		http.Error(w, "\n\n\nBad Request: Error 405. Action is not allowed.", http.StatusMethodNotAllowed)
+		ErrorLogger.Println("signup | Bad Request: Error 405. Method other than POST was used.")
 	}
 }
 
+// login turns the IsLoggedIn boolean of the user whose credentials are correctly provided to True.
 func (u *UserDatabase) login(w http.ResponseWriter, r *http.Request) {
 	var ui UserInfo
 	isLogged := false
@@ -111,11 +227,12 @@ func (u *UserDatabase) login(w http.ResponseWriter, r *http.Request) {
 	case "GET": 
 		w.Header().Set("Content-Type", "application/json")
 		
-		if len(u.users) == 0 {
-			http.Error(w, "Bad Request: Error 404. Database not found.", http.StatusNotFound)
+		if len(u.Users) == 0 {
+			http.Error(w, "\n\n\nBad Request: Error 404. Database not found.", http.StatusNotFound)
 		} else {
-			if err := json.NewEncoder(w).Encode(u.users); err != nil {
+			if err := json.NewEncoder(w).Encode(u.Users); err != nil {
 				http.Error(w, err.Error(), http.StatusInternalServerError)
+				ErrorLogger.Println("login | Bad Request: Error 500. Status Internal Server Error.")
 				return
 			}
 		}
@@ -125,34 +242,36 @@ func (u *UserDatabase) login(w http.ResponseWriter, r *http.Request) {
 		
 		if err := json.NewDecoder(r.Body).Decode(&ui); err != nil {
 			http.Error(w, err.Error(), http.StatusBadRequest)
+			ErrorLogger.Println("login | Error 400: Bad Request. Error on decoding json sign up.")
 			return
 		}
 		
-		for _, user := range u.users {
+		for _, user := range u.Users {
 			if user.IsLoggedIn {
 				amtLogged++
 			}
 		}
 
 		u.mu.Lock()
-		for j, user := range u.users {
+		for j, user := range u.Users {
 			if ui.Username == user.Username && ui.Password == user.Password && amtLogged == 0 {
-				u.users[j].IsLoggedIn = true
+				u.Users[j].IsLoggedIn = true
 				isLogged = true
 				index = j
 				userCorrect = true
 				passCorrect = true
 				amtLogged++
-				//fmt.Fprintln(w, "Successfully logged in ran")
+				InfoLogger.Printf("login | %v succesfully logged in.\n", ui.Username)
 			} else if ui.Username == user.Username && ui.Password == user.Password && user.IsLoggedIn && amtLogged == 1 {
 				isLogged = true
 				index = j
 				userCorrect = true
 				passCorrect = true
 				alreadyLogged = true
+				InfoLogger.Printf("login | %v succesfully logged in.\n", ui.Username)
 			} else if ui.Username == user.Username && ui.Password != user.Password {
 				userCorrect = true
-				//fmt.Fprintln(w, "Correct user, but wrong pass ran")
+				InfoLogger.Printf("login | %v entered incorrect password.\n", ui.Username)
 			} else if ui.Username == user.Username && ui.Password == user.Password && amtLogged == 1 {
 				amtLogged++
 			} 
@@ -160,25 +279,29 @@ func (u *UserDatabase) login(w http.ResponseWriter, r *http.Request) {
 		u.mu.Unlock()
 		
 		if alreadyLogged {
-			fmt.Fprintf(w, "####################\nYou are already logged in, %v\n####################\n",  u.users[index].Username)
+			fmt.Fprintf(w, "\n\n\nYou are already logged in, %v\n",  u.Users[index].Username)
 		} else if isLogged && amtLogged == 1 && userCorrect && passCorrect {
-			fmt.Fprintf(w, "####################\nLogged in successfully.\nWelcome to your Watch Collection, %v.\n####################\n", u.users[index].Username)
+			fmt.Fprintf(w, "\n\n\nLogged in successfully.\nWelcome to your Watch Collection, %v.\n", u.Users[index].Username)
 		} else if !isLogged && amtLogged == 0 && userCorrect {
-				fmt.Fprintln(w, "####################\nThe password you entered is incorrect. Please try again.\n####################")
+			http.Error(w, "\n\n\nError 400: Password entered is incorrect.\nPlease try again.\n", http.StatusBadRequest)
+			ErrorLogger.Println("login | Error 400: Bad Request. Incorrect password.")
 		} else if !isLogged && amtLogged == 0 && !userCorrect && !passCorrect {
-			fmt.Fprintln(w, "####################\nAccount does not exist.\n####################")
+			http.Error(w, "\n\n\nError 400: Account does not exist.\n", http.StatusBadRequest)
+			ErrorLogger.Println("login | Error 400: Bad Request. Account does not exist.")
 		} else {
-			fmt.Fprintln(w, "####################\nPlease log out of your current account before attempting to log in again.\n####################")
+			http.Error(w, "\n\n\nError 400: Please log out of your current account before attempting to log in again.\n", http.StatusBadRequest)
+			ErrorLogger.Println("login | Error 400: Bad Request. Attempted to log in a different account without logging out.")
 		}
-		//fmt.Fprintf(w, "userCorrect: %v, passCorrect: %v, amtLogged: %v\n", userCorrect, passCorrect, amtLogged)
 		
 	default:
 		w.Header().Set("Content-Type", "application/json")
 
-		http.Error(w, "Bad Request: Error 405. Action is not allowed.", http.StatusMethodNotAllowed)
+		http.Error(w, "\n\n\nBad Request: Error 405. Action is not allowed.", http.StatusMethodNotAllowed)
+		ErrorLogger.Println("login | Bad Request: Error 405. Method other than GET and POST was used.")
 	}
 }
 
+// logout turns the IsLoggedIn boolean of the currently logged in user to false.
 func (u *UserDatabase) logout(w http.ResponseWriter, r *http.Request) {
 	var ui UserInfo
 	
@@ -186,11 +309,13 @@ func (u *UserDatabase) logout(w http.ResponseWriter, r *http.Request) {
 	case "GET": 
 		w.Header().Set("Content-Type", "application/json")
 		
-		if len(u.users) == 0 {
-			http.Error(w, "Bad Request: Error 404. Database not found.", http.StatusNotFound)
+		if len(u.Users) == 0 {
+			http.Error(w, "\n\n\nBad Request: Error 404. Database not found.", http.StatusNotFound)
+			WarningLogger.Println("delete | Database not found.")
 		} else {
-			if err := json.NewEncoder(w).Encode(u.users); err != nil {
+			if err := json.NewEncoder(w).Encode(u.Users); err != nil {
 				http.Error(w, err.Error(), http.StatusInternalServerError)
+				ErrorLogger.Println("logout | Bad Request: Error 500. Status Internal Server Error.")
 				return
 			}
 		}	
@@ -201,40 +326,49 @@ func (u *UserDatabase) logout(w http.ResponseWriter, r *http.Request) {
 		allOut := false
 		if err := json.NewDecoder(r.Body).Decode(&ui); err != nil {
 			http.Error(w, err.Error(), http.StatusBadRequest)
+			ErrorLogger.Println("logout | Error 400: Bad Request. Error on decoding json sign up.")
 			return
 		}
 
-		for j, _ := range u.users {
-			if u.users[j].IsLoggedIn {
-				u.users[j].IsLoggedIn = false
-				fmt.Fprintln(w, "####################\nSuccessfully logged out.\nThank you for using WatchCollection.\n####################")
+		u.mu.Lock()
+		for j := range u.Users {
+			if u.Users[j].IsLoggedIn {
+				u.Users[j].IsLoggedIn = false
+				fmt.Fprintln(w, "\n\n\nSuccessfully logged out.\nThank you for using our application.")
 				allOut = true
+				InfoLogger.Printf("logout | %v succesfully logged out\n.", ui.Username)
 				break
 			} 
 		}
+		u.mu.Unlock()
 
 		if !allOut {
-			fmt.Fprintln(w, "####################\nYou are not logged in.\n####################")
+			fmt.Fprintln(w, "\n\n\nYou are not logged in.")
+			WarningLogger.Println("logout | Attempted to log out while not logged in.")
 		}
 		
 	default:
 		w.Header().Set("Content-Type", "application/json")
 
-		http.Error(w, "Bad Request: Error 405. Action is not allowed.", http.StatusMethodNotAllowed)
+		http.Error(w, "\n\n\nBad Request: Error 405. Action is not allowed.", http.StatusMethodNotAllowed)
+		ErrorLogger.Println("logout | Bad Request: Error 405. Method other than GET and POST was used.")
 	}
 }
 
+// delete removes a registered user from the database after providing that user's credentials.
 func (u *UserDatabase) delete(w http.ResponseWriter, r *http.Request) {
 	var ui UserInfo
 	switch r.Method {
 	case "GET": 
 		w.Header().Set("Content-Type", "application/json")
 		
-		if len(u.users) == 0 {
+		if len(u.Users) == 0 {
 			http.Error(w, "Bad Request: Error 404. Database not found.", http.StatusNotFound)
+			WarningLogger.Println("delete | Database not found.")
 		} else {
-			if err := json.NewEncoder(w).Encode(u.users); err != nil {
+			if err := json.NewEncoder(w).Encode(u.Users); err != nil {
 				http.Error(w, err.Error(), http.StatusInternalServerError)
+				ErrorLogger.Println("delete | Bad Request: Error 500. Status Internal Server Error.")
 				return
 			}
 		}	
@@ -244,181 +378,195 @@ func (u *UserDatabase) delete(w http.ResponseWriter, r *http.Request) {
 		
 		if err := json.NewDecoder(r.Body).Decode(&ui); err != nil {
 			http.Error(w, err.Error(), http.StatusBadRequest)
+			ErrorLogger.Println("delete | Error 400: Bad Request. Error on decoding json sign up.")
 			return
 		}
 
-		for j, user := range u.users {
-			if ui.Username == user.Username && ui.Password == user.Password {
-				fmt.Fprintf(w, "####################\nThank you for trying our app, %v.\nYour account has been successfully deleted.\n####################\n", u.users[j].Username)
-				u.users = append(u.users[:j], u.users[j+1:]...)
-				break
+		if len(u.Users) == 0 {
+			http.Error(w, "\n\n\nThere are currently no Users in the database to delete", http.StatusBadRequest)
+			ErrorLogger.Println("delete | Error 400: Bad Request. No users in database to delete.")
+		} else {
+			u.mu.Lock()
+			for j, user := range u.Users {
+				if ui.Username == user.Username && ui.Password == user.Password {
+					fmt.Fprintf(w, "\n\n\nThank you for trying our app, %v.\nYour account has been successfully deleted.\n", u.Users[j].Username)
+					u.Users = append(u.Users[:j], u.Users[j+1:]...)
+					InfoLogger.Printf("delete | User %v was deleted from the database.\n", u.Users[j].Username)
+					break
+				} else if ui.Username == user.Username && ui.Password != user.Password {
+					http.Error(w, "\n\n\nError 400: Password entered is incorrect. Please try again.", http.StatusBadRequest)
+					ErrorLogger.Println("delete | Error 400: Bad Request. Password entered is incorrect.")
+				} else {
+					http.Error(w, "\n\n\nError 400: Specified user wasn't found", http.StatusBadRequest)
+					ErrorLogger.Println("delete | Error 400: Bad Request. User to delete was not found.")
+				}
+			}
+			u.mu.Unlock()
+		}
+		
+	default:
+		w.Header().Set("Content-Type", "application/json")
+
+		http.Error(w, "\n\n\nBad Request: Error 405. Action is not allowed.", http.StatusMethodNotAllowed)
+		ErrorLogger.Println("delete | Bad Request: Error 405. Method other than GET and POST was used.")
+	}
+}
+
+// watchList displays all the watches in the user's database.
+func (u *UserDatabase) watchList (w http.ResponseWriter, r *http.Request) {
+	var wi WatchInfo
+	switch r.Method {
+	case "GET":
+		w.Header().Set("Content-Type", "application/json")
+
+		if len(u.Users) == 0 {
+			http.Error(w, "\n\n\nUser database is currently empty.", http.StatusNotFound)
+			WarningLogger.Println("watchList | Database not found.")
+		} else {
+			index, isLogged := logCheck(u)
+
+			if index == -1 {
+				fmt.Fprintln(w, "\n\n\nPlease log in before attempting to add a watch to your collection.")
+				WarningLogger.Println("watchList | Login before adding a watch to collection.")
+			}
+			
+			if isLogged {
+				if len(u.Users[index].Watches) == 0 {
+					fmt.Fprintln(w, "\n\n\nYour collection is currently empty.")
+					WarningLogger.Println("watchList | Watch collection is currently empty.")
+				} else {
+					
+					displayCollection(u, wi, u.Users[index].Username, len(u.Users[index].Watches), index, w)
+
+					InfoLogger.Printf("watchList | Current watch collection of User: %v was displayed.\n", u.Users[index].Username)
+				}
 			} 
 		}
 		
 	default:
 		w.Header().Set("Content-Type", "application/json")
 
-		http.Error(w, "Bad Request: Error 405. Action is not allowed.", http.StatusMethodNotAllowed)
+		http.Error(w, "\n\n\nBad Request: Error 405. Action is not allowed.", http.StatusMethodNotAllowed)
+		ErrorLogger.Println("watchList | Bad Request: Error 405. Method other than GET was used.")
 	}
 }
 
-func (u *UserDatabase) watchList (w http.ResponseWriter, r *http.Request) {
-	switch r.Method {
-	case "GET":
-		w.Header().Set("Content-Type", "application/json")
-
-		if len(u.users) == 0 {
-			http.Error(w, "Bad Request: Error 404. Database not found.", http.StatusNotFound)
-		} else {
-
-			index := -1
-
-			for i, user := range u.users {
-				if user.IsLoggedIn {
-					index = i
-				}
-			}
-
-			for j, user := range u.users {
-				if user.IsLoggedIn {
-					if err := json.NewEncoder(w).Encode(u.users[j].Watches); err != nil {
-						http.Error(w, err.Error(), http.StatusInternalServerError)
-						return
-					}
-				}
-			}
-	
-			if len(u.users[index].Watches) > 0 {
-				fmt.Fprintln(w, "")
-				fmt.Fprintln(w, "~~~~~ YOUR CURRENT WATCH COLLECTION ~~~~~~")
-				for _, watch := range u.users[index].Watches {
-					fmt.Fprintln(w, "")
-					fmt.Fprintln(w, "----------")
-					fmt.Fprintln(w, "")
-					fmt.Fprintf(w, "-| %v %v |-\n", watch.Brand, watch.Model )
-					fmt.Fprintf(w, "     Dial Size: %v     \n", watch.DialSize )
-					fmt.Fprintf(w, "     %v     \n", watch.Price )
-					fmt.Fprintln(w, "")
-					fmt.Fprintln(w, "----------")
-					fmt.Fprintln(w, "")
-				}
-			} else {
-				fmt.Fprintln(w, "Your collection is currently empty.")
-			}
-		}
-		
-	default:
-		w.Header().Set("Content-Type", "application/json")
-
-		http.Error(w, "Bad Request: Error 405. Action is not allowed.", http.StatusMethodNotAllowed)
-	}
-}
-
+// addWatch appends a watch to the logged in user's watch collection based on the details specified.
 func (u *UserDatabase) addWatch(w http.ResponseWriter, r *http.Request) {
 	var wi WatchInfo
 	switch r.Method {
 	case "POST":
 		w.Header().Set("Content-Type", "application/json")
-		
-		index := -1
 
 		if err := json.NewDecoder(r.Body).Decode(&wi); err != nil {
 			http.Error(w, err.Error(), http.StatusBadRequest)
+			ErrorLogger.Println("addWatch | Error 400: Bad Request. Error on decoding json sign up.")
 			return
 		}
-		
-		for j, user := range u.users {
-			if user.IsLoggedIn {
-				index = j
-				u.users[j].Watches = append(u.users[j].Watches, wi)
-				fmt.Fprintln(w, "Sucessfully added watch to the collection.")
-			}
-		}
+
+		index, isLogged := logCheck(u)
+
+		isDuplicate := false
 
 		if index == -1 {
-			fmt.Fprintln(w, "Please log in before trying to add a watch from your list.")
+			fmt.Fprintln(w, "\n\n\nPlease log in before attempting to add a watch to your collection.")
+			WarningLogger.Println("addWatch | Attempted to add a watch before logging in.")
 		}
 
-		if len(u.users[index].Watches) > 0 {
-			fmt.Fprintln(w, "")
-			fmt.Fprintln(w, "~~~~~ YOUR CURRENT WATCH COLLECTION ~~~~~~")
-			for _, watch := range u.users[index].Watches {
-				fmt.Fprintln(w, "")
-				fmt.Fprintln(w, "----------")
-				fmt.Fprintln(w, "")
-				fmt.Fprintf(w, "-| %v %v |-\n", watch.Brand, watch.Model )
-				fmt.Fprintf(w, "     Dial Size: %v     \n", watch.DialSize )
-				fmt.Fprintf(w, "     %v     \n", watch.Price )
-				fmt.Fprintln(w, "")
-				fmt.Fprintln(w, "----------")
-				fmt.Fprintln(w, "")
+		if isLogged {
+			for _, watch := range u.Users[index].Watches {
+				if wi.Brand == watch.Brand && wi.Model == watch.Model {
+					isDuplicate = true
+
+				}
 			}
-		} else {
-			fmt.Fprintln(w, "Your collection is currently empty.")
-		}
-		
+			
+			u.mu.Lock()
+			if wi.Brand != "" && wi.Model != "" && wi.Width != "" && wi.Price != "" && !isDuplicate {
+				u.Users[index].Watches = append(u.Users[index].Watches, wi)
+				fmt.Fprintf(w, "\n\n\nSuccessfully added %v %v.\n", wi.Brand, wi.Model)	
+				InfoLogger.Printf("addWatch | Added %v %v to the collection of User: %v.\n", wi.Brand, wi.Model, u.Users[index].Username)
+
+				displayCollection(u, wi, u.Users[index].Username, len(u.Users[index].Watches), index, w)
+
+				InfoLogger.Printf("addWatch | Current watch collection of User: %v was displayed.\n", u.Users[index].Username)
+			} else if wi.Brand != "" && wi.Model != "" && wi.Width != "" && wi.Price != "" && isDuplicate {
+				http.Error(w, "\n\n\nThis watch is already a part of your collection.", http.StatusMethodNotAllowed)
+				ErrorLogger.Println("addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.")
+
+				displayCollection(u, wi, u.Users[index].Username, len(u.Users[index].Watches), index, w)
+
+				InfoLogger.Printf("addWatch | Current watch collection of User: %v was displayed.\n", u.Users[index].Username)
+			} else {
+				http.Error(w, "\n\n\nPlease include the desired brand, model, width, and price of the item.", http.StatusMethodNotAllowed)
+				ErrorLogger.Println("addWatch | Bad Request: Error 405. User attempted to add a watch with incomplete details.")
+
+				displayCollection(u, wi, u.Users[index].Username, len(u.Users[index].Watches), index, w)
+
+				InfoLogger.Printf("addWatch | Current watch collection of User: %v was displayed.\n", u.Users[index].Username)
+			}
+			u.mu.Unlock()
+		} 
+
 	default:
 		w.Header().Set("Content-Type", "application/json")
 
-		http.Error(w, "Bad Request: Error 405. Action is not allowed.", http.StatusMethodNotAllowed)
+		http.Error(w, "\n\n\nBad Request: Error 405. Action is not allowed.", http.StatusMethodNotAllowed)
+		ErrorLogger.Println("addWatch | Bad Request: Error 405. Method other than POST was used.")
 	}
 }
 
+// removeWatch deletes the watch from the logged in user's watch collection based on the provided Brand and Model.
 func (u *UserDatabase) removeWatch(w http.ResponseWriter, r *http.Request) {
 	var wi WatchInfo
+
 	switch r.Method {
 	case "POST":
 		w.Header().Set("Content-Type", "application/json")
 		
 		if err := json.NewDecoder(r.Body).Decode(&wi); err != nil {
 			http.Error(w, err.Error(), http.StatusBadRequest)
+			ErrorLogger.Println("removeWatch | Error 400: Bad Request. Error on decoding json sign up.")
 			return
 		}
 		
-		index := -1
-		for i, user := range u.users {
-			if user.IsLoggedIn {
-				index = i
-			}
-		}
-
-		for j, watch := range u.users[index].Watches {
-			if wi.Brand == u.users[index].Watches[j].Brand && wi.Model == u.users[index].Watches[j].Model {
-				u.users[index].Watches = append(u.users[index].Watches[:j], u.users[index].Watches[j+1:]...)
-				fmt.Fprintf(w, "%v %v successfully removed from your list.\n", watch.Model, watch.Brand)			
-				break
-			}
-		}
-
+		index, isLogged := logCheck(u)
+		
 		if index == -1 {
-			fmt.Fprintln(w, "Please log in before trying to remove a watch from your list.\n")
+			fmt.Fprintln(w, "\n\n\nPlease log in before atemmpting to remove a watch from your collection.")
+			WarningLogger.Println("removeWatch | Attempted to remove a watch before logging in.")
 		}
-
-		if len(u.users[index].Watches) > 0 {
-			fmt.Fprintln(w, "")
-			fmt.Fprintln(w, "~~~~~ YOUR CURRENT WATCH COLLECTION ~~~~~~")
-			for _, watch := range u.users[index].Watches {
-				fmt.Fprintln(w, "")
-				fmt.Fprintln(w, "----------")
-				fmt.Fprintln(w, "")
-				fmt.Fprintf(w, "-| %v %v |-\n", watch.Brand, watch.Model )
-				fmt.Fprintf(w, "     Dial Size: %v     \n", watch.DialSize )
-				fmt.Fprintf(w, "     %v     \n", watch.Price )
-				fmt.Fprintln(w, "")
-				fmt.Fprintln(w, "----------")
-				fmt.Fprintln(w, "")
+		
+		if isLogged {
+			for j, watch := range u.Users[index].Watches {
+				u.mu.Lock()
+				if wi.Brand == u.Users[index].Watches[j].Brand && wi.Model == u.Users[index].Watches[j].Model {
+					u.Users[index].Watches = append(u.Users[index].Watches[:j], u.Users[index].Watches[j+1:]...)
+					fmt.Fprintf(w, "\n\n\nSuccessfully added %v %v.\n", watch.Brand, watch.Model)		
+					InfoLogger.Printf("removeWatch | Removed %v %v from the collection of User: %v.\n", wi.Brand, wi.Model, u.Users[index].Username)
+					break
+				}
+				u.mu.Unlock()
 			}
-		} else {
-			fmt.Fprintln(w, "Your collection is currently empty.")
+			
+			if len(u.Users[index].Watches) > 0 {
+				displayCollection(u, wi, u.Users[index].Username, len(u.Users[index].Watches), index, w)
+				InfoLogger.Printf("removeWatch | Current watch collection of User: %v was displayed.\n", u.Users[index].Username)
+			} else {
+				fmt.Fprintln(w, "Your collection is currently empty.")
+				WarningLogger.Println("removeWatch | Watch collection is currently empty.")
+			}
 		}
 
 	default:
 		w.Header().Set("Content-Type", "application/json")
 
-		http.Error(w, "Bad Request: Error 405. Action is not allowed.", http.StatusMethodNotAllowed)
+		http.Error(w, "\n\n\nBad Request: Error 405. Action is not allowed.", http.StatusMethodNotAllowed)
+		ErrorLogger.Println("removeWatch | Bad Request: Error 405. Method other than POST was used.")
 	}
 }
 
+// markWatch toggles the Collected bool of a watch based on the provided Brand and Model.
 func (u *UserDatabase) markWatch(w http.ResponseWriter, r *http.Request) {
 	var wi WatchInfo
 	switch r.Method {
@@ -427,55 +575,73 @@ func (u *UserDatabase) markWatch(w http.ResponseWriter, r *http.Request) {
 		
 		if err := json.NewDecoder(r.Body).Decode(&wi); err != nil {
 			http.Error(w, err.Error(), http.StatusBadRequest)
+			ErrorLogger.Println("markWatch | Error 400: Bad Request. Error on decoding json sign up.")
 			return
 		}
 		
-		index := -1
-		for i, user := range u.users {
-			if user.IsLoggedIn {
-				index = i
-			}
-		}
+		index, isLogged := logCheck(u)
+		watchIndex := -1
 
-		for j, watch := range u.users[index].Watches {
-			if wi.Brand == u.users[index].Watches[j].Brand && wi.Model == u.users[index].Watches[j].Model {
-				if !u.users[index].Watches[j].Collected {
-					u.users[index].Watches[j].Collected = true
-					fmt.Fprintf(w, "%v %v successfully marked as COLLECTED in your list.\n", watch.Model, watch.Brand)
-					break
-				} else if u.users[index].Watches[j].Collected {
-					u.users[index].Watches[j].Collected = false
-					fmt.Fprintf(w, "%v %v successfully marked as NOT YET COLLECTED in your list.\n", watch.Model, watch.Brand)
-					break
-				}				
-			}
-		}
+		exists := false
 
 		if index == -1 {
-			fmt.Fprintln(w, "Please log in before trying to mark a watch from your list.")
+			fmt.Fprintln(w, "\n\n\nPlease log in before trying to mark a watch from your collection.")
+			WarningLogger.Println("markWatch | Attempted to mark a watch before logging in.")
 		}
+		
+		if isLogged {
+			if wi.Brand == "" || wi.Model == "" {
+				http.Error(w, "\n\n\nPlease enter the watch brand and model properly.\n", http.StatusMethodNotAllowed)
+				ErrorLogger.Println("markWatch | Bad Request: Error 405. Incorrect input.")
+			} else {
+				for j, watch := range u.Users[index].Watches {
+					if wi.Brand == watch.Brand && wi.Model == watch.Model {
+						exists = true
 
-		if len(u.users[index].Watches) > 0 {
-			fmt.Fprintln(w, "")
-			fmt.Fprintln(w, "~~~~~ YOUR CURRENT WATCH COLLECTION ~~~~~~")
-			for _, watch := range u.users[index].Watches {
-				fmt.Fprintln(w, "")
-				fmt.Fprintln(w, "----------")
-				fmt.Fprintln(w, "")
-				fmt.Fprintf(w, "-| %v %v |-\n", watch.Brand, watch.Model )
-				fmt.Fprintf(w, "     Dial Size: %v     \n", watch.DialSize )
-				fmt.Fprintf(w, "     %v     \n", watch.Price )
-				fmt.Fprintln(w, "")
-				fmt.Fprintln(w, "----------")
-				fmt.Fprintln(w, "")
+						u.mu.Lock()
+						if !watch.Collected {
+							watchIndex = j
+							u.Users[index].Watches[j].Collected = true
+							InfoLogger.Printf("markWatch | %v %v was marked as COLLECTED from the collection of User: %v.\n", wi.Brand, wi.Model, u.Users[index].Username)
+							break
+						} else if watch.Collected {
+							watchIndex = j
+							u.Users[index].Watches[j].Collected = false
+							InfoLogger.Printf("markWatch | %v %v was marked as NOT COLLECTED from the collection of User: %v.\n", wi.Brand, wi.Model, u.Users[index].Username)
+							break
+						}	
+						u.mu.Unlock()
+					} 
+				}
+				
+				if !exists {
+					fmt.Fprintf(w, "\n\n\n%v is not in your collection.\n", wi.Model)
+					WarningLogger.Printf("markWatch | %v %v is not in the collection of User: %v.\n", wi.Brand, wi.Model, u.Users[index].Username)
+				} else {
+					if u.Users[index].Watches[watchIndex].Collected {
+						fmt.Fprintf(w, "\n\n\n%v %v successfully marked as COLLECTED.\n", wi.Brand, wi.Model)
+					} else {
+						fmt.Fprintf(w, "\n\n\n%v %v successfully marked as NOT COLLECTED.\n", wi.Brand, wi.Model)
+					}
+				}
+	
+				if len(u.Users[index].Watches) > 0 {
+					displayCollection(u, wi, u.Users[index].Username, len(u.Users[index].Watches), index, w)
+					InfoLogger.Printf("markWatch | Current watch collection of User: %v was displayed.\n", u.Users[index].Username)
+				} else {
+					fmt.Fprintln(w, "Your collection is currently empty.")
+					fmt.Fprintln(w, "")
+					WarningLogger.Println("markWatch | Watch collection is currently empty.")
+				}
 			}
-		} else {
-			fmt.Fprintln(w, "Your collection is currently empty.")
+
+			
 		}
 
 	default:
 		w.Header().Set("Content-Type", "application/json")
 
-		http.Error(w, "Bad Request: Error 405. Action is not allowed.", http.StatusMethodNotAllowed)
+		http.Error(w, "\n\n\nBad Request: Error 405. Action is not allowed.", http.StatusMethodNotAllowed)
+		ErrorLogger.Println("markWatch | Bad Request: Error 405. Method other than POST was used.")
 	}
 }

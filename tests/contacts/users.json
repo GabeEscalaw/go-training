@@ -1,0 +1,23 @@
+{
+  "NextID": "0",
+  "Contacts": [
+    {
+      "ID": "0",
+      "Last": "Escalaw",
+      "First": "Elise Gabriel",
+      "Company": "DSG",
+      "Address": "BGC",
+      "Country": "Philippines",
+      "Position": "Software Engineer"
+    },
+    {
+      "ID": "1",
+      "Last": "Esc",
+      "First": "Eli Gab",
+      "Company": "DS",
+      "Address": "BG",
+      "Country": "Philip",
+      "Position": "Soft Eng"
+    }
+  ]
+}

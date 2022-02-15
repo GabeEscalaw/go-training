@@ -1,0 +1,1380 @@
+INFO: 2022/02/14 12:07:33 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 12:09:43 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 12:17:54 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 12:20:33 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 12:22:15 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 12:34:17 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 12:37:46 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 12:40:45 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 12:41:53 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 13:06:15 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 13:07:22 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 13:11:56 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 13:12:57 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 13:15:39 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 13:16:58 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 13:19:00 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 13:19:55 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 13:20:37 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 13:22:07 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 13:23:19 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 13:24:02 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 13:24:56 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 13:25:15 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 13:25:38 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 13:25:45 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 14:40:45 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 14:41:59 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 14:42:03 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 14:42:09 server.go:62: Sign up command was received from cli
+INFO: 2022/02/14 15:33:06 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 15:33:11 server.go:144: signup | A user was successfully added to the database.
+INFO: 2022/02/14 15:33:11 server.go:63: /signup request was received from cli
+ERROR: 2022/02/14 15:33:31 server.go:135: signup | Bad Request: Error 405. Incorrect input.
+INFO: 2022/02/14 15:33:31 server.go:63: /signup request was received from cli
+ERROR: 2022/02/14 15:33:46 server.go:132: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/14 15:33:46 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 15:33:55 server.go:204: login | gabe succesfully logged in.
+INFO: 2022/02/14 15:33:55 server.go:66: /login request was received from cli
+INFO: 2022/02/14 15:33:58 server.go:109: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 15:33:58 server.go:425: addWatch | Bad Request: Error 405. User attempted to add a watch with incomplete details.
+INFO: 2022/02/14 15:33:58 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 15:34:34 server.go:109: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 15:34:34 server.go:414: addWatch | Added Rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 15:34:34 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 15:34:34 server.go:422: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 15:34:34 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 15:34:50 server.go:109: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 15:34:50 server.go:414: addWatch | Added Rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 15:34:50 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 15:34:50 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 15:34:50 server.go:422: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 15:34:50 server.go:75: /addWatch request was received from cli
+ERROR: 2022/02/14 15:35:44 server.go:135: signup | Bad Request: Error 405. Incorrect input.
+INFO: 2022/02/14 15:35:44 server.go:63: /signup request was received from cli
+ERROR: 2022/02/14 15:35:53 server.go:135: signup | Bad Request: Error 405. Incorrect input.
+INFO: 2022/02/14 15:35:53 server.go:63: /signup request was received from cli
+ERROR: 2022/02/14 15:36:00 server.go:135: signup | Bad Request: Error 405. Incorrect input.
+INFO: 2022/02/14 15:36:00 server.go:63: /signup request was received from cli
+ERROR: 2022/02/14 15:36:05 server.go:135: signup | Bad Request: Error 405. Incorrect input.
+INFO: 2022/02/14 15:36:05 server.go:144: signup | A user was successfully added to the database.
+INFO: 2022/02/14 15:36:05 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 15:37:16 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 15:37:22 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 15:38:11 server.go:66: /login request was received from cli
+INFO: 2022/02/14 15:38:14 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 15:38:29 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 15:39:25 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 15:39:42 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 15:39:58 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 15:40:11 server.go:63: /signup request was received from cli
+ERROR: 2022/02/14 15:41:06 server.go:147: signup | Bad Request: Error 405. Incorrect input.
+INFO: 2022/02/14 15:41:06 server.go:63: /signup request was received from cli
+ERROR: 2022/02/14 15:41:10 server.go:147: signup | Bad Request: Error 405. Incorrect input.
+INFO: 2022/02/14 15:41:10 server.go:63: /signup request was received from cli
+ERROR: 2022/02/14 15:41:14 server.go:147: signup | Bad Request: Error 405. Incorrect input.
+INFO: 2022/02/14 15:41:14 server.go:63: /signup request was received from cli
+ERROR: 2022/02/14 15:41:19 server.go:233: login | Error 400: Bad Request. Account does not exist.
+INFO: 2022/02/14 15:41:19 server.go:66: /login request was received from cli
+ERROR: 2022/02/14 15:41:23 server.go:233: login | Error 400: Bad Request. Account does not exist.
+INFO: 2022/02/14 15:41:23 server.go:66: /login request was received from cli
+ERROR: 2022/02/14 15:41:31 server.go:233: login | Error 400: Bad Request. Account does not exist.
+INFO: 2022/02/14 15:41:31 server.go:66: /login request was received from cli
+WARNING: 2022/02/14 15:41:35 server.go:288: logout | Attempted to log out while not logged in.
+INFO: 2022/02/14 15:41:35 server.go:69: /logout request was received from cli
+INFO: 2022/02/14 16:17:15 server.go:144: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 16:17:15 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 16:17:26 server.go:207: login | gabe succesfully logged in.
+INFO: 2022/02/14 16:17:26 server.go:66: /login request was received from cli
+INFO: 2022/02/14 16:17:56 server.go:109: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 16:17:56 server.go:417: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 16:17:56 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 16:17:56 server.go:425: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 16:17:56 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 16:22:52 server.go:144: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 16:22:52 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 16:22:54 server.go:207: login | gabe succesfully logged in.
+INFO: 2022/02/14 16:22:54 server.go:66: /login request was received from cli
+INFO: 2022/02/14 16:22:56 server.go:109: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 16:22:56 server.go:417: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 16:22:56 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 16:22:56 server.go:426: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 16:22:56 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 16:25:49 server.go:144: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 16:25:49 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 16:25:51 server.go:207: login | gabe succesfully logged in.
+INFO: 2022/02/14 16:25:51 server.go:66: /login request was received from cli
+INFO: 2022/02/14 16:25:53 server.go:109: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 16:25:53 server.go:417: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 16:25:53 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 16:25:53 server.go:428: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 16:25:53 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 16:26:42 server.go:144: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 16:26:42 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 16:26:43 server.go:207: login | gabe succesfully logged in.
+INFO: 2022/02/14 16:26:43 server.go:66: /login request was received from cli
+INFO: 2022/02/14 16:26:45 server.go:109: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 16:26:45 server.go:417: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 16:26:45 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 16:26:45 server.go:428: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 16:26:45 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 16:27:38 server.go:144: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 16:27:38 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 16:27:40 server.go:207: login | gabe succesfully logged in.
+INFO: 2022/02/14 16:27:40 server.go:66: /login request was received from cli
+INFO: 2022/02/14 16:27:41 server.go:109: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 16:27:41 server.go:417: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 16:27:41 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 16:27:41 server.go:428: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 16:27:41 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 16:29:24 server.go:144: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 16:29:24 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 16:29:27 server.go:207: login | gabe succesfully logged in.
+INFO: 2022/02/14 16:29:27 server.go:66: /login request was received from cli
+INFO: 2022/02/14 16:29:30 server.go:109: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 16:29:30 server.go:417: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 16:29:30 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 16:29:30 server.go:428: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 16:29:30 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 16:31:28 server.go:144: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 16:31:28 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 16:31:30 server.go:207: login | gabe succesfully logged in.
+INFO: 2022/02/14 16:31:30 server.go:66: /login request was received from cli
+INFO: 2022/02/14 16:31:32 server.go:109: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 16:31:32 server.go:417: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 16:31:32 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 16:31:32 server.go:428: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 16:31:32 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 16:32:43 server.go:144: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 16:32:43 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 16:32:45 server.go:207: login | gabe succesfully logged in.
+INFO: 2022/02/14 16:32:45 server.go:66: /login request was received from cli
+INFO: 2022/02/14 16:32:47 server.go:109: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 16:32:47 server.go:417: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 16:32:47 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 16:32:47 server.go:428: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 16:32:47 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 16:33:26 server.go:144: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 16:33:26 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 16:33:27 server.go:207: login | gabe succesfully logged in.
+INFO: 2022/02/14 16:33:27 server.go:66: /login request was received from cli
+INFO: 2022/02/14 16:33:29 server.go:109: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 16:33:29 server.go:417: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 16:33:29 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 16:33:29 server.go:428: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 16:33:29 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 16:34:04 server.go:109: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 16:34:04 server.go:417: addWatch | Added AudemarsPiguet RoyalOak to the collection of User: gabe.
+INFO: 2022/02/14 16:34:04 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 16:34:04 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 16:34:04 server.go:428: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 16:34:04 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 16:34:48 server.go:144: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 16:34:48 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 16:34:51 server.go:207: login | gabe succesfully logged in.
+INFO: 2022/02/14 16:34:51 server.go:66: /login request was received from cli
+INFO: 2022/02/14 16:34:55 server.go:109: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 16:34:55 server.go:417: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 16:34:55 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 16:34:55 server.go:428: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 16:34:55 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 16:34:58 server.go:109: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 16:34:58 server.go:417: addWatch | Added AudemarsPiguet RoyalOak to the collection of User: gabe.
+INFO: 2022/02/14 16:34:58 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 16:34:58 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 16:34:58 server.go:428: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 16:34:58 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 16:35:44 server.go:144: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 16:35:44 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 16:35:46 server.go:207: login | gabe succesfully logged in.
+INFO: 2022/02/14 16:35:46 server.go:66: /login request was received from cli
+INFO: 2022/02/14 16:35:48 server.go:109: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 16:35:48 server.go:417: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 16:35:48 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 16:35:48 server.go:428: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 16:35:48 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 16:35:50 server.go:109: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 16:35:50 server.go:417: addWatch | Added AudemarsPiguet RoyalOak to the collection of User: gabe.
+INFO: 2022/02/14 16:35:50 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 16:35:50 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 16:35:50 server.go:428: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 16:35:50 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 16:37:20 server.go:144: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 16:37:20 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 16:37:22 server.go:207: login | gabe succesfully logged in.
+INFO: 2022/02/14 16:37:22 server.go:66: /login request was received from cli
+INFO: 2022/02/14 16:37:24 server.go:109: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 16:37:24 server.go:417: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 16:37:24 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 16:37:24 server.go:428: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 16:37:24 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 16:37:27 server.go:109: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 16:37:27 server.go:417: addWatch | Added AudemarsPiguet RoyalOak to the collection of User: gabe.
+INFO: 2022/02/14 16:37:27 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 16:37:27 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 16:37:27 server.go:428: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 16:37:27 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 16:38:08 server.go:144: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 16:38:08 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 16:38:10 server.go:207: login | gabe succesfully logged in.
+INFO: 2022/02/14 16:38:10 server.go:66: /login request was received from cli
+INFO: 2022/02/14 16:38:12 server.go:109: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 16:38:12 server.go:417: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 16:38:12 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 16:38:12 server.go:428: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 16:38:12 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 16:38:24 server.go:109: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 16:38:24 server.go:417: addWatch | Added AudemarsPiguet RoyalOak to the collection of User: gabe.
+INFO: 2022/02/14 16:38:24 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 16:38:24 server.go:95: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 16:38:24 server.go:428: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 16:38:24 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 16:58:51 server.go:155: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 16:58:51 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 16:58:52 server.go:218: login | gabe succesfully logged in.
+INFO: 2022/02/14 16:58:52 server.go:66: /login request was received from cli
+INFO: 2022/02/14 16:58:55 server.go:120: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 16:58:55 server.go:425: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 16:58:55 server.go:107: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 16:58:55 server.go:429: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 16:58:55 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 16:59:00 server.go:120: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 16:59:00 server.go:425: addWatch | Added AudemarsPiguet RoyalOak to the collection of User: gabe.
+INFO: 2022/02/14 16:59:00 server.go:107: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 16:59:00 server.go:429: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 16:59:00 server.go:75: /addWatch request was received from cli
+ERROR: 2022/02/14 16:59:05 server.go:143: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/14 16:59:05 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 16:59:59 server.go:156: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 16:59:59 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 17:00:01 server.go:219: login | gabe succesfully logged in.
+INFO: 2022/02/14 17:00:01 server.go:66: /login request was received from cli
+INFO: 2022/02/14 17:00:03 server.go:121: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:00:03 server.go:426: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 17:00:03 server.go:108: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:00:03 server.go:430: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:00:03 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 17:00:06 server.go:121: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:00:06 server.go:426: addWatch | Added AudemarsPiguet RoyalOak to the collection of User: gabe.
+INFO: 2022/02/14 17:00:06 server.go:108: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:00:06 server.go:430: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:00:06 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 17:00:27 server.go:121: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:00:27 server.go:471: removeWatch | Removed AudemarsPiguet RoyalOak from the collection of User: gabe.
+INFO: 2022/02/14 17:00:27 server.go:108: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:00:27 server.go:478: removeWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:00:27 server.go:78: /removeWatch request was received from cli
+INFO: 2022/02/14 17:10:05 server.go:156: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 17:10:05 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 17:10:06 server.go:219: login | gabe succesfully logged in.
+INFO: 2022/02/14 17:10:06 server.go:66: /login request was received from cli
+INFO: 2022/02/14 17:10:12 server.go:121: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:10:12 server.go:426: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 17:10:12 server.go:108: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:10:12 server.go:430: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:10:12 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 17:10:17 server.go:121: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:10:17 server.go:426: addWatch | Added AudemarsPiguet RoyalOak to the collection of User: gabe.
+INFO: 2022/02/14 17:10:17 server.go:108: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:10:17 server.go:430: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:10:17 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 17:11:43 server.go:121: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:11:43 server.go:426: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 17:11:43 server.go:108: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:11:43 server.go:430: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:11:43 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 17:12:04 server.go:156: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 17:12:04 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 17:12:08 server.go:219: login | gabe succesfully logged in.
+INFO: 2022/02/14 17:12:08 server.go:66: /login request was received from cli
+INFO: 2022/02/14 17:12:13 server.go:121: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:12:13 server.go:426: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 17:12:13 server.go:108: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:12:13 server.go:430: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:12:13 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 17:12:16 server.go:121: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:12:16 server.go:426: addWatch | Added AudemarsPiguet RoyalOak to the collection of User: gabe.
+INFO: 2022/02/14 17:12:16 server.go:108: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:12:16 server.go:430: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:12:16 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 17:12:29 server.go:121: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:12:29 server.go:471: removeWatch | Removed rolex submariner from the collection of User: gabe.
+INFO: 2022/02/14 17:12:29 server.go:108: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:12:29 server.go:478: removeWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:12:29 server.go:78: /removeWatch request was received from cli
+INFO: 2022/02/14 17:16:21 server.go:126: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/14 17:16:21 server.go:468: removeWatch | Attempted to remove a watch before logging in.
+INFO: 2022/02/14 17:16:21 server.go:78: /removeWatch request was received from cli
+INFO: 2022/02/14 17:16:44 server.go:161: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 17:16:44 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 17:16:46 server.go:224: login | gabe succesfully logged in.
+INFO: 2022/02/14 17:16:46 server.go:66: /login request was received from cli
+INFO: 2022/02/14 17:16:49 server.go:126: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:16:49 server.go:431: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 17:16:49 server.go:113: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:16:49 server.go:435: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:16:49 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 17:17:24 server.go:126: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/14 17:17:24 server.go:424: addWatch | Attempted to add a watch before logging in.
+INFO: 2022/02/14 17:17:24 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 17:17:35 server.go:161: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 17:17:35 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 17:17:37 server.go:224: login | gabe succesfully logged in.
+INFO: 2022/02/14 17:17:37 server.go:66: /login request was received from cli
+INFO: 2022/02/14 17:17:40 server.go:126: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:17:40 server.go:431: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 17:17:40 server.go:113: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:17:40 server.go:435: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:17:40 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 17:17:48 server.go:126: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:17:48 server.go:431: addWatch | Added AudemarsPiguet RoyalOak to the collection of User: gabe.
+INFO: 2022/02/14 17:17:48 server.go:113: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:17:48 server.go:435: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:17:48 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 17:19:16 server.go:162: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 17:19:16 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 17:19:18 server.go:225: login | gabe succesfully logged in.
+INFO: 2022/02/14 17:19:18 server.go:66: /login request was received from cli
+INFO: 2022/02/14 17:19:20 server.go:127: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:19:20 server.go:432: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 17:19:20 server.go:114: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:19:20 server.go:436: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:19:20 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 17:19:26 server.go:127: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:19:26 server.go:432: addWatch | Added AudemarsPiguet RoyalOak to the collection of User: gabe.
+INFO: 2022/02/14 17:19:26 server.go:114: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:19:26 server.go:436: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:19:26 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 17:19:38 server.go:127: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:19:38 server.go:524: markWatch | AudemarsPiguet RoyalOak was marked as COLLECTED from the collection of User: gabe.
+INFO: 2022/02/14 17:19:38 server.go:114: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:19:38 server.go:537: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:19:38 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 17:22:03 server.go:66: /login request was received from cli
+INFO: 2022/02/14 17:22:58 server.go:170: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 17:22:58 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 17:23:00 server.go:233: login | gabe succesfully logged in.
+INFO: 2022/02/14 17:23:00 server.go:66: /login request was received from cli
+INFO: 2022/02/14 17:23:03 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:23:03 server.go:440: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 17:23:03 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:23:03 server.go:444: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:23:03 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 17:23:06 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:23:06 server.go:440: addWatch | Added AudemarsPiguet RoyalOak to the collection of User: gabe.
+INFO: 2022/02/14 17:23:06 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:23:06 server.go:444: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:23:06 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 17:23:09 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:23:09 server.go:532: markWatch | AudemarsPiguet RoyalOak was marked as COLLECTED from the collection of User: gabe.
+INFO: 2022/02/14 17:23:09 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:23:09 server.go:545: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:23:09 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 17:29:02 server.go:170: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 17:29:02 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 17:29:04 server.go:233: login | gabe succesfully logged in.
+INFO: 2022/02/14 17:29:04 server.go:66: /login request was received from cli
+INFO: 2022/02/14 17:29:06 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:29:06 server.go:440: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 17:29:06 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:29:06 server.go:444: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:29:06 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 17:29:12 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:29:12 server.go:440: addWatch | Added AudemarsPiguet RoyalOak to the collection of User: gabe.
+INFO: 2022/02/14 17:29:12 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:29:12 server.go:444: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:29:12 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 17:29:20 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:29:20 server.go:532: markWatch | AudemarsPiguet RoyalOak was marked as COLLECTED from the collection of User: gabe.
+INFO: 2022/02/14 17:29:20 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:29:20 server.go:545: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:29:20 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 17:30:21 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:30:21 server.go:537: markWatch | AudemarsPiguet RoyalOak was marked as NOT YET COLLECTED from the collection of User: gabe.
+INFO: 2022/02/14 17:30:21 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:30:21 server.go:545: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:30:21 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 17:32:26 server.go:170: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 17:32:26 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 17:32:28 server.go:233: login | gabe succesfully logged in.
+INFO: 2022/02/14 17:32:28 server.go:66: /login request was received from cli
+INFO: 2022/02/14 17:32:31 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:32:31 server.go:440: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 17:32:31 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:32:31 server.go:444: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:32:31 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 17:32:35 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:32:35 server.go:440: addWatch | Added AudemarsPiguet RoyalOak to the collection of User: gabe.
+INFO: 2022/02/14 17:32:35 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:32:35 server.go:444: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:32:35 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 17:32:38 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:32:38 server.go:532: markWatch | AudemarsPiguet RoyalOak was marked as COLLECTED from the collection of User: gabe.
+INFO: 2022/02/14 17:32:38 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:32:38 server.go:545: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:32:38 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 17:32:50 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:32:50 server.go:537: markWatch | AudemarsPiguet RoyalOak was marked as NOT YET COLLECTED from the collection of User: gabe.
+INFO: 2022/02/14 17:32:50 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:32:50 server.go:545: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:32:50 server.go:81: /markWatch request was received from cli
+ERROR: 2022/02/14 17:33:27 server.go:161: signup | Bad Request: Error 405. Incorrect input.
+ERROR: 2022/02/14 17:33:27 server.go:173: signup | Bad Request: Error 405. Incorrect input.
+INFO: 2022/02/14 17:33:27 server.go:63: /signup request was received from cli
+ERROR: 2022/02/14 17:33:31 server.go:161: signup | Bad Request: Error 405. Incorrect input.
+ERROR: 2022/02/14 17:33:31 server.go:173: signup | Bad Request: Error 405. Incorrect input.
+INFO: 2022/02/14 17:33:31 server.go:63: /signup request was received from cli
+ERROR: 2022/02/14 17:34:47 server.go:170: signup | Bad Request: Error 405. Incorrect input.
+INFO: 2022/02/14 17:34:47 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 17:34:55 server.go:135: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/14 17:34:55 server.go:430: addWatch | Attempted to add a watch before logging in.
+INFO: 2022/02/14 17:34:55 server.go:75: /addWatch request was received from cli
+ERROR: 2022/02/14 17:36:10 server.go:170: signup | Bad Request: Error 405. Incorrect input.
+INFO: 2022/02/14 17:36:10 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 17:36:15 server.go:135: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/14 17:36:15 server.go:430: addWatch | Attempted to add a watch before logging in.
+INFO: 2022/02/14 17:36:15 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 17:36:35 server.go:135: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/14 17:36:35 server.go:474: removeWatch | Attempted to remove a watch before logging in.
+INFO: 2022/02/14 17:36:35 server.go:78: /removeWatch request was received from cli
+ERROR: 2022/02/14 17:37:08 server.go:256: login | Error 400: Bad Request. Account does not exist.
+INFO: 2022/02/14 17:37:08 server.go:66: /login request was received from cli
+WARNING: 2022/02/14 17:37:12 server.go:311: logout | Attempted to log out while not logged in.
+INFO: 2022/02/14 17:37:12 server.go:69: /logout request was received from cli
+ERROR: 2022/02/14 17:37:18 server.go:170: signup | Bad Request: Error 405. Incorrect input.
+INFO: 2022/02/14 17:37:18 server.go:63: /signup request was received from cli
+ERROR: 2022/02/14 17:37:21 server.go:350: delete | Error 400: Bad Request. No users in database to delete.
+INFO: 2022/02/14 17:37:21 server.go:72: /delete request was received from cli
+INFO: 2022/02/14 17:46:03 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 17:46:03 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 17:46:05 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 17:46:05 server.go:66: /login request was received from cli
+INFO: 2022/02/14 17:46:10 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:46:36 server.go:66: /login request was received from cli
+INFO: 2022/02/14 17:46:44 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:46:52 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:49:30 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 17:49:30 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 17:49:33 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 17:49:33 server.go:66: /login request was received from cli
+INFO: 2022/02/14 17:49:36 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:50:30 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:52:41 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 17:52:41 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 17:52:43 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 17:52:43 server.go:66: /login request was received from cli
+INFO: 2022/02/14 17:52:48 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 17:55:50 server.go:170: signup | Bad Request: Error 405. Incorrect input.
+INFO: 2022/02/14 17:55:50 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 17:55:56 server.go:135: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/14 17:55:56 server.go:432: addWatch | Attempted to add a watch before logging in.
+INFO: 2022/02/14 17:55:56 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 17:56:02 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 17:56:02 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 17:56:04 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 17:56:04 server.go:66: /login request was received from cli
+INFO: 2022/02/14 17:56:07 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:57:43 server.go:135: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/14 17:57:44 server.go:432: addWatch | Attempted to add a watch before logging in.
+INFO: 2022/02/14 17:57:44 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 17:57:48 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 17:57:48 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 17:57:50 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 17:57:50 server.go:66: /login request was received from cli
+INFO: 2022/02/14 17:57:53 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:57:53 server.go:439: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 17:57:53 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:57:53 server.go:443: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:57:53 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 17:57:59 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 17:57:59 server.go:439: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 17:57:59 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 17:57:59 server.go:443: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 17:57:59 server.go:75: /addWatch request was received from cli
+ERROR: 2022/02/14 18:02:11 server.go:158: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/14 18:02:11 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 18:02:13 server.go:237: login | gabe succesfully logged in.
+INFO: 2022/02/14 18:02:13 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:02:16 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:02:16 server.go:439: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:02:16 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:02:16 server.go:443: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:02:16 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:02:19 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:02:19 server.go:439: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:02:19 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:02:19 server.go:443: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:02:19 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:06:19 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 18:06:19 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 18:06:21 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 18:06:21 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:06:22 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:06:22 server.go:445: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:06:22 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:06:22 server.go:449: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:06:22 server.go:75: /addWatch request was received from cli
+ERROR: 2022/02/14 18:06:25 server.go:158: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/14 18:06:25 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 18:06:28 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:06:28 server.go:445: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:06:28 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:06:28 server.go:449: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:06:28 server.go:75: /addWatch request was received from cli
+ERROR: 2022/02/14 18:07:10 server.go:256: login | Error 400: Bad Request. Account does not exist.
+INFO: 2022/02/14 18:07:10 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:07:12 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 18:07:12 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 18:07:14 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 18:07:14 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:07:16 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:07:16 server.go:446: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:07:16 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:07:16 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:07:16 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:07:19 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:07:19 server.go:446: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:07:19 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:07:19 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:07:19 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:08:03 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 18:08:03 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 18:08:04 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 18:08:04 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:08:06 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:08:06 server.go:448: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:08:06 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:08:06 server.go:452: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:08:06 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:08:21 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:08:21 server.go:448: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:08:21 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:08:21 server.go:452: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:08:21 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:08:49 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 18:08:49 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 18:08:51 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 18:08:51 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:08:53 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:08:53 server.go:448: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:08:53 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:08:53 server.go:452: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:08:53 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:08:58 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 18:08:58 server.go:455: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/14 18:08:58 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:09:25 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 18:09:25 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 18:09:27 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 18:09:27 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:09:36 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:09:36 server.go:445: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:09:36 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:09:36 server.go:449: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:09:36 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:10:02 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 18:10:02 server.go:452: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/14 18:10:02 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:10:32 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 18:10:32 server.go:452: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/14 18:10:32 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:10:55 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:10:57 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:13:20 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 18:13:20 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 18:13:22 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 18:13:22 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:13:24 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:13:24 server.go:445: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:13:24 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:13:24 server.go:449: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:13:24 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:13:27 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:13:27 server.go:445: addWatch | Added audemarspiguet royaloak to the collection of User: gabe.
+INFO: 2022/02/14 18:13:27 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:13:27 server.go:449: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:13:27 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:13:30 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 18:13:30 server.go:452: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/14 18:13:30 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:13:36 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 18:13:36 server.go:452: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/14 18:13:36 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:13:48 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 18:13:48 server.go:452: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/14 18:13:48 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:13:52 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 18:13:52 server.go:452: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/14 18:13:52 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:14:10 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 18:14:10 server.go:452: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/14 18:14:10 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:15:08 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 18:15:08 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 18:15:09 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 18:15:09 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:15:12 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:15:12 server.go:445: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:15:12 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:15:12 server.go:449: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:15:12 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:15:14 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:15:14 server.go:445: addWatch | Added audemarspiguet royaloak to the collection of User: gabe.
+INFO: 2022/02/14 18:15:14 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:15:14 server.go:449: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:15:14 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:15:17 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:15:17 server.go:445: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:15:17 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:15:17 server.go:449: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:15:17 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:15:20 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:15:20 server.go:445: addWatch | Added audemarspiguet royal to the collection of User: gabe.
+INFO: 2022/02/14 18:15:20 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:15:20 server.go:449: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:15:20 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:15:23 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:15:23 server.go:445: addWatch | Added breguet royal to the collection of User: gabe.
+INFO: 2022/02/14 18:15:23 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:15:23 server.go:449: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:15:23 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:15:25 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 18:15:25 server.go:452: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/14 18:15:25 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:15:32 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 18:15:32 server.go:452: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/14 18:15:32 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:16:27 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 18:16:27 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 18:16:29 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 18:16:29 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:16:31 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:16:31 server.go:447: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:16:31 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:16:31 server.go:451: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:16:31 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:16:36 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:16:36 server.go:447: addWatch | Added audemarspiguet royaloak to the collection of User: gabe.
+INFO: 2022/02/14 18:16:36 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:16:36 server.go:451: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:16:36 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:16:50 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:16:50 server.go:447: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:16:50 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:16:50 server.go:451: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:16:50 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:18:30 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 18:18:30 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 18:18:32 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 18:18:32 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:18:34 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:18:34 server.go:448: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:18:34 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:18:34 server.go:452: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:18:34 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:18:36 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:18:36 server.go:448: addWatch | Added audemarspiguet royaloak to the collection of User: gabe.
+INFO: 2022/02/14 18:18:36 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:18:36 server.go:452: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:18:36 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:18:38 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 18:18:38 server.go:455: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/14 18:18:38 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:18:43 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:18:43 server.go:448: addWatch | Added audemarspiguet royal to the collection of User: gabe.
+INFO: 2022/02/14 18:18:43 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:18:43 server.go:452: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:18:43 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:18:53 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 18:18:53 server.go:455: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/14 18:18:53 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:19:44 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 18:19:44 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 18:19:46 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 18:19:46 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:19:49 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:19:49 server.go:446: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:19:49 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:19:49 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:19:49 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:19:56 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:19:56 server.go:446: addWatch | Added audemarspiguet royaloak to the collection of User: gabe.
+INFO: 2022/02/14 18:19:56 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:19:56 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:19:56 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:19:59 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 18:19:59 server.go:453: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/14 18:19:59 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:20:53 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 18:20:53 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 18:20:54 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 18:20:54 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:20:57 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:20:57 server.go:446: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:20:57 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:20:57 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:20:57 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:20:59 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:20:59 server.go:446: addWatch | Added audemarspiguet royaloak to the collection of User: gabe.
+INFO: 2022/02/14 18:20:59 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:20:59 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:20:59 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:21:03 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 18:21:03 server.go:453: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/14 18:21:03 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:21:03 server.go:457: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:21:03 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:21:14 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:21:14 server.go:446: addWatch | Added audemarspiguet royal to the collection of User: gabe.
+INFO: 2022/02/14 18:21:14 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:21:14 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:21:14 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:21:36 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:21:36 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:21:36 server.go:561: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:21:36 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 18:23:52 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 18:23:53 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 18:23:54 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 18:23:54 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:23:57 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:23:57 server.go:446: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:23:57 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:23:57 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:23:57 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:24:00 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:24:00 server.go:446: addWatch | Added audemarspiguet royaloak to the collection of User: gabe.
+INFO: 2022/02/14 18:24:00 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:24:00 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:24:00 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:24:04 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 18:24:04 server.go:453: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/14 18:24:04 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:24:04 server.go:457: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:24:04 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:24:11 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:24:11 server.go:446: addWatch | Added audemarspiguet royal to the collection of User: gabe.
+INFO: 2022/02/14 18:24:11 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:24:11 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:24:11 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:24:23 server.go:135: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/14 18:24:23 server.go:558: markWatch | breguet royal is not in the collection of User: gabe.
+WARNING: 2022/02/14 18:24:23 server.go:558: markWatch | breguet royal is not in the collection of User: gabe.
+WARNING: 2022/02/14 18:24:23 server.go:558: markWatch | breguet royal is not in the collection of User: gabe.
+INFO: 2022/02/14 18:24:23 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:24:23 server.go:564: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:24:23 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 18:26:46 server.go:135: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/14 18:26:46 server.go:558: markWatch | breguet royal is not in the collection of User: gabe.
+WARNING: 2022/02/14 18:26:46 server.go:558: markWatch | breguet royal is not in the collection of User: gabe.
+WARNING: 2022/02/14 18:26:46 server.go:558: markWatch | breguet royal is not in the collection of User: gabe.
+INFO: 2022/02/14 18:26:46 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:26:46 server.go:564: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:26:46 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 18:26:57 server.go:135: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/14 18:26:57 server.go:541: markWatch | Attempted to mark a watch before logging in.
+INFO: 2022/02/14 18:26:57 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 18:27:02 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 18:27:02 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 18:27:04 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 18:27:04 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:27:07 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:27:07 server.go:446: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:27:07 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:27:07 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:27:07 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:27:10 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:27:10 server.go:446: addWatch | Added audemarspiguet royaloak to the collection of User: gabe.
+INFO: 2022/02/14 18:27:10 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:27:10 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:27:10 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:27:12 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 18:27:12 server.go:453: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/14 18:27:12 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:27:12 server.go:457: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:27:12 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:27:15 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:27:15 server.go:446: addWatch | Added audemarspiguet royal to the collection of User: gabe.
+INFO: 2022/02/14 18:27:15 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:27:15 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:27:15 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:27:21 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:27:21 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:27:21 server.go:570: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:27:21 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 18:29:07 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 18:29:07 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 18:29:09 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 18:29:09 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:29:10 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:29:10 server.go:446: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:29:10 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:29:10 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:29:10 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:29:13 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:29:13 server.go:446: addWatch | Added audemarspiguet royaloak to the collection of User: gabe.
+INFO: 2022/02/14 18:29:13 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:29:13 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:29:13 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:29:15 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 18:29:15 server.go:453: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/14 18:29:15 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:29:15 server.go:457: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:29:15 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:29:24 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:29:24 server.go:446: addWatch | Added audemarspiguet royal to the collection of User: gabe.
+INFO: 2022/02/14 18:29:24 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:29:24 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:29:24 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:29:33 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:29:33 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:29:33 server.go:570: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:29:33 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 18:30:33 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 18:30:33 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 18:30:35 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 18:30:35 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:30:36 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:30:36 server.go:446: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:30:36 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:30:36 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:30:36 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:30:38 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:30:38 server.go:446: addWatch | Added audemarspiguet royaloak to the collection of User: gabe.
+INFO: 2022/02/14 18:30:38 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:30:38 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:30:38 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:30:48 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 18:30:48 server.go:453: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/14 18:30:48 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:30:48 server.go:457: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:30:48 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:30:51 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:30:51 server.go:446: addWatch | Added audemarspiguet royal to the collection of User: gabe.
+INFO: 2022/02/14 18:30:51 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:30:51 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:30:51 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:30:57 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:30:57 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:30:57 server.go:570: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:30:57 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 18:31:10 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:31:10 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:31:10 server.go:570: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:31:10 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 18:31:38 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:31:38 server.go:550: markWatch | rolex submariner was marked as COLLECTED from the collection of User: gabe.
+WARNING: 2022/02/14 18:31:38 server.go:565: markWatch | rolex submariner is not in the collection of User: gabe.
+INFO: 2022/02/14 18:31:38 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:31:38 server.go:570: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:31:38 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 18:32:07 server.go:135: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/14 18:32:07 server.go:541: markWatch | Attempted to mark a watch before logging in.
+INFO: 2022/02/14 18:32:07 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 18:32:12 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 18:32:12 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 18:32:14 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 18:32:14 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:32:16 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:32:16 server.go:446: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:32:16 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:32:16 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:32:16 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:32:18 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:32:18 server.go:446: addWatch | Added audemarspiguet royaloak to the collection of User: gabe.
+INFO: 2022/02/14 18:32:18 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:32:18 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:32:18 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:32:21 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 18:32:21 server.go:453: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/14 18:32:21 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:32:21 server.go:457: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:32:21 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:32:30 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:32:30 server.go:446: addWatch | Added audemarspiguet royal to the collection of User: gabe.
+INFO: 2022/02/14 18:32:30 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:32:30 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:32:30 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:32:36 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:32:36 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:32:36 server.go:570: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:32:36 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 18:32:41 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:32:41 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:32:41 server.go:570: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:32:41 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 18:32:45 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:32:45 server.go:550: markWatch | rolex submariner was marked as COLLECTED from the collection of User: gabe.
+WARNING: 2022/02/14 18:32:45 server.go:565: markWatch | rolex submariner is not in the collection of User: gabe.
+INFO: 2022/02/14 18:32:45 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:32:45 server.go:570: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:32:45 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 18:33:26 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 18:33:26 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 18:33:28 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 18:33:28 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:33:30 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:33:30 server.go:446: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:33:30 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:33:30 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:33:30 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:33:32 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:33:32 server.go:446: addWatch | Added audemarspiguet royaloak to the collection of User: gabe.
+INFO: 2022/02/14 18:33:32 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:33:32 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:33:32 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:33:34 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 18:33:34 server.go:453: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/14 18:33:34 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:33:34 server.go:457: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:33:34 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:33:39 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:33:39 server.go:446: addWatch | Added audemarspiguet royal to the collection of User: gabe.
+INFO: 2022/02/14 18:33:39 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:33:39 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:33:39 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:33:42 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:33:42 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:33:42 server.go:570: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:33:42 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 18:33:50 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:33:50 server.go:550: markWatch | rolex submariner was marked as COLLECTED from the collection of User: gabe.
+WARNING: 2022/02/14 18:33:50 server.go:565: markWatch | rolex submariner is not in the collection of User: gabe.
+INFO: 2022/02/14 18:33:50 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:33:50 server.go:570: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:33:50 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 18:35:41 server.go:135: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/14 18:35:41 server.go:541: markWatch | Attempted to mark a watch before logging in.
+INFO: 2022/02/14 18:35:41 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 18:35:45 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 18:35:45 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 18:35:47 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 18:35:47 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:35:49 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:35:49 server.go:446: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:35:49 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:35:49 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:35:49 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:35:50 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:35:50 server.go:446: addWatch | Added audemarspiguet royaloak to the collection of User: gabe.
+INFO: 2022/02/14 18:35:50 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:35:50 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:35:50 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:35:52 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 18:35:52 server.go:453: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/14 18:35:52 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:35:52 server.go:457: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:35:52 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:35:53 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:35:53 server.go:446: addWatch | Added audemarspiguet royal to the collection of User: gabe.
+INFO: 2022/02/14 18:35:53 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:35:53 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:35:53 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:35:58 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:35:58 server.go:550: markWatch | rolex submariner was marked as COLLECTED from the collection of User: gabe.
+WARNING: 2022/02/14 18:35:58 server.go:571: markWatch | rolex submariner is not in the collection of User: gabe.
+INFO: 2022/02/14 18:35:58 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:35:58 server.go:576: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:35:58 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 18:36:27 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 18:36:27 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 18:36:29 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 18:36:29 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:36:30 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:36:30 server.go:446: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:36:30 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:36:30 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:36:30 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:36:32 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:36:32 server.go:446: addWatch | Added audemarspiguet royaloak to the collection of User: gabe.
+INFO: 2022/02/14 18:36:32 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:36:32 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:36:32 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:36:35 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 18:36:35 server.go:453: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/14 18:36:35 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:36:35 server.go:457: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:36:35 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:36:38 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:36:38 server.go:446: addWatch | Added audemarspiguet royal to the collection of User: gabe.
+INFO: 2022/02/14 18:36:38 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:36:38 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:36:38 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:40:09 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 18:40:09 server.go:63: /signup request was received from cli
+ERROR: 2022/02/14 18:40:19 server.go:88: 
+
+
+Bad Request: Error 404. url /err was not found on this server.
+ERROR: 2022/02/14 18:43:56 server.go:588: markWatch | Bad Request: Error 405. Method other than POST was used.
+INFO: 2022/02/14 18:43:56 server.go:81: /markWatch request was received from cli
+ERROR: 2022/02/14 18:44:33 server.go:588: markWatch | Bad Request: Error 405. Method other than POST was used.
+INFO: 2022/02/14 18:44:33 server.go:81: /markWatch request was received from cli
+ERROR: 2022/02/14 18:44:56 server.go:588: markWatch | Bad Request: Error 405. Method other than POST was used.
+INFO: 2022/02/14 18:44:56 server.go:81: /markWatch request was received from cli
+ERROR: 2022/02/14 18:45:15 server.go:588: markWatch | Bad Request: Error 405. Method other than POST was used.
+INFO: 2022/02/14 18:45:15 server.go:81: /markWatch request was received from cli
+ERROR: 2022/02/14 18:46:59 server.go:531: markWatch | Error 400: Bad Request. Error on decoding json sign up.
+INFO: 2022/02/14 18:46:59 server.go:81: /markWatch request was received from cli
+ERROR: 2022/02/14 18:47:11 server.go:531: markWatch | Error 400: Bad Request. Error on decoding json sign up.
+INFO: 2022/02/14 18:47:11 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 18:47:16 server.go:135: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/14 18:47:16 server.go:541: markWatch | Attempted to mark a watch before logging in.
+INFO: 2022/02/14 18:47:16 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 18:48:15 server.go:135: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/14 18:48:15 server.go:541: markWatch | Attempted to mark a watch before logging in.
+INFO: 2022/02/14 18:48:15 server.go:81: /markWatch request was received from cli
+ERROR: 2022/02/14 18:48:18 server.go:88: 
+
+
+Bad Request: Error 404. url /mar was not found on this server.
+ERROR: 2022/02/14 18:48:22 server.go:588: markWatch | Bad Request: Error 405. Method other than POST was used.
+INFO: 2022/02/14 18:48:22 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 18:49:09 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 18:49:09 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 18:49:11 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 18:49:11 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:49:14 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:49:14 server.go:446: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:49:14 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:49:14 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:49:14 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:49:20 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:49:20 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:49:20 server.go:576: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:49:20 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 18:53:42 server.go:135: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/14 18:53:42 server.go:432: addWatch | Attempted to add a watch before logging in.
+INFO: 2022/02/14 18:53:42 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:53:45 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 18:53:45 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 18:53:46 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 18:53:46 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:53:48 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:53:48 server.go:446: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:53:48 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:53:48 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:53:48 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:53:53 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 18:53:53 server.go:560: markWatch | Bad Request: Error 405. Incorrect input.
+INFO: 2022/02/14 18:53:53 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:53:53 server.go:580: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:53:53 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 18:56:29 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 18:56:29 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 18:56:30 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 18:56:30 server.go:66: /login request was received from cli
+INFO: 2022/02/14 18:56:32 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 18:56:32 server.go:446: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 18:56:32 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:56:32 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:56:32 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 18:56:35 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 18:56:35 server.go:560: markWatch | Bad Request: Error 405. Incorrect input.
+INFO: 2022/02/14 18:56:35 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 18:56:35 server.go:580: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 18:56:35 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 19:01:40 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 19:01:40 server.go:63: /signup request was received from cli
+ERROR: 2022/02/14 19:01:41 server.go:593: markWatch | Bad Request: Error 405. Method other than POST was used.
+INFO: 2022/02/14 19:01:41 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 19:01:54 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 19:01:54 server.go:66: /login request was received from cli
+INFO: 2022/02/14 19:01:59 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 19:01:59 server.go:446: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 19:01:59 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:01:59 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:01:59 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 19:02:04 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 19:02:04 server.go:453: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/14 19:02:04 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:02:04 server.go:457: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:02:04 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 19:02:08 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 19:02:08 server.go:453: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/14 19:02:08 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:02:08 server.go:457: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:02:08 server.go:75: /addWatch request was received from cli
+ERROR: 2022/02/14 19:02:15 server.go:593: markWatch | Bad Request: Error 405. Method other than POST was used.
+INFO: 2022/02/14 19:02:15 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 19:02:29 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 19:02:29 server.go:446: addWatch | Added breguet royal to the collection of User: gabe.
+INFO: 2022/02/14 19:02:29 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:02:29 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:02:29 server.go:75: /addWatch request was received from cli
+ERROR: 2022/02/14 19:02:34 server.go:593: markWatch | Bad Request: Error 405. Method other than POST was used.
+INFO: 2022/02/14 19:02:34 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 19:02:40 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 19:02:40 server.go:555: markWatch | breguet royal was marked as COLLECTED from the collection of User: gabe.
+WARNING: 2022/02/14 19:02:40 server.go:573: markWatch | breguet royal is not in the collection of User: gabe.
+INFO: 2022/02/14 19:02:40 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:02:40 server.go:578: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:02:40 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 19:03:44 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 19:03:44 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 19:03:45 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 19:03:45 server.go:66: /login request was received from cli
+INFO: 2022/02/14 19:03:47 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 19:03:47 server.go:446: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 19:03:47 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:03:47 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:03:47 server.go:75: /addWatch request was received from cli
+ERROR: 2022/02/14 19:03:52 server.go:593: markWatch | Bad Request: Error 405. Method other than POST was used.
+INFO: 2022/02/14 19:03:52 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 19:03:54 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 19:03:54 server.go:446: addWatch | Added breguet royal to the collection of User: gabe.
+INFO: 2022/02/14 19:03:54 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:03:54 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:03:54 server.go:75: /addWatch request was received from cli
+ERROR: 2022/02/14 19:03:57 server.go:593: markWatch | Bad Request: Error 405. Method other than POST was used.
+INFO: 2022/02/14 19:03:57 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 19:04:00 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 19:04:00 server.go:555: markWatch | breguet royal was marked as COLLECTED from the collection of User: gabe.
+WARNING: 2022/02/14 19:04:00 server.go:567: markWatch | breguet royal is not in the collection of User: gabe.
+INFO: 2022/02/14 19:04:00 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:04:00 server.go:578: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:04:00 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 19:04:30 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 19:04:30 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 19:04:34 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 19:04:34 server.go:66: /login request was received from cli
+INFO: 2022/02/14 19:04:37 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 19:04:37 server.go:446: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 19:04:37 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:04:37 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:04:37 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 19:04:41 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 19:04:41 server.go:446: addWatch | Added breguet royal to the collection of User: gabe.
+INFO: 2022/02/14 19:04:41 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:04:41 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:04:41 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 19:04:45 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 19:04:45 server.go:555: markWatch | breguet royal was marked as COLLECTED from the collection of User: gabe.
+INFO: 2022/02/14 19:04:45 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:04:45 server.go:578: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:04:45 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 19:05:28 server.go:135: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/14 19:05:28 server.go:541: markWatch | Attempted to mark a watch before logging in.
+INFO: 2022/02/14 19:05:28 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 19:05:32 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 19:05:32 server.go:63: /signup request was received from cli
+ERROR: 2022/02/14 19:05:33 server.go:593: markWatch | Bad Request: Error 405. Method other than POST was used.
+INFO: 2022/02/14 19:05:33 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 19:05:35 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 19:05:35 server.go:66: /login request was received from cli
+INFO: 2022/02/14 19:05:37 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 19:05:37 server.go:446: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 19:05:37 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:05:37 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:05:37 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 19:05:41 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 19:05:41 server.go:446: addWatch | Added breguet royal to the collection of User: gabe.
+INFO: 2022/02/14 19:05:41 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:05:41 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:05:41 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 19:05:44 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 19:05:44 server.go:453: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/14 19:05:44 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:05:44 server.go:457: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:05:44 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 19:06:06 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 19:06:06 server.go:555: markWatch | breguet royal was marked as COLLECTED from the collection of User: gabe.
+INFO: 2022/02/14 19:06:06 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:06:06 server.go:578: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:06:06 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 19:06:12 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 19:06:12 server.go:559: markWatch | breguet royal was marked as NOT COLLECTED from the collection of User: gabe.
+INFO: 2022/02/14 19:06:12 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:06:12 server.go:578: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:06:12 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 19:07:37 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 19:07:37 server.go:63: /signup request was received from cli
+ERROR: 2022/02/14 19:07:39 server.go:593: markWatch | Bad Request: Error 405. Method other than POST was used.
+INFO: 2022/02/14 19:07:39 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 19:07:44 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 19:07:44 server.go:66: /login request was received from cli
+INFO: 2022/02/14 19:07:47 server.go:135: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/14 19:07:47 server.go:547: markWatch | Bad Request: Error 405. Incorrect input.
+INFO: 2022/02/14 19:07:47 server.go:81: /markWatch request was received from cli
+ERROR: 2022/02/14 19:07:53 server.go:593: markWatch | Bad Request: Error 405. Method other than POST was used.
+INFO: 2022/02/14 19:07:53 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 19:08:01 server.go:135: logCheck | Login check boolean and index was sent.
+WARNING: 2022/02/14 19:08:01 server.go:567: markWatch | breguet royal is not in the collection of User: gabe.
+WARNING: 2022/02/14 19:08:01 server.go:582: markWatch | Watch collection is currently empty.
+INFO: 2022/02/14 19:08:01 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 19:08:16 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 19:08:16 server.go:446: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 19:08:16 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:08:16 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:08:16 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 19:08:24 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 19:08:24 server.go:446: addWatch | Added breguet royal to the collection of User: gabe.
+INFO: 2022/02/14 19:08:24 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:08:24 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:08:24 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 19:08:28 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 19:08:28 server.go:555: markWatch | breguet royal was marked as COLLECTED from the collection of User: gabe.
+INFO: 2022/02/14 19:08:28 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:08:28 server.go:578: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:08:28 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 19:08:33 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 19:08:33 server.go:559: markWatch | breguet royal was marked as NOT COLLECTED from the collection of User: gabe.
+INFO: 2022/02/14 19:08:33 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:08:33 server.go:578: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:08:33 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 19:08:38 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 19:08:38 server.go:555: markWatch | breguet royal was marked as COLLECTED from the collection of User: gabe.
+INFO: 2022/02/14 19:08:38 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:08:38 server.go:578: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:08:38 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 19:09:54 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 19:09:54 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 19:09:56 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 19:09:56 server.go:66: /login request was received from cli
+INFO: 2022/02/14 19:09:58 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 19:09:58 server.go:446: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 19:09:58 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:09:58 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:09:58 server.go:75: /addWatch request was received from cli
+ERROR: 2022/02/14 19:10:00 server.go:596: markWatch | Bad Request: Error 405. Method other than POST was used.
+INFO: 2022/02/14 19:10:00 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 19:10:04 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 19:10:04 server.go:446: addWatch | Added breguet royal to the collection of User: gabe.
+INFO: 2022/02/14 19:10:04 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:10:04 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:10:04 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 19:10:08 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 19:10:08 server.go:557: markWatch | breguet royal was marked as COLLECTED from the collection of User: gabe.
+INFO: 2022/02/14 19:10:08 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:10:08 server.go:581: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:10:08 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 19:10:12 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 19:10:12 server.go:562: markWatch | breguet royal was marked as NOT COLLECTED from the collection of User: gabe.
+INFO: 2022/02/14 19:10:12 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:10:12 server.go:581: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:10:12 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 19:11:08 server.go:167: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/14 19:11:08 server.go:63: /signup request was received from cli
+INFO: 2022/02/14 19:11:10 server.go:230: login | gabe succesfully logged in.
+INFO: 2022/02/14 19:11:10 server.go:66: /login request was received from cli
+INFO: 2022/02/14 19:11:12 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 19:11:12 server.go:446: addWatch | Added rolex submariner to the collection of User: gabe.
+INFO: 2022/02/14 19:11:12 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:11:12 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:11:12 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 19:14:35 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 19:14:35 server.go:446: addWatch | Added breguet royal to the collection of User: gabe.
+INFO: 2022/02/14 19:14:35 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:14:35 server.go:450: addWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:14:35 server.go:75: /addWatch request was received from cli
+INFO: 2022/02/14 19:14:40 server.go:135: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/14 19:14:40 server.go:557: markWatch | breguet royal was marked as COLLECTED from the collection of User: gabe.
+INFO: 2022/02/14 19:14:40 server.go:122: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/14 19:14:40 server.go:581: markWatch | Current watch collection of User: gabe was displayed.
+INFO: 2022/02/14 19:14:40 server.go:81: /markWatch request was received from cli
+INFO: 2022/02/14 20:26:24 server.go:66: /login request was received from cli
+INFO: 2022/02/14 20:32:00 server.go:167: signup | User: user was successfully added to the database.
+INFO: 2022/02/14 20:32:00 server.go:63: /signup request was received from cli
+ERROR: 2022/02/14 20:32:07 server.go:88: 
+
+
+Bad Request: Error 404. url /login was not found on this server.
+INFO: 2022/02/14 20:32:31 server.go:173: signup | User: user was successfully added to the database.
+INFO: 2022/02/14 20:32:31 server.go:67: /signup request was received from cli
+INFO: 2022/02/14 20:32:33 server.go:237: login | user succesfully logged in.
+INFO: 2022/02/14 20:32:33 server.go:70: /login request was received from cli
+INFO: 2022/02/14 20:32:40 server.go:311: logout | na succesfully logged out
+.
+INFO: 2022/02/14 20:32:40 server.go:73: /logout request was received from cli
+INFO: 2022/02/14 21:59:31 server.go:173: signup | User: user was successfully added to the database.
+INFO: 2022/02/14 21:59:31 server.go:67: /signup request was received from cli
+INFO: 2022/02/14 21:59:36 server.go:237: login | user succesfully logged in.
+INFO: 2022/02/14 21:59:36 server.go:70: /login request was received from cli
+INFO: 2022/02/14 22:00:17 server.go:311: logout | na succesfully logged out
+.
+INFO: 2022/02/14 22:00:17 server.go:73: /logout request was received from cli
+ERROR: 2022/02/14 22:07:38 server.go:176: signup | Bad Request: Error 405. Incorrect input.
+INFO: 2022/02/14 22:07:38 server.go:67: /signup request was received from cli
+ERROR: 2022/02/14 22:07:50 server.go:176: signup | Bad Request: Error 405. Incorrect input.
+INFO: 2022/02/14 22:07:50 server.go:67: /signup request was received from cli
+ERROR: 2022/02/14 22:07:53 server.go:263: login | Error 400: Bad Request. Account does not exist.
+INFO: 2022/02/14 22:07:53 server.go:70: /login request was received from cli
+ERROR: 2022/02/14 22:07:58 server.go:263: login | Error 400: Bad Request. Account does not exist.
+INFO: 2022/02/14 22:07:58 server.go:70: /login request was received from cli
+ERROR: 2022/02/14 22:08:02 server.go:176: signup | Bad Request: Error 405. Incorrect input.
+INFO: 2022/02/14 22:08:02 server.go:67: /signup request was received from cli
+ERROR: 2022/02/14 22:08:21 server.go:176: signup | Bad Request: Error 405. Incorrect input.
+INFO: 2022/02/14 22:08:21 server.go:67: /signup request was received from cli
+INFO: 2022/02/14 22:08:44 server.go:173: signup | User: test was successfully added to the database.
+INFO: 2022/02/14 22:08:44 server.go:67: /signup request was received from cli
+ERROR: 2022/02/14 22:08:49 server.go:92: 
+
+
+Bad Request: Error 404. url /user was not found on this server.
+INFO: 2022/02/14 22:08:59 server.go:70: /login request was received from cli
+ERROR: 2022/02/14 22:18:34 server.go:176: signup | Bad Request: Error 405. Incorrect input.
+INFO: 2022/02/14 22:18:34 server.go:67: /signup request was received from cli
+ERROR: 2022/02/14 22:27:46 server.go:280: login | Error 400: Bad Request. Account does not exist.
+INFO: 2022/02/14 22:27:46 server.go:87: /login request was received from cli
+ERROR: 2022/02/14 22:27:57 server.go:193: signup | Bad Request: Error 405. Incorrect input.
+INFO: 2022/02/14 22:27:57 server.go:84: /signup request was received from cli
+ERROR: 2022/02/14 22:27:59 server.go:280: login | Error 400: Bad Request. Account does not exist.
+INFO: 2022/02/14 22:27:59 server.go:87: /login request was received from cli
+INFO: 2022/02/15 10:43:38 server.go:193: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/15 10:43:38 server.go:87: /signup request was received from cli
+INFO: 2022/02/15 10:43:45 server.go:193: signup | User: test was successfully added to the database.
+INFO: 2022/02/15 10:43:45 server.go:87: /signup request was received from cli
+INFO: 2022/02/15 10:43:53 server.go:193: signup | User: user was successfully added to the database.
+INFO: 2022/02/15 10:43:53 server.go:87: /signup request was received from cli
+INFO: 2022/02/15 10:44:00 server.go:257: login | user succesfully logged in.
+INFO: 2022/02/15 10:44:00 server.go:90: /login request was received from cli
+INFO: 2022/02/15 10:46:10 server.go:161: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/15 10:46:10 server.go:476: addWatch | Added Rolex Explorer to the collection of User: user.
+INFO: 2022/02/15 10:46:10 server.go:147: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 10:46:10 server.go:480: addWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/15 10:46:10 server.go:99: /addWatch request was received from cli
+INFO: 2022/02/15 10:47:36 server.go:161: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/15 10:47:36 server.go:476: addWatch | Added AudemarsPiguet RoyalOak to the collection of User: user.
+INFO: 2022/02/15 10:47:36 server.go:147: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 10:47:36 server.go:480: addWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/15 10:47:36 server.go:99: /addWatch request was received from cli
+INFO: 2022/02/15 10:50:25 server.go:90: /login request was received from cli
+INFO: 2022/02/15 10:50:43 server.go:193: signup | User: gabe was successfully added to the database.
+INFO: 2022/02/15 10:50:43 server.go:87: /signup request was received from cli
+INFO: 2022/02/15 10:50:44 server.go:193: signup | User: test was successfully added to the database.
+INFO: 2022/02/15 10:50:44 server.go:87: /signup request was received from cli
+INFO: 2022/02/15 10:50:46 server.go:193: signup | User: user was successfully added to the database.
+INFO: 2022/02/15 10:50:46 server.go:87: /signup request was received from cli
+INFO: 2022/02/15 10:50:47 server.go:90: /login request was received from cli
+INFO: 2022/02/15 10:50:51 server.go:257: login | user succesfully logged in.
+INFO: 2022/02/15 10:50:51 server.go:90: /login request was received from cli
+INFO: 2022/02/15 10:51:02 server.go:264: login | user succesfully logged in.
+INFO: 2022/02/15 10:51:02 server.go:90: /login request was received from cli
+INFO: 2022/02/15 10:51:06 server.go:90: /login request was received from cli
+INFO: 2022/02/15 10:51:26 server.go:161: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/15 10:51:26 server.go:476: addWatch | Added Rolex Explorer to the collection of User: user.
+INFO: 2022/02/15 10:51:26 server.go:147: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 10:51:26 server.go:480: addWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/15 10:51:26 server.go:99: /addWatch request was received from cli
+INFO: 2022/02/15 10:51:44 server.go:161: logCheck | Login check boolean and index was sent.
+ERROR: 2022/02/15 10:51:44 server.go:483: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/15 10:51:44 server.go:147: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 10:51:44 server.go:487: addWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/15 10:51:44 server.go:99: /addWatch request was received from cli
+INFO: 2022/02/15 10:51:54 server.go:161: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/15 10:51:54 server.go:476: addWatch | Added AudemarsPiguet RoyalOak to the collection of User: user.
+INFO: 2022/02/15 10:51:54 server.go:147: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 10:51:54 server.go:480: addWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/15 10:51:54 server.go:99: /addWatch request was received from cli
+INFO: 2022/02/15 10:57:43 server.go:90: /login request was received from cli
+INFO: 2022/02/15 10:57:56 server.go:161: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/15 10:57:56 server.go:476: addWatch | Added Tissot PRX to the collection of User: user.
+INFO: 2022/02/15 10:57:56 server.go:147: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 10:57:56 server.go:480: addWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/15 10:57:56 server.go:99: /addWatch request was received from cli
+INFO: 2022/02/15 10:58:07 server.go:161: logCheck | Login check boolean and index was sent.
+INFO: 2022/02/15 10:58:07 server.go:589: markWatch | Tissot PRX was marked as COLLECTED from the collection of User: user.
+INFO: 2022/02/15 10:58:07 server.go:147: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/15 10:58:07 server.go:613: markWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/15 10:58:07 server.go:105: /markWatch request was received from cli
+INFO: 2022/02/15 10:58:13 server.go:90: /login request was received from cli
