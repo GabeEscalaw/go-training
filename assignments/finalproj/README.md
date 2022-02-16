@@ -30,16 +30,16 @@ Main Features:
 6. `-delW=` delete an existing watch from the user's collection database with `-brand=` `-model=` and display current collection
 7. `-mark=` mark an existing watch from the user's collection database with `-brand=` `-model=` to mark it as COLLECTED if not yet collected and vice verse, as well as displaying current collection
 
-| Commands | Required Inputs (after -cmd="command")                |
-| -------- | ----------------------------------------------------- |
-| `in`     | `-u=username -p=password`                             |
-| `out`    | ` `                                                    |
-| `reg`    | `-u=username -p=password`                             |
-| `del`    | `-u=username -p=password`                             |
-| `list`   | ``                                                    |
-| `addW`   | `-brand=brand -model=model -width=width -price=price` |
-| `delW`   | `-brand=brand -model=model`                           |
-| `mark`   | `-brand=brand -model=model`                           |
+| Commands | Required Inputs (after -cmd="command")                      |
+| -------- | ----------------------------------------------------------- |
+| `in`     | `-u=username` `-p=password`                                 |
+| `out`    | ` `                                                         |
+| `reg`    | `-u=username` `-p=password`                                 |
+| `del`    | `-u=username` `-p=password`                                 |
+| `list`   | ` `                                                         |
+| `addW`   | `-brand=brand` `-model=model` `-width=width` `-price=price` |
+| `delW`   | `-brand=brand` `-model=model`                               |
+| `mark`   | `-brand=brand` `-model=model`                               |
 
 Notes:
 

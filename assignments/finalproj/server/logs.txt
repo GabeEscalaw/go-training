@@ -2984,3 +2984,4 @@ INFO: 2022/02/16 17:16:49 main.go:63: databaseReader | Database was read
 INFO: 2022/02/16 17:16:49 main.go:410: delete | User user was deleted from the database.
 INFO: 2022/02/16 17:16:49 main.go:74: databaseWriter | Database was updated
 INFO: 2022/02/16 17:16:49 main.go:114: handler | /delete request was received from cli
+INFO: 2022/02/16 17:23:31 main.go:63: databaseReader | Database was read
