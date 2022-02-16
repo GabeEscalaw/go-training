@@ -2452,3 +2452,535 @@ INFO: 2022/02/16 11:27:32 main.go:63: databaseReader | Database was read
 INFO: 2022/02/16 11:27:32 main.go:211: signup | User: user4 was successfully added to the database.
 INFO: 2022/02/16 11:27:32 main.go:74: databaseWriter | Database was updated
 INFO: 2022/02/16 11:27:32 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 15:33:08 main.go:65: databaseReader | Database was read
+INFO: 2022/02/16 15:34:24 main.go:66: databaseReader | Database was read
+INFO: 2022/02/16 15:34:40 main.go:66: databaseReader | Database was read
+INFO: 2022/02/16 15:35:21 main.go:66: databaseReader | Database was read
+INFO: 2022/02/16 15:35:21 main.go:214: signup | User: username was successfully added to the database.
+INFO: 2022/02/16 15:35:21 main.go:77: databaseWriter | Database was updated
+INFO: 2022/02/16 15:35:21 main.go:108: handler | /signup request was received from cli
+INFO: 2022/02/16 15:35:34 main.go:66: databaseReader | Database was read
+ERROR: 2022/02/16 15:35:34 main.go:205: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/16 15:35:34 main.go:77: databaseWriter | Database was updated
+INFO: 2022/02/16 15:35:34 main.go:108: handler | /signup request was received from cli
+INFO: 2022/02/16 15:37:00 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 15:37:06 main.go:63: databaseReader | Database was read
+ERROR: 2022/02/16 15:37:06 main.go:202: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/16 15:37:06 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 15:37:06 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 15:37:40 main.go:65: databaseReader | Database was read
+INFO: 2022/02/16 15:37:47 main.go:65: databaseReader | Database was read
+INFO: 2022/02/16 15:37:47 main.go:213: signup | User: username was successfully added to the database.
+INFO: 2022/02/16 15:37:47 main.go:76: databaseWriter | Database was updated
+INFO: 2022/02/16 15:37:47 main.go:107: handler | /signup request was received from cli
+INFO: 2022/02/16 15:37:49 main.go:65: databaseReader | Database was read
+ERROR: 2022/02/16 15:37:49 main.go:204: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/16 15:37:49 main.go:76: databaseWriter | Database was updated
+INFO: 2022/02/16 15:37:49 main.go:107: handler | /signup request was received from cli
+INFO: 2022/02/16 15:37:56 main.go:65: databaseReader | Database was read
+INFO: 2022/02/16 15:38:02 main.go:65: databaseReader | Database was read
+INFO: 2022/02/16 15:38:02 main.go:213: signup | User: username was successfully added to the database.
+INFO: 2022/02/16 15:38:02 main.go:76: databaseWriter | Database was updated
+INFO: 2022/02/16 15:38:02 main.go:107: handler | /signup request was received from cli
+INFO: 2022/02/16 15:38:27 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 15:38:35 main.go:63: databaseReader | Database was read
+ERROR: 2022/02/16 15:38:35 main.go:202: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/16 15:38:35 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 15:38:35 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 16:08:17 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:10:20 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:10:20 main.go:211: signup | User: user was successfully added to the database.
+INFO: 2022/02/16 16:10:20 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:10:20 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 16:10:34 main.go:63: databaseReader | Database was read
+ERROR: 2022/02/16 16:10:34 main.go:202: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/16 16:10:34 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:10:34 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 16:10:49 main.go:63: databaseReader | Database was read
+ERROR: 2022/02/16 16:10:49 main.go:202: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/16 16:10:49 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:10:49 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 16:10:56 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:10:56 main.go:211: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/16 16:10:56 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:10:56 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 16:11:03 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:11:03 main.go:294: login | user2 succesfully logged in.
+INFO: 2022/02/16 16:11:03 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:11:03 main.go:108: handler | /login request was received from cli
+INFO: 2022/02/16 16:11:09 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:11:09 main.go:351: logout | na succesfully logged out
+.
+INFO: 2022/02/16 16:11:09 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:11:09 main.go:111: handler | /logout request was received from cli
+INFO: 2022/02/16 16:11:14 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:11:14 main.go:294: login | user2 succesfully logged in.
+INFO: 2022/02/16 16:11:14 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:11:14 main.go:108: handler | /login request was received from cli
+INFO: 2022/02/16 16:11:54 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:11:54 main.go:516: addWatch | Added Rolex submariner to the collection of User: user2.
+INFO: 2022/02/16 16:11:54 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:11:54 main.go:520: addWatch | Current watch collection of User: user2 was displayed.
+INFO: 2022/02/16 16:11:54 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:11:54 main.go:117: handler | /addWatch request was received from cli
+INFO: 2022/02/16 16:12:23 main.go:63: databaseReader | Database was read
+ERROR: 2022/02/16 16:12:23 main.go:523: addWatch | Bad Request: Error 405. User attempted to add a watch that's already part of their collection.
+INFO: 2022/02/16 16:12:23 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:12:23 main.go:527: addWatch | Current watch collection of User: user2 was displayed.
+INFO: 2022/02/16 16:12:23 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:12:23 main.go:117: handler | /addWatch request was received from cli
+INFO: 2022/02/16 16:12:47 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:12:47 main.go:516: addWatch | Added Rolex Explorer to the collection of User: user2.
+INFO: 2022/02/16 16:12:47 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:12:47 main.go:520: addWatch | Current watch collection of User: user2 was displayed.
+INFO: 2022/02/16 16:12:47 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:12:47 main.go:117: handler | /addWatch request was received from cli
+ERROR: 2022/02/16 16:12:59 main.go:130: 
+
+
+Bad Request: Error 404. url /markW was not found on this server.
+INFO: 2022/02/16 16:13:06 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:13:06 main.go:643: markWatch | Rolex Explorer was marked as COLLECTED from the collection of User: user2.
+INFO: 2022/02/16 16:13:06 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:13:06 main.go:668: markWatch | Current watch collection of User: user2 was displayed.
+INFO: 2022/02/16 16:13:06 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:13:06 main.go:123: handler | /markWatch request was received from cli
+INFO: 2022/02/16 16:13:30 main.go:63: databaseReader | Database was read
+ERROR: 2022/02/16 16:13:30 main.go:425: delete | Error 400: Bad Request. User to delete was not found.
+INFO: 2022/02/16 16:13:30 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:13:30 main.go:114: handler | /delete request was received from cli
+INFO: 2022/02/16 16:13:36 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:13:36 main.go:577: removeWatch | Removed Rolex Explorer from the collection of User: user2.
+INFO: 2022/02/16 16:13:36 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:13:36 main.go:590: removeWatch | Current watch collection of User: user2 was displayed.
+INFO: 2022/02/16 16:13:36 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:13:36 main.go:120: handler | /removeWatch request was received from cli
+INFO: 2022/02/16 16:15:49 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:16:50 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:16:50 main.go:211: signup | User: test was successfully added to the database.
+INFO: 2022/02/16 16:16:50 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:16:50 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 16:16:56 main.go:63: databaseReader | Database was read
+ERROR: 2022/02/16 16:16:56 main.go:202: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/16 16:16:56 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:16:56 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 16:17:04 main.go:63: databaseReader | Database was read
+ERROR: 2022/02/16 16:17:04 main.go:303: login | Error 400: Bad Request. Attempted to log in a different account without logging out.
+INFO: 2022/02/16 16:17:04 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:17:04 main.go:108: handler | /login request was received from cli
+INFO: 2022/02/16 16:17:11 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:17:11 main.go:351: logout | na succesfully logged out
+.
+INFO: 2022/02/16 16:17:11 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:17:11 main.go:111: handler | /logout request was received from cli
+INFO: 2022/02/16 16:17:13 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:17:13 main.go:294: login | test succesfully logged in.
+INFO: 2022/02/16 16:17:13 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:17:13 main.go:108: handler | /login request was received from cli
+INFO: 2022/02/16 16:17:22 main.go:63: databaseReader | Database was read
+WARNING: 2022/02/16 16:17:22 main.go:463: watchList | Watch collection is currently empty.
+INFO: 2022/02/16 16:17:22 main.go:126: handler | /watchList request was received from cli
+INFO: 2022/02/16 16:17:48 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:17:48 main.go:516: addWatch | Added rolex explorer to the collection of User: test.
+INFO: 2022/02/16 16:17:48 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:17:48 main.go:520: addWatch | Current watch collection of User: test was displayed.
+INFO: 2022/02/16 16:17:48 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:17:48 main.go:117: handler | /addWatch request was received from cli
+INFO: 2022/02/16 16:18:16 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:18:16 main.go:643: markWatch | rolex explorer was marked as COLLECTED from the collection of User: test.
+INFO: 2022/02/16 16:18:16 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:18:16 main.go:668: markWatch | Current watch collection of User: test was displayed.
+INFO: 2022/02/16 16:18:16 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:18:16 main.go:123: handler | /markWatch request was received from cli
+INFO: 2022/02/16 16:18:57 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:22:35 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:23:18 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:23:18 main.go:211: signup | User: testUser was successfully added to the database.
+INFO: 2022/02/16 16:23:18 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:23:18 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 16:23:31 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:23:31 main.go:294: login | testUser succesfully logged in.
+INFO: 2022/02/16 16:23:31 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:23:31 main.go:108: handler | /login request was received from cli
+INFO: 2022/02/16 16:24:17 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:24:17 main.go:516: addWatch | Added Rolex Explorer to the collection of User: testUser.
+INFO: 2022/02/16 16:24:17 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:24:17 main.go:520: addWatch | Current watch collection of User: testUser was displayed.
+INFO: 2022/02/16 16:24:17 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:24:17 main.go:117: handler | /addWatch request was received from cli
+INFO: 2022/02/16 16:24:34 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:24:34 main.go:516: addWatch | Added Rolex Submariner to the collection of User: testUser.
+INFO: 2022/02/16 16:24:34 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:24:34 main.go:520: addWatch | Current watch collection of User: testUser was displayed.
+INFO: 2022/02/16 16:24:34 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:24:34 main.go:117: handler | /addWatch request was received from cli
+INFO: 2022/02/16 16:25:07 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:25:07 main.go:643: markWatch | Rolex Submariner was marked as COLLECTED from the collection of User: testUser.
+INFO: 2022/02/16 16:25:07 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:25:07 main.go:668: markWatch | Current watch collection of User: testUser was displayed.
+INFO: 2022/02/16 16:25:07 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:25:07 main.go:123: handler | /markWatch request was received from cli
+ERROR: 2022/02/16 16:25:18 main.go:130: 
+
+
+Bad Request: Error 404. url /mdelW was not found on this server.
+ERROR: 2022/02/16 16:25:22 main.go:130: 
+
+
+Bad Request: Error 404. url /DelW was not found on this server.
+INFO: 2022/02/16 16:25:26 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:25:26 main.go:577: removeWatch | Removed Rolex Submariner from the collection of User: testUser.
+INFO: 2022/02/16 16:25:26 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:25:26 main.go:590: removeWatch | Current watch collection of User: testUser was displayed.
+INFO: 2022/02/16 16:25:26 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:25:26 main.go:120: handler | /removeWatch request was received from cli
+INFO: 2022/02/16 16:25:31 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:25:31 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:25:31 main.go:468: watchList | Current watch collection of User: testUser was displayed.
+INFO: 2022/02/16 16:25:31 main.go:126: handler | /watchList request was received from cli
+INFO: 2022/02/16 16:25:38 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:25:38 main.go:351: logout | na succesfully logged out
+.
+INFO: 2022/02/16 16:25:38 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:25:38 main.go:111: handler | /logout request was received from cli
+INFO: 2022/02/16 16:25:48 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:25:48 main.go:410: delete | User testUser was deleted from the database.
+INFO: 2022/02/16 16:25:48 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:25:48 main.go:114: handler | /delete request was received from cli
+INFO: 2022/02/16 16:30:04 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:30:36 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:30:36 main.go:211: signup | User: test was successfully added to the database.
+INFO: 2022/02/16 16:30:36 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:30:36 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 16:30:46 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:30:46 main.go:294: login | test succesfully logged in.
+INFO: 2022/02/16 16:30:46 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:30:46 main.go:108: handler | /login request was received from cli
+INFO: 2022/02/16 16:30:56 main.go:63: databaseReader | Database was read
+WARNING: 2022/02/16 16:30:56 main.go:463: watchList | Watch collection is currently empty.
+INFO: 2022/02/16 16:30:56 main.go:126: handler | /watchList request was received from cli
+INFO: 2022/02/16 16:31:25 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:31:25 main.go:516: addWatch | Added Rolex Explorer to the collection of User: test.
+INFO: 2022/02/16 16:31:25 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:31:25 main.go:520: addWatch | Current watch collection of User: test was displayed.
+INFO: 2022/02/16 16:31:25 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:31:25 main.go:117: handler | /addWatch request was received from cli
+INFO: 2022/02/16 16:31:42 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:31:42 main.go:516: addWatch | Added Rolex Submariner to the collection of User: test.
+INFO: 2022/02/16 16:31:42 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:31:42 main.go:520: addWatch | Current watch collection of User: test was displayed.
+INFO: 2022/02/16 16:31:42 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:31:42 main.go:117: handler | /addWatch request was received from cli
+INFO: 2022/02/16 16:32:02 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:32:02 main.go:643: markWatch | Rolex Submariner was marked as COLLECTED from the collection of User: test.
+INFO: 2022/02/16 16:32:02 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:32:02 main.go:668: markWatch | Current watch collection of User: test was displayed.
+INFO: 2022/02/16 16:32:02 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:32:02 main.go:123: handler | /markWatch request was received from cli
+INFO: 2022/02/16 16:32:14 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:32:14 main.go:577: removeWatch | Removed Rolex Submariner from the collection of User: test.
+INFO: 2022/02/16 16:32:14 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:32:14 main.go:590: removeWatch | Current watch collection of User: test was displayed.
+INFO: 2022/02/16 16:32:14 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:32:14 main.go:120: handler | /removeWatch request was received from cli
+INFO: 2022/02/16 16:32:24 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:32:24 main.go:351: logout | na succesfully logged out
+.
+INFO: 2022/02/16 16:32:24 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:32:24 main.go:111: handler | /logout request was received from cli
+INFO: 2022/02/16 16:32:38 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:32:38 main.go:410: delete | User test was deleted from the database.
+INFO: 2022/02/16 16:32:38 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:32:38 main.go:114: handler | /delete request was received from cli
+INFO: 2022/02/16 16:36:42 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:37:12 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:37:12 main.go:211: signup | User: user was successfully added to the database.
+INFO: 2022/02/16 16:37:12 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:37:12 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 16:37:24 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:37:24 main.go:294: login | user succesfully logged in.
+INFO: 2022/02/16 16:37:24 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:37:24 main.go:108: handler | /login request was received from cli
+INFO: 2022/02/16 16:37:32 main.go:63: databaseReader | Database was read
+WARNING: 2022/02/16 16:37:32 main.go:463: watchList | Watch collection is currently empty.
+INFO: 2022/02/16 16:37:32 main.go:126: handler | /watchList request was received from cli
+INFO: 2022/02/16 16:38:05 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:38:05 main.go:516: addWatch | Added Rolex Submariner to the collection of User: user.
+INFO: 2022/02/16 16:38:05 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:38:05 main.go:520: addWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/16 16:38:05 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:38:05 main.go:117: handler | /addWatch request was received from cli
+INFO: 2022/02/16 16:38:17 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:38:17 main.go:516: addWatch | Added Rolex Explorer to the collection of User: user.
+INFO: 2022/02/16 16:38:17 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:38:17 main.go:520: addWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/16 16:38:17 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:38:17 main.go:117: handler | /addWatch request was received from cli
+INFO: 2022/02/16 16:38:32 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:38:32 main.go:643: markWatch | Rolex Explorer was marked as COLLECTED from the collection of User: user.
+INFO: 2022/02/16 16:38:32 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:38:32 main.go:668: markWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/16 16:38:32 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:38:32 main.go:123: handler | /markWatch request was received from cli
+INFO: 2022/02/16 16:38:39 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:38:39 main.go:577: removeWatch | Removed Rolex Explorer from the collection of User: user.
+INFO: 2022/02/16 16:38:39 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:38:39 main.go:590: removeWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/16 16:38:39 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:38:39 main.go:120: handler | /removeWatch request was received from cli
+INFO: 2022/02/16 16:38:47 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:38:47 main.go:351: logout | na succesfully logged out
+.
+INFO: 2022/02/16 16:38:47 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:38:47 main.go:111: handler | /logout request was received from cli
+INFO: 2022/02/16 16:39:00 main.go:63: databaseReader | Database was read
+ERROR: 2022/02/16 16:39:00 main.go:425: delete | Error 400: Bad Request. User to delete was not found.
+INFO: 2022/02/16 16:39:00 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:39:00 main.go:114: handler | /delete request was received from cli
+INFO: 2022/02/16 16:39:09 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:39:09 main.go:410: delete | User user was deleted from the database.
+INFO: 2022/02/16 16:39:09 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:39:09 main.go:114: handler | /delete request was received from cli
+INFO: 2022/02/16 16:42:34 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:43:08 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:43:08 main.go:211: signup | User: username was successfully added to the database.
+INFO: 2022/02/16 16:43:08 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:43:08 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 16:43:21 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:43:21 main.go:294: login | username succesfully logged in.
+INFO: 2022/02/16 16:43:21 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:43:21 main.go:108: handler | /login request was received from cli
+INFO: 2022/02/16 16:43:35 main.go:63: databaseReader | Database was read
+WARNING: 2022/02/16 16:43:35 main.go:463: watchList | Watch collection is currently empty.
+INFO: 2022/02/16 16:43:35 main.go:126: handler | /watchList request was received from cli
+INFO: 2022/02/16 16:43:59 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:43:59 main.go:516: addWatch | Added Rolex Explorer to the collection of User: username.
+INFO: 2022/02/16 16:43:59 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:43:59 main.go:520: addWatch | Current watch collection of User: username was displayed.
+INFO: 2022/02/16 16:43:59 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:43:59 main.go:117: handler | /addWatch request was received from cli
+INFO: 2022/02/16 16:44:12 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:44:12 main.go:516: addWatch | Added Rolex Submariner to the collection of User: username.
+INFO: 2022/02/16 16:44:12 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:44:12 main.go:520: addWatch | Current watch collection of User: username was displayed.
+INFO: 2022/02/16 16:44:12 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:44:12 main.go:117: handler | /addWatch request was received from cli
+INFO: 2022/02/16 16:44:30 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:44:30 main.go:643: markWatch | Rolex Submariner was marked as COLLECTED from the collection of User: username.
+INFO: 2022/02/16 16:44:30 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:44:30 main.go:668: markWatch | Current watch collection of User: username was displayed.
+INFO: 2022/02/16 16:44:30 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:44:30 main.go:123: handler | /markWatch request was received from cli
+INFO: 2022/02/16 16:44:44 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:44:44 main.go:577: removeWatch | Removed Rolex Submariner from the collection of User: username.
+INFO: 2022/02/16 16:44:44 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:44:44 main.go:590: removeWatch | Current watch collection of User: username was displayed.
+INFO: 2022/02/16 16:44:44 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:44:44 main.go:120: handler | /removeWatch request was received from cli
+INFO: 2022/02/16 16:44:52 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:44:52 main.go:351: logout | na succesfully logged out
+.
+INFO: 2022/02/16 16:44:52 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:44:52 main.go:111: handler | /logout request was received from cli
+INFO: 2022/02/16 16:45:04 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:45:04 main.go:410: delete | User username was deleted from the database.
+INFO: 2022/02/16 16:45:04 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:45:04 main.go:114: handler | /delete request was received from cli
+INFO: 2022/02/16 16:46:11 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:47:08 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:47:42 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:47:42 main.go:211: signup | User: user was successfully added to the database.
+INFO: 2022/02/16 16:47:42 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:47:42 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 16:47:55 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:47:55 main.go:294: login | user succesfully logged in.
+INFO: 2022/02/16 16:47:55 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:47:55 main.go:108: handler | /login request was received from cli
+INFO: 2022/02/16 16:48:06 main.go:63: databaseReader | Database was read
+WARNING: 2022/02/16 16:48:06 main.go:463: watchList | Watch collection is currently empty.
+INFO: 2022/02/16 16:48:06 main.go:126: handler | /watchList request was received from cli
+INFO: 2022/02/16 16:48:31 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:48:31 main.go:516: addWatch | Added Rolex Explorer to the collection of User: user.
+INFO: 2022/02/16 16:48:31 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:48:31 main.go:520: addWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/16 16:48:31 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:48:31 main.go:117: handler | /addWatch request was received from cli
+INFO: 2022/02/16 16:48:43 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:48:43 main.go:516: addWatch | Added Rolex Submariner to the collection of User: user.
+INFO: 2022/02/16 16:48:43 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:48:43 main.go:520: addWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/16 16:48:43 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:48:43 main.go:117: handler | /addWatch request was received from cli
+INFO: 2022/02/16 16:48:58 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:48:58 main.go:643: markWatch | Rolex Submariner was marked as COLLECTED from the collection of User: user.
+INFO: 2022/02/16 16:48:58 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:48:58 main.go:668: markWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/16 16:48:58 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:48:58 main.go:123: handler | /markWatch request was received from cli
+INFO: 2022/02/16 16:49:27 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:49:27 main.go:577: removeWatch | Removed Rolex Submariner from the collection of User: user.
+INFO: 2022/02/16 16:49:27 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:49:27 main.go:590: removeWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/16 16:49:27 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:49:27 main.go:120: handler | /removeWatch request was received from cli
+INFO: 2022/02/16 16:49:41 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:49:41 main.go:351: logout | na succesfully logged out
+.
+INFO: 2022/02/16 16:49:41 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:49:41 main.go:111: handler | /logout request was received from cli
+INFO: 2022/02/16 16:49:52 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:49:52 main.go:410: delete | User user was deleted from the database.
+INFO: 2022/02/16 16:49:52 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:49:52 main.go:114: handler | /delete request was received from cli
+INFO: 2022/02/16 16:50:29 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:52:56 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:57:36 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:58:07 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:58:07 main.go:211: signup | User: user was successfully added to the database.
+INFO: 2022/02/16 16:58:07 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:58:07 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 16:58:19 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:58:19 main.go:294: login | user succesfully logged in.
+INFO: 2022/02/16 16:58:19 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:58:19 main.go:108: handler | /login request was received from cli
+INFO: 2022/02/16 16:58:26 main.go:63: databaseReader | Database was read
+WARNING: 2022/02/16 16:58:26 main.go:463: watchList | Watch collection is currently empty.
+INFO: 2022/02/16 16:58:26 main.go:126: handler | /watchList request was received from cli
+INFO: 2022/02/16 16:58:52 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:58:52 main.go:516: addWatch | Added Rolex Submariner to the collection of User: user.
+INFO: 2022/02/16 16:58:52 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:58:52 main.go:520: addWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/16 16:58:52 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:58:52 main.go:117: handler | /addWatch request was received from cli
+INFO: 2022/02/16 16:59:10 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:59:10 main.go:516: addWatch | Added Rolex Explorer to the collection of User: user.
+INFO: 2022/02/16 16:59:10 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:59:10 main.go:520: addWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/16 16:59:10 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:59:10 main.go:117: handler | /addWatch request was received from cli
+INFO: 2022/02/16 16:59:27 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:59:27 main.go:643: markWatch | Rolex Explorer was marked as COLLECTED from the collection of User: user.
+INFO: 2022/02/16 16:59:27 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:59:27 main.go:668: markWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/16 16:59:27 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:59:27 main.go:123: handler | /markWatch request was received from cli
+INFO: 2022/02/16 16:59:39 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:59:39 main.go:577: removeWatch | Removed Rolex Explorer from the collection of User: user.
+INFO: 2022/02/16 16:59:39 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 16:59:39 main.go:590: removeWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/16 16:59:39 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:59:39 main.go:120: handler | /removeWatch request was received from cli
+INFO: 2022/02/16 16:59:51 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 16:59:51 main.go:351: logout | na succesfully logged out
+.
+INFO: 2022/02/16 16:59:51 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 16:59:51 main.go:111: handler | /logout request was received from cli
+INFO: 2022/02/16 17:00:06 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 17:00:06 main.go:410: delete | User user was deleted from the database.
+INFO: 2022/02/16 17:00:06 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 17:00:06 main.go:114: handler | /delete request was received from cli
+INFO: 2022/02/16 17:01:06 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 17:01:52 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 17:02:26 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 17:02:26 main.go:211: signup | User: user was successfully added to the database.
+INFO: 2022/02/16 17:02:26 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 17:02:26 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 17:02:35 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 17:02:35 main.go:294: login | user succesfully logged in.
+INFO: 2022/02/16 17:02:35 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 17:02:35 main.go:108: handler | /login request was received from cli
+INFO: 2022/02/16 17:02:44 main.go:63: databaseReader | Database was read
+WARNING: 2022/02/16 17:02:44 main.go:463: watchList | Watch collection is currently empty.
+INFO: 2022/02/16 17:02:44 main.go:126: handler | /watchList request was received from cli
+INFO: 2022/02/16 17:03:13 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 17:03:13 main.go:516: addWatch | Added Rolex Submariner to the collection of User: user.
+INFO: 2022/02/16 17:03:13 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 17:03:13 main.go:520: addWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/16 17:03:13 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 17:03:13 main.go:117: handler | /addWatch request was received from cli
+INFO: 2022/02/16 17:03:27 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 17:03:27 main.go:516: addWatch | Added Rolex Explorer to the collection of User: user.
+INFO: 2022/02/16 17:03:27 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 17:03:27 main.go:520: addWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/16 17:03:27 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 17:03:27 main.go:117: handler | /addWatch request was received from cli
+INFO: 2022/02/16 17:03:42 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 17:03:42 main.go:643: markWatch | Rolex Explorer was marked as COLLECTED from the collection of User: user.
+INFO: 2022/02/16 17:03:42 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 17:03:42 main.go:668: markWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/16 17:03:42 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 17:03:42 main.go:123: handler | /markWatch request was received from cli
+INFO: 2022/02/16 17:03:53 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 17:03:53 main.go:577: removeWatch | Removed Rolex Explorer from the collection of User: user.
+INFO: 2022/02/16 17:03:53 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 17:03:53 main.go:590: removeWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/16 17:03:53 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 17:03:53 main.go:120: handler | /removeWatch request was received from cli
+INFO: 2022/02/16 17:04:06 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 17:04:06 main.go:351: logout | na succesfully logged out
+.
+INFO: 2022/02/16 17:04:06 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 17:04:06 main.go:111: handler | /logout request was received from cli
+INFO: 2022/02/16 17:04:22 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 17:04:22 main.go:410: delete | User user was deleted from the database.
+INFO: 2022/02/16 17:04:22 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 17:04:22 main.go:114: handler | /delete request was received from cli
+INFO: 2022/02/16 17:08:18 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 17:08:52 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 17:09:26 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 17:09:26 main.go:211: signup | User: user was successfully added to the database.
+INFO: 2022/02/16 17:09:26 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 17:09:26 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 17:09:44 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 17:09:44 main.go:294: login | user succesfully logged in.
+INFO: 2022/02/16 17:09:44 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 17:09:44 main.go:108: handler | /login request was received from cli
+INFO: 2022/02/16 17:09:51 main.go:63: databaseReader | Database was read
+WARNING: 2022/02/16 17:09:51 main.go:463: watchList | Watch collection is currently empty.
+INFO: 2022/02/16 17:09:51 main.go:126: handler | /watchList request was received from cli
+INFO: 2022/02/16 17:13:17 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 17:14:16 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 17:14:50 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 17:14:50 main.go:211: signup | User: user was successfully added to the database.
+INFO: 2022/02/16 17:14:50 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 17:14:50 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 17:15:00 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 17:15:00 main.go:294: login | user succesfully logged in.
+INFO: 2022/02/16 17:15:00 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 17:15:00 main.go:108: handler | /login request was received from cli
+INFO: 2022/02/16 17:15:11 main.go:63: databaseReader | Database was read
+WARNING: 2022/02/16 17:15:11 main.go:463: watchList | Watch collection is currently empty.
+INFO: 2022/02/16 17:15:11 main.go:126: handler | /watchList request was received from cli
+INFO: 2022/02/16 17:15:42 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 17:15:42 main.go:516: addWatch | Added Rolex Submariner to the collection of User: user.
+INFO: 2022/02/16 17:15:42 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 17:15:42 main.go:520: addWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/16 17:15:42 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 17:15:42 main.go:117: handler | /addWatch request was received from cli
+INFO: 2022/02/16 17:16:00 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 17:16:00 main.go:516: addWatch | Added Rolex Explorer to the collection of User: user.
+INFO: 2022/02/16 17:16:00 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 17:16:00 main.go:520: addWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/16 17:16:00 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 17:16:00 main.go:117: handler | /addWatch request was received from cli
+INFO: 2022/02/16 17:16:17 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 17:16:17 main.go:643: markWatch | Rolex Explorer was marked as COLLECTED from the collection of User: user.
+INFO: 2022/02/16 17:16:17 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 17:16:17 main.go:668: markWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/16 17:16:17 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 17:16:17 main.go:123: handler | /markWatch request was received from cli
+INFO: 2022/02/16 17:16:29 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 17:16:29 main.go:577: removeWatch | Removed Rolex Explorer from the collection of User: user.
+INFO: 2022/02/16 17:16:29 main.go:165: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 17:16:29 main.go:590: removeWatch | Current watch collection of User: user was displayed.
+INFO: 2022/02/16 17:16:29 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 17:16:29 main.go:120: handler | /removeWatch request was received from cli
+INFO: 2022/02/16 17:16:40 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 17:16:40 main.go:351: logout | na succesfully logged out
+.
+INFO: 2022/02/16 17:16:40 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 17:16:40 main.go:111: handler | /logout request was received from cli
+INFO: 2022/02/16 17:16:49 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 17:16:49 main.go:410: delete | User user was deleted from the database.
+INFO: 2022/02/16 17:16:49 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 17:16:49 main.go:114: handler | /delete request was received from cli
