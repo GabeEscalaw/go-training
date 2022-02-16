@@ -2302,3 +2302,153 @@ INFO: 2022/02/15 19:50:28 main.go:519: addWatch | Current watch collection of Us
 INFO: 2022/02/15 19:50:28 main.go:72: databaseWriter | Database was updated
 INFO: 2022/02/15 19:50:28 main.go:115: handler | /addWatch request was received from cli
 INFO: 2022/02/16 01:38:33 main.go:61: databaseReader | Database was read
+INFO: 2022/02/16 10:41:54 main.go:61: databaseReader | Database was read
+INFO: 2022/02/16 10:42:34 main.go:61: databaseReader | Database was read
+INFO: 2022/02/16 10:42:34 main.go:209: signup | User: user3 was successfully added to the database.
+INFO: 2022/02/16 10:42:34 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/16 10:42:34 main.go:103: handler | /signup request was received from cli
+INFO: 2022/02/16 10:42:43 main.go:61: databaseReader | Database was read
+ERROR: 2022/02/16 10:42:43 main.go:200: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/16 10:42:43 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/16 10:42:43 main.go:103: handler | /signup request was received from cli
+INFO: 2022/02/16 10:55:47 main.go:61: databaseReader | Database was read
+INFO: 2022/02/16 10:55:59 main.go:61: databaseReader | Database was read
+ERROR: 2022/02/16 10:55:59 main.go:298: login | Error 400: Bad Request. Account does not exist.
+INFO: 2022/02/16 10:55:59 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/16 10:55:59 main.go:106: handler | /login request was received from cli
+INFO: 2022/02/16 10:56:07 main.go:61: databaseReader | Database was read
+INFO: 2022/02/16 10:56:07 main.go:209: signup | User: user3 was successfully added to the database.
+INFO: 2022/02/16 10:56:07 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/16 10:56:07 main.go:103: handler | /signup request was received from cli
+INFO: 2022/02/16 10:56:13 main.go:61: databaseReader | Database was read
+INFO: 2022/02/16 10:56:13 main.go:292: login | user3 succesfully logged in.
+INFO: 2022/02/16 10:56:13 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/16 10:56:13 main.go:106: handler | /login request was received from cli
+INFO: 2022/02/16 10:59:23 main.go:61: databaseReader | Database was read
+INFO: 2022/02/16 10:59:23 main.go:514: addWatch | Added Rolex Submariner to the collection of User: user3.
+INFO: 2022/02/16 10:59:23 main.go:163: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 10:59:23 main.go:518: addWatch | Current watch collection of User: user3 was displayed.
+INFO: 2022/02/16 10:59:23 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/16 10:59:23 main.go:115: handler | /addWatch request was received from cli
+INFO: 2022/02/16 10:59:43 main.go:61: databaseReader | Database was read
+INFO: 2022/02/16 10:59:43 main.go:514: addWatch | Added Rolex Explorer to the collection of User: user3.
+INFO: 2022/02/16 10:59:43 main.go:163: displayCollection | Current watch collection list was sent.
+INFO: 2022/02/16 10:59:43 main.go:518: addWatch | Current watch collection of User: user3 was displayed.
+INFO: 2022/02/16 10:59:43 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/16 10:59:43 main.go:115: handler | /addWatch request was received from cli
+INFO: 2022/02/16 11:04:46 main.go:61: databaseReader | Database was read
+INFO: 2022/02/16 11:04:58 main.go:61: databaseReader | Database was read
+WARNING: 2022/02/16 11:04:58 main.go:357: logout | Attempted to log out while not logged in.
+INFO: 2022/02/16 11:04:58 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/16 11:04:58 main.go:109: handler | /logout request was received from cli
+INFO: 2022/02/16 11:05:09 main.go:61: databaseReader | Database was read
+INFO: 2022/02/16 11:05:09 main.go:209: signup | User: user3 was successfully added to the database.
+INFO: 2022/02/16 11:05:09 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/16 11:05:09 main.go:103: handler | /signup request was received from cli
+INFO: 2022/02/16 11:05:12 main.go:61: databaseReader | Database was read
+INFO: 2022/02/16 11:05:12 main.go:292: login | user3 succesfully logged in.
+INFO: 2022/02/16 11:05:12 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/16 11:05:12 main.go:106: handler | /login request was received from cli
+INFO: 2022/02/16 11:06:06 main.go:106: handler | /login request was received from cli
+INFO: 2022/02/16 11:07:19 main.go:61: databaseReader | Database was read
+ERROR: 2022/02/16 11:07:19 main.go:200: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/16 11:07:19 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/16 11:07:19 main.go:103: handler | /signup request was received from cli
+INFO: 2022/02/16 11:07:26 main.go:61: databaseReader | Database was read
+INFO: 2022/02/16 11:07:33 main.go:61: databaseReader | Database was read
+INFO: 2022/02/16 11:07:33 main.go:209: signup | User: user3 was successfully added to the database.
+INFO: 2022/02/16 11:07:33 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/16 11:07:33 main.go:103: handler | /signup request was received from cli
+INFO: 2022/02/16 11:12:16 main.go:61: databaseReader | Database was read
+INFO: 2022/02/16 11:12:26 main.go:61: databaseReader | Database was read
+INFO: 2022/02/16 11:12:26 main.go:209: signup | User: user3 was successfully added to the database.
+INFO: 2022/02/16 11:12:26 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/16 11:12:26 main.go:103: handler | /signup request was received from cli
+INFO: 2022/02/16 11:16:19 main.go:61: databaseReader | Database was read
+INFO: 2022/02/16 11:16:19 main.go:292: login | user3 succesfully logged in.
+INFO: 2022/02/16 11:16:19 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/16 11:16:19 main.go:106: handler | /login request was received from cli
+INFO: 2022/02/16 11:16:24 main.go:61: databaseReader | Database was read
+INFO: 2022/02/16 11:16:24 main.go:349: logout | na succesfully logged out
+.
+INFO: 2022/02/16 11:16:24 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/16 11:16:24 main.go:109: handler | /logout request was received from cli
+INFO: 2022/02/16 11:16:31 main.go:61: databaseReader | Database was read
+INFO: 2022/02/16 11:16:31 main.go:209: signup | User: user1 was successfully added to the database.
+INFO: 2022/02/16 11:16:31 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/16 11:16:31 main.go:103: handler | /signup request was received from cli
+INFO: 2022/02/16 11:16:35 main.go:61: databaseReader | Database was read
+INFO: 2022/02/16 11:16:35 main.go:209: signup | User: user2 was successfully added to the database.
+INFO: 2022/02/16 11:16:35 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/16 11:16:35 main.go:103: handler | /signup request was received from cli
+INFO: 2022/02/16 11:16:38 main.go:61: databaseReader | Database was read
+ERROR: 2022/02/16 11:16:38 main.go:200: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/16 11:16:38 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/16 11:16:38 main.go:103: handler | /signup request was received from cli
+INFO: 2022/02/16 11:16:45 main.go:61: databaseReader | Database was read
+INFO: 2022/02/16 11:16:45 main.go:209: signup | User: user4 was successfully added to the database.
+INFO: 2022/02/16 11:16:45 main.go:72: databaseWriter | Database was updated
+INFO: 2022/02/16 11:16:45 main.go:103: handler | /signup request was received from cli
+INFO: 2022/02/16 11:22:23 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 11:22:34 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 11:22:34 main.go:211: signup | User: user4 was successfully added to the database.
+INFO: 2022/02/16 11:22:34 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 11:22:34 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 11:22:38 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 11:22:38 main.go:211: signup | User: user4 was successfully added to the database.
+INFO: 2022/02/16 11:22:38 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 11:22:38 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 11:22:46 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 11:22:46 main.go:211: signup | User: user4 was successfully added to the database.
+INFO: 2022/02/16 11:22:46 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 11:22:46 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 11:23:11 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 11:23:19 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 11:23:19 main.go:211: signup | User: user4 was successfully added to the database.
+INFO: 2022/02/16 11:23:19 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 11:23:19 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 11:23:23 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 11:23:23 main.go:211: signup | User: user4 was successfully added to the database.
+INFO: 2022/02/16 11:23:23 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 11:23:23 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 11:23:27 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 11:23:27 main.go:211: signup | User: user4 was successfully added to the database.
+INFO: 2022/02/16 11:23:27 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 11:23:27 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 11:23:36 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 11:23:50 main.go:63: databaseReader | Database was read
+ERROR: 2022/02/16 11:23:50 main.go:202: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/16 11:23:50 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 11:23:50 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 11:23:53 main.go:63: databaseReader | Database was read
+ERROR: 2022/02/16 11:23:53 main.go:202: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/16 11:23:53 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 11:23:53 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 11:23:57 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 11:24:05 main.go:63: databaseReader | Database was read
+ERROR: 2022/02/16 11:24:05 main.go:202: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/16 11:24:05 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 11:24:05 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 11:24:10 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 11:24:10 main.go:410: delete | User user4 was deleted from the database.
+INFO: 2022/02/16 11:24:10 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 11:24:10 main.go:114: handler | /delete request was received from cli
+INFO: 2022/02/16 11:24:21 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 11:24:31 main.go:63: databaseReader | Database was read
+WARNING: 2022/02/16 11:24:31 main.go:359: logout | Attempted to log out while not logged in.
+INFO: 2022/02/16 11:24:31 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 11:24:31 main.go:111: handler | /logout request was received from cli
+INFO: 2022/02/16 11:26:58 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 11:27:09 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 11:27:09 main.go:211: signup | User: user4 was successfully added to the database.
+INFO: 2022/02/16 11:27:09 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 11:27:09 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 11:27:14 main.go:63: databaseReader | Database was read
+ERROR: 2022/02/16 11:27:14 main.go:202: signup | Bad Request: Error 409. User already exists in Database.
+INFO: 2022/02/16 11:27:14 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 11:27:14 main.go:105: handler | /signup request was received from cli
+INFO: 2022/02/16 11:27:22 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 11:27:32 main.go:63: databaseReader | Database was read
+INFO: 2022/02/16 11:27:32 main.go:211: signup | User: user4 was successfully added to the database.
+INFO: 2022/02/16 11:27:32 main.go:74: databaseWriter | Database was updated
+INFO: 2022/02/16 11:27:32 main.go:105: handler | /signup request was received from cli

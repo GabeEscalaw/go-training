@@ -33,7 +33,7 @@ Main Features:
 | Commands | Required Inputs (after -cmd="command")                |
 | -------- | ----------------------------------------------------- |
 | `in`     | `-u=username -p=password`                             |
-| `out`    | ``                                                    |
+| `out`    | ` `                                                    |
 | `reg`    | `-u=username -p=password`                             |
 | `del`    | `-u=username -p=password`                             |
 | `list`   | ``                                                    |

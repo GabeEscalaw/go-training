@@ -54,10 +54,12 @@ func (u *UserDatabase) databaseReader () {
 		log.Fatalf("failed to read json file: %s", err)
 		ErrorLogger.Println("databaseReader | Fatal error with reading users.json file.")
 	}
-	var result UserDatabase 
+
+	var result UserDatabase
 	json.Unmarshal([]byte(byteData), &result)
-	
 	*u = result
+
+	//json.Unmarshal([]byte(byteData), &u.Users) 
 	InfoLogger.Println("databaseReader | Database was read")
 }
 
